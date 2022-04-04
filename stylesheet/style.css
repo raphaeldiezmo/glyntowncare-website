@@ -1,0 +1,75 @@
+body{
+  margin:auto;
+  background-color: rgba(217, 217, 217, 0.5);
+  max-width: 1980px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* navbar styling */
+.logo-container{
+  position: fixed;
+  z-index: 100;
+  margin:auto;
+}
+.brand-logo{
+  border-radius: 5px;
+  border: 1px solid yellow;
+}
+
+.nav-container{
+  margin: auto;
+  max-width: 1980px;
+  width: 100%;
+  
+  right: 0;
+  background-color: rgba(186, 122, 255, 0.5);
+  position: fixed;
+
+
+}
+.navbar{
+  height: 50px;
+  width: 100%;
+}
+
+.navbar-nav {
+  position: absolute;
+  right:10px;
+}
+.nav-link{
+  color: #422287;
+  transition: 0.5s ease;
+  position: relative
+  padding: 0px 10px 0px 10px;
+
+}
+.nav-link:hover{
+  color: white;
+}
+
+
+/* General styling */
+.container{
+  padding: 50px;
+}
+/* =========== */
+/* home styles */
+/* =========== */
+.home-container{
+  height: 100vh;
+}
+.content-container{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+/* ================ */
+/* About us styling */
+/* ================ */
+
+/* ================== */
+/* Contact us styling */
+/* ================== */
