@@ -1,75 +1,352 @@
+*{
+  margin:0;
+  padding:0;
+}
+
 body{
-  margin:auto;
-  background-color: rgba(217, 217, 217, 0.5);
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(219, 157, 255));
+  position          :relative;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+
+.container{
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+}
+.inner-container{
+  width: 90%;
+  margin: auto;
+}
+/* home section style */
+#home{
+  padding-top: 100px;
   max-width: 1980px;
-  justify-content: center;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+.img-container{
+  width: 100%;
+  max-width: 1980px;
+  margin: auto;
+  height: 600px;
   align-items: center;
+  
+  background:linear-gradient(
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.6)
+  ), url(../images/img2.jpg); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; 
+
+}
+
+.banner-container{
+  position: relative;
+  top: 180px;
+  left: 150px;
+  width: 500px;
+  animation: fadeDown 1s;
+}
+.banner-title{
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+
+}
+
+@keyframes fadeDown{
+  0%{
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+.banner-text{
+  margin-top: 5px;
+  letter-spacing: 0.5px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+ 
+}
+
+
+.contact-us-btn, .learn-more-btn{
+  margin-top: 20px;
+  margin-right: 10px;
+  width: 200px;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 10px;
+  background: rgb(128, 0, 202);
+  font-weight: bold;
+  color: white;
+  border: none;
+}
+
+
+/* simple statement styles */
+#simple-statement{
+  width: 100%;
+  max-width: 1980px;
+  margin:auto;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(219, 157, 255));
   text-align: center;
 }
-
-/* navbar styling */
-.logo-container{
-  position: fixed;
-  z-index: 100;
-  margin:auto;
-}
-.brand-logo{
-  border-radius: 5px;
-  border: 1px solid yellow;
-}
-
-.nav-container{
+.statement{
+  width: 40%;
+  max-width: 1200px;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 100px;
   margin: auto;
+  color: rgb(70, 0, 110);
+}
+/* card styles */
+#about-us{
+  width: 100%;
   max-width: 1980px;
-  width: 100%;
+  max-height: 900px;
+  margin: auto;
+  background-image: url(../images/img1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   
-  right: 0;
-  background-color: rgba(186, 122, 255, 0.5);
-  position: fixed;
-
-
 }
-.navbar{
-  height: 50px;
+.about-us-container{
+  padding-top: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
-}
-
-.navbar-nav {
-  position: absolute;
-  right:10px;
-}
-.nav-link{
-  color: #422287;
-  transition: 0.5s ease;
-  position: relative
-  padding: 0px 10px 0px 10px;
-
-}
-.nav-link:hover{
-  color: white;
-}
-
-
-/* General styling */
-.container{
-  padding: 50px;
-}
-/* =========== */
-/* home styles */
-/* =========== */
-.home-container{
-  height: 100vh;
-}
-.content-container{
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.about-us-inner-container{
+  width: 90%;
+  max-width: 1500px;
+
+  margin: auto;
+  text-align: center;
+}
+.abt-us-title{
+  font-weight: bolder;
+  font-size: 60px;
+  color: rgb(70, 0, 110);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.abt-us-card-row{
+  margin: auto;
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.abt-us-card{
+  width: 49%;
+  height: 450px;
+  background: rgba(48, 0, 80, 0.8);
+  color: rgb(255, 254, 255);
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px rgba(5, 0, 8,0.3);
+
+}
+.abt-us-card-title{
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+  
+  
+}
+.abt-us-card p{
+  padding:20px 10px 50px 10px;
+  font-size: 17px;
+  font-weight: 100;
+  width: 90%;
+  height: 45%;
+  margin: auto;
+  
+}
+.abt-us-card a{
+  width: 300px;
+  padding: 5px 30px 5px 30px;
+  background: none;
+  text-decoration: none;
+}
+
+/* location style */
+#location{
+  width: 100%;
+  position: inherit;  
+}
+
+.location-header{
+  font-size: 50px;
+  font-weight: bolder;
+  padding: 30px;
+}
+.location-container{
+  text-align: center;
+  padding-bottom: 50px;
+}
+.location-container h1{
+  color: rgb(78, 0, 97);
+  font-weight: bold;
+  font-size: 2.2rem;
+
+  letter-spacing: 2px;
+}
+.location-container-inner{
+  display: flex;
+}
+.bus-route-title{
+  padding-bottom: 30px;
+}
+.bus-info-container{
+  width: 80%;
+  color: rgb(78, 0, 97);
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding-right: 30px;
+}
+
+.bus-information-step-by-step-list{
+  list-style-type: decimal;
+  padding-bottom: 50px;
+}
+.bus-step{
+  padding-bottom: 10px;
+  font-weight:200;
+  letter-spacing: 1px;
+}
+iframe{
   width: 100%;
   height: 500px;
+  margin: auto;
+  border-radius: 10px;
 }
-/* ================ */
-/* About us styling */
-/* ================ */
+/* contact us form style */
+#contact-form{
+  width: 100%;
+  max-width: 1980px;
+  margin:auto;
+  text-align: center;
+  border-radius: 60% 60% 0 0;
+  overflow: hidden;
+  background:linear-gradient(to right, rgb(9, 0, 17), rgb(83, 0, 131));
+}
+.form-title{
+  font-size: 40px;
+  font-weight: bolder;
+  color:rgb(255, 255, 255);
+  padding: 20px 0px 20px 0px;
 
-/* ================== */
-/* Contact us styling */
-/* ================== */
+}
+.form-item{
+  width: 600px;
+  margin: auto;
+}
+
+
+.form-item input{
+  background-color: rgba(208, 120, 255,0.3);
+  border-radius: 5px;
+  height: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  width: 500px;
+}
+.form-item textarea{
+  background-color: rgba(208, 120, 255,0.3);
+  width: 490px;
+  height: 250px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  font-weight: bold;
+  font-size: 15px;
+
+}
+
+.snd-msg-btn{
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background: rgb(164, 43, 235);
+  color: rgb(252, 252, 252);
+  width: 120px;
+  height: 30px;
+  border: none;
+  font-weight: bold;
+  border-radius: 100px;
+}
+.form-item text-area :active{
+  background-color: white;
+}
+::placeholder {
+  color: rgb(235, 186, 255);
+  opacity: 0.7; /* Firefox */
+  text-align: center;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+
+  font-weight: 300;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(235, 186, 255);
+  opacity: 0.7; /* Firefox */
+
+
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(235, 186, 255);
+  opacity: 0.7; /* Firefox */
+
+
+}
+
+
+
+/* responsive elements */
+@media (max-width: 800px){
+  .banner-container{
+    left: 20px;
+  }
+  #about-us{
+    padding-bottom: 250px;
+  }
+  .abt-us-card-row{
+    flex-direction: column;
+  }
+  .abt-us-card{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .statement{
+    width: 80%;
+  }
+  .location-container-inner{
+    flex-direction: column;
+  }
+  #contact-form{
+    border-radius: 30% 30 0 0;
+    padding-top: 30px;
+  }
+}

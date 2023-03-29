@@ -1,0 +1,30 @@
+/* contact style / contact Us page */
+.timeline-photo-container{
+    height: 200px;
+    width: 100%;
+    background: white;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  #contact-container{
+    width: 100%;
+    text-align: center;
+  }
+  .contact-us-title{
+    color: rgb(70, 0, 110);
+  }
+  .contact-inner-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .contact-information{
+    width: 100%;
+  }
+  .contact-form{
+    width: 100%;
+  }
+  
+  

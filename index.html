@@ -1,66 +1,251 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Glyntown Care</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/stylesheet/style.css">
-  </head>
-  <body>
-    <div class="logo-container">
-      <a href="../index.html">
-        <img class="brand-logo"src="/images/logo.jpg" alt="" width="170" height="100" class="d-inline-block align-text-top">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- style sheet link -->
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <link rel="stylesheet" href="stylesheet/navbar.css">
+  <link rel="stylesheet" href="stylesheet/footerstyle.css">
 
-      </a>
-    </div>
+  <title>Home - Glytown Care</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo.png">
+  
+</head>
+<body>
 
-    <div class="nav-container ">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active disabled" href="#">Home</a>
-              <a class="nav-link" href="#">About Us</a>
-              <a class="nav-link" href="#">Our Services</a>
-              <a class="nav-link" href="#">Contact Us</a>
+  <!-- Header elements -->
+  <header>
+    <div class="nav-container container">
+      <div class="nav-container-inner inner-container">
+        <nav class="navbar">
+          <img class="navbar-brand" src="images/logo-nobg.png" alt="">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/about-us.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/services.html">Services</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#">Careers</a>
-            </div>
-          </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/reach-out.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </nav>
+        <div class="social"></div>
+      </div>
     </div>
-
-
-    <div class="container home-container">
-      <div class="home-container-inner">
-        <div class="slider-container">
-          <div class="slider">
-
-          </div>
-        </div>
-        <div class="content-container">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8">
-                <p>When your loved one can no
-                  longer live independently, you need peace of mind with the care you choose. Quality residential care is the best solution for many older people. We provide person-centred care in a kind and friendly environment.</p>
-              </div>
+  </header>
+  <main>
+    <!-- Section elements -->
+    <section id="home">
+      <div class="section-container ">
+        <div class="section-container-inner ">
+        
+          <div class="img-container">
+            <div class="banner-container">
+              <h2 class="banner-title">
+              Welcome to Our Compasionate and Caring Nursing Home 
+              </h2>
+              <p class="banner-text">The place Where your Loved Ones Are Our Top Priority</p>
+                  <button class="contact-us-btn btn">Get in Touch</button>
+                  <button class="learn-more-btn btn">Learn more</button>
+                </div>
+            
             </div>
+            
           </div>
         </div>
       </div>
-    </div>
-    <div class="container footer-container">
-      <footer>
-      </footer>
+    </section>
+    <!-- ---------------------------------------- -->
+    <!-- ---------------------------------------- -->
+    <!-- SIMPLE STATEMENT SECTION -->
+    <!-- ---------------------------------------- -->
 
-    </div>
-    <!-- scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <section id="simple-statement">
+      <h2 class="statement">In <span class="glyntown-name">Glyntown Care 
+        Centre</span>, we make it our utmost priority to ensure that your
+         loved ones receive the highest quality of care and attention, 
+         and we are committed to creating a warm and welcoming environment
+          that feels just like home.</h2>
+    </section>
 
-  </body>
+    <!-- ---------------------------------------- -->
+    <!-- ABOUT US SECTION -->
+    <!-- ---------------------------------------- -->
+    <!-- ---------------------------------------- -->
+
+    <section id="about-us">
+      <div class="about-us-container">
+        <div class="about-us-inner-container">
+          <h1 class="abt-us-title">
+            Why Choose Us?
+          </h1>
+            <div class="abt-us-card-row">
+              <div class="abt-us-card">
+                <h1 class="abt-us-card-title">Services</h1>
+                <p class="abt-us-card-info">Our nursing home is dedicated to providing high-quality, individualized care to our residents in a safe and welcoming environment. We strive to promote physical, emotional, and social well-being for each of our residents.</p>
+                <a href="" class="learn-more-btn">Learn more</a>
+              </div>
+              <div class="abt-us-card">
+                <h1 class="abt-us-card-title">Facilities</h1>
+                <p class="abt-us-card-info">Our nursing home offers a range of state-of-the-art facilities designed to meet the unique needs of our residents, including comfortable living spaces, nutritious dining options, and engaging social activities. We are committed to creating an environment where our residents can thrive and enjoy a high quality of life.</p>
+                <a href="" class="learn-more-btn">Learn more</a>
+              </div>
+              
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------------------- -->
+    <!-- LOCATION SECTION -->
+    <!-- ---------------------------------------- -->
+
+    <section id="location">
+      <div class="location-container container">
+          
+        <h1 class="location-header ">Locate us</h1>
+        <div class="inner-container location-container-inner">
+          
+          <div class="bus-info-container">
+            <h2 class="bus-route-title">
+              Bus Route Option
+            </h2>
+              <ul class="bus-information-step-by-step-list">
+                  <li class="bus-step">Look for the nearest bus stop to <b>Glyntown Glanmire</b> that is serviced by the <b>bus 214</b>. 
+                    you can use a map or a transportation app to locate the nearest stop. <i>You can google bus 214 
+                      or install moovitapp</i>
+                      <br><br>
+                      <b>bus 214 schedule</b><br>
+                      <a href="https://bustimes.org/services/214-cuh-a-and-e-cork-city-patrick-street
+                      ">https://bustimes.org/services/214-cuh-a-and-e-cork-city-patrick-street</a>
+                      <br>
+                      <br>
+                      <b>You can also use the movitapp, by clicking the link below</b><br>
+                      <a href="https://moovitapp.com/index/en/public_transit-line-214-Ireland-502-851897-228786-0">
+                        https://moovitapp.com/index/en/public_transit-line-214-Ireland-502-851897-228786-0
+                      </a>
+                    </li>
+                    <br>
+
+                  <li class="bus-step">
+                    Board the bus 214 at the bus stop and make sure it is headed to hazelwood not Knockraha.
+                    always ask the driver if you're going to hazelwood instead of Knockraha.
+                  </li>
+                  <li class="bus-step">
+                    Stay on the bus until you reach the last stop.
+                  </li>
+                  <li class="bus-step">
+                    Open your google maps, or the easiest way is to just open the website
+                    glyntowncarecentre.ie. Scroll down and click the direction from our website's locate us through the end of the home page.
+                </li>
+              </ul>
+                
+              
+              
+              
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.5030539028985!2d-8.389418684003196!3d51.92477718792069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48449a9e4aae304b%3A0xf5e729b0aebc63be!2sGlyntown%20Care%20Centre!5e0!3m2!1sen!2sie!4v1678902111606!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+          
+        
+      </div>
+    </section>
+
+
+
+    <!-- Contact form section -->
+    <section id="contact-form">
+      <div class="contact-form-container">
+        <div class="contact-form-inner-container">
+          <form action="">
+            <div class="form-title">
+              Send us a Message
+            </div>
+            <div class="form-item">
+              <input type="text" id="name" placeholder="Name" required>
+            </div>
+            <div class="form-item">
+              <input type="text" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-item">
+              <input type="tel" id="phone" name="phone" placeholder="Phone number (Optional)" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </div>
+            <div class="form-item">
+              <input type="text" id="topic" placeholder="Enter a Subject" required>
+            </div>
+            <div class="form-item">
+              <textarea id="message" placeholder="Write Something" required></textarea>
+            </div>
+            <div class="form-send-btn">
+              <input class="snd-msg-btn btn" type="submit" value="Send Message">
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer elements -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-container-inner inner-container font-1">
+        <div class="footer-row">
+          <div class="footer-column">
+            <img src="images/logo.png" alt="">
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Address</h4>
+
+            <ul class="address-list list">
+              <li class="footer-item-list">Glyntown Care Centre</li>
+              <li class="footer-item-list">Glyntown, Glanmire</li>
+              <li class="footer-item-list">Co. Cork, T45 H795</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Contact Us</h4>
+    
+            <ul class="reach-out-list list">
+              <li class="footer-item-list"><a href="mailto:info@glyntowncare.ie">E: info@glyntowncare.ie</a></li>
+              <li class="footer-item-list"><a href="tel:0874400603">M: 087 440 0603</a></li>
+              <li class="footer-item-list"><a href="tel:0214821500">T: 021 482 1500</a></li>
+
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Socials</h4>
+
+            <ul class="social-list list">
+              <li class="footer-item-list"><a href="#">Facebook</a></li>
+              <li class="footer-item-list"><a href="#">Instagram</a></li>
+              <li class="footer-item-list"><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div> 
+        <p class="footer-span"> © Copyright Glyntown Care Centre. All Rights Reserved.</p>
+
+      </div>
+    </div>
+    <hr class="divider">
+  </footer>
+
+  <script type="text/javascript" src="scripts/script.js"></script>
+
+</body>
 </html>

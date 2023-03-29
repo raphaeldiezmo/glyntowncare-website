@@ -1,0 +1,117 @@
+header{
+  position: fixed;
+  top:0;
+  width: 100%;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(219, 157, 255));
+  box-shadow: 0 0 0 0;
+  z-index : 10000;
+
+  
+}
+/* navbar styles */
+.navbar{
+    align-items: center;
+    width:100%;
+    margin:auto;
+    min-height:100px;
+    display:flex;
+    justify-content:space-between;
+    padding: 0 20px;
+    
+  }
+
+  .navbar-brand{
+    mix-blend-mode: multiply;
+    width: 120px;
+    padding: 10px 0 10px 0;
+  }
+
+  .nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .nav-item{
+    list-style:none;
+  }
+
+  .nav-link{
+    position: relative;
+    text-decoration   :none;
+    font-size: 1rem;
+    color:rgb(78, 0, 97);
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 0 10px;
+  }
+
+  .nav-link:after{
+    content: "";
+    position:absolute;
+    background-color: rgb(82, 0, 177);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom:-5px;
+    transition: 0.5s ;
+  }
+
+  .nav-link:hover:after{
+    width: 100%;
+    
+  }
+
+  /* BURGER-MENU STYLES */
+  .burger-menu{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 35px;
+    right: 30px;
+  }
+
+  .bar{
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: rgb(78, 0, 97);
+  }
+
+  @media(max-width:1024px){
+    .burger-menu{
+      display:block;
+    }
+    .burger-menu.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .burger-menu.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .burger-menu.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav{
+      top: 100px;
+      right:-150%;
+      gap: 0;
+      position: fixed;
+      flex-direction: column;
+      background: linear-gradient(to right, rgb(255, 255, 255), rgb(219, 157, 255));
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: 0.5s;
+      
+    }
+    .nav-item{
+      margin: 16px 0;
+      }
+    .nav.active{
+      right:0;
+      
+    }
+  }
+  
