@@ -49,7 +49,7 @@ body{
 .banner-container{
   position: relative;
   top: 180px;
-  left: 150px;
+  left: 5%;
   width: 500px;
   animation: fadeDown 1s;
 }
@@ -63,7 +63,7 @@ body{
 @keyframes fadeDown{
   0%{
     opacity: 0;
-    transform: translateY(-30px) scale(0.9);
+    transform: translateY(100px) scale(0.9);
 
   }
   100%{
