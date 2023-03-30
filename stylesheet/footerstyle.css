@@ -49,3 +49,10 @@ footer{
     cursor: pointer;
   }
   
+
+  @media (max-width: 500px){
+    .footer-row{
+      text-align: center;
+      gap: 20px;
+    }
+  }

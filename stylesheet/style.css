@@ -327,13 +327,23 @@ iframe{
 /* responsive elements */
 @media (max-width: 800px){
   .banner-container{
-    left: 20px;
+    width: 100%;
+    text-align: center;
+    left: 0;
   }
   #about-us{
     padding-bottom: 250px;
   }
+  .about-us-container{
+    padding-bottom: 62px;
+  }
+  .abt-us-title{
+    padding-top: 0;
+    font-size: 40px;
+  }
   .abt-us-card-row{
     flex-direction: column;
+    width: 100%;
   }
   .abt-us-card{
     width: 100%;
@@ -345,8 +355,23 @@ iframe{
   .location-container-inner{
     flex-direction: column;
   }
+
+  .bus-info-container{
+    width: 100%;
+    left: 2.5%;
+  }
   #contact-form{
-    border-radius: 30% 30 0 0;
+    border-radius: 15% 15% 0 0;
     padding-top: 30px;
   }
+  .form-item{
+    width: 95%;
+    margin-left: 2.5%;
+    padding: 0;
+  }
+  .form-item input, .form-item textarea{
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
 }
