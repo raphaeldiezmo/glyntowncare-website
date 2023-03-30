@@ -101,7 +101,6 @@
   color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(158,27,104,1) 22%, rgba(0,212,255,1) 100%);;
 }
 .contact-card-container{
-  min-width: 400px;
   margin: 30px 15px 0 0;
   background-color: rgba(183, 120, 255, 0.2);
   border: none;
@@ -133,6 +132,7 @@
 @media (max-width: 800px){
   .contact-inner-container{
     flex-direction: column;
+    width: 100%;
   }
   .form-rows{
     flex-direction: column;
@@ -142,8 +142,16 @@
 @media (max-width: 1200px){
   .contact-inner-container{
     flex-direction: column;
+    width: 100%;
+  }
+  .contact-card-container{
+    width: 95%;
+    margin-left: 2.5%;
   }
   .contact-form{
     margin-top: 0px;
+    width: 95%;
+
+    margin: 0px 0px 20px 2.5%;
   }
 }
