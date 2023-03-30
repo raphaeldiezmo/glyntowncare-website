@@ -32,13 +32,19 @@
   .contact-form-title{
     color: rgb(70, 0, 110);
     padding-bottom: 20px;
+    margin-top: 20px;
     font-size: 2rem;
   }
   .contact-form{
     width: 100%;
     flex: 50%;
-    padding-left: 30px;
+
+  }
+  .contact-form form{
+    background-color: rgba(183, 120, 255, 0.2);
     margin-top: 30px;
+    padding: 5px 20px 0px 20px;
+    border-radius: 8px;
   }
   .form-item{
     display: flex;
@@ -68,6 +74,7 @@
   }
   .form-item textarea{
     width: 96%;
+    height: 200px;
   }
   .contact-form{
     text-align: left;
@@ -94,20 +101,19 @@
   color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(158,27,104,1) 22%, rgba(0,212,255,1) 100%);;
 }
 .contact-card-container{
-  margin-top: 30px;
   min-width: 400px;
-  width: 100%;
+  margin: 30px 15px 0 0;
   background-color: rgba(183, 120, 255, 0.2);
   border: none;
   border-radius: 8px;
   padding-bottom: 30px;
   color: rgb(70, 0, 110);
   height: 230px;
-  margin-right: 30px;
-
 }
+
 .contact-frm-btn{
   text-align: center;
+  margin-bottom: 0px;
 }
 .contact-card-title{
   padding-top: 30px;
@@ -127,5 +133,17 @@
 @media (max-width: 800px){
   .contact-inner-container{
     flex-direction: column;
+  }
+  .form-rows{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px){
+  .contact-inner-container{
+    flex-direction: column;
+  }
+  .contact-form{
+    margin-top: 0px;
   }
 }
