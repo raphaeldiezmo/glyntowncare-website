@@ -2,8 +2,8 @@
 .timeline-photo-container{
     height: 100px;
     width: 100%;
-    background: rgb(150, 93, 255);
-    padding-top: 100px;
+    padding: 100px 0px 50px 0px;
+
     align-items: center;
     justify-content: center;
   
@@ -16,9 +16,9 @@
 
   /* timeline of the contact-us */
   .contact-us-title{
-    color: rgb(70, 0, 110);
+    color: rgb(53, 0, 83);
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     margin-top: 30px;
   }
   .contact-inner-container{
@@ -137,6 +137,13 @@
   .form-rows{
     flex-direction: column;
   }
+  .contact-us-title{
+    font-size: 35px;
+  }
+  .timeline-photo-container{
+    padding-bottom: 0;
+  }
+
 }
 
 @media (max-width: 1200px){
