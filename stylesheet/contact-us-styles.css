@@ -143,7 +143,15 @@
   .timeline-photo-container{
     padding-bottom: 0;
   }
-
+  .form-item{
+    margin-left: 0px;
+  }
+  .form-item label{
+    margin-left: 7px;
+  }
+  .form-item textarea{
+    width: 92%;
+  }
 }
 
 @media (max-width: 1200px){
