@@ -1,23 +1,86 @@
-.abt-us-section{
-    padding: 100px 0 100px 0;
+main{
     width: 100%;
-    height: 600px;
-    background: black;
+    margin: 0;
+    background-position: fixed;
 }
-.abt-us-section-inner{
-    width: 80%;
-    
-}
-.abt-us-title{
-    font-size: 60px;
-    font-weight: bolder;
-    letter-spacing: 0px;
-}
-.abt-us-contents{
-    display: flex;
-    flex-direction: row;
+.abt-us-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+
 }
 
+/* first part of the abt us section */
+.first-part-of-abt-us-section{
+    width: 95%;
+    margin: auto;
+
+}
+.abt-us-info-container{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+.abt-us-paragraph{
+    width: 60%;
+    margin: auto;
+    color: rgb(87, 3, 165);
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+.abt-us-info-title{
+    font-size: 3rem;
+    color: rgb(72, 2, 138);
+}
+
+
+/* second part of the abt us section */
+.second-part-of-abt-us-section{
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+
+
+}
+
+.abt-us-contents{
+    margin:auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.abt-us-content-container{
+    width: 100%;
+    margin: auto;
+}
 .abt-us-contents img{
     width: 100%;
+    border-radius: 8px;
+    
+}
+.abt-us-statement-{
+
+    font-weight: bolder;
+    font-size: 60px;
+    width: 90%;
+    text-align: left;
+    color: rgb(82, 0, 117);
+}
+
+
+
+/* services section */
+.services-section{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(51, 0, 94);
+    border-radius: 30% 15% 0 0;
+}
+.services-section-inner{
+    width: 80%;
+    
 }
