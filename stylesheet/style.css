@@ -22,7 +22,6 @@ body{
 }
 /* home section style */
 #home{
-  padding-top: 100px;
   max-width: 1980px;
   margin: auto;
   overflow: hidden;
@@ -33,9 +32,7 @@ body{
   width: 100%;
   max-width: 1980px;
   margin: auto;
-  height: 600px;
-  align-items: center;
-  
+  height: 100vh;
   background:linear-gradient(
     rgba(0, 0, 0, 0.3), 
     rgba(0, 0, 0, 0.6)
@@ -48,14 +45,14 @@ body{
 
 .banner-container{
   position: relative;
-  top: 180px;
+  top: 30%;
   left: 5%;
   width: 500px;
   animation: fadeDown 1s;
 }
 .banner-title{
   font-weight: bold;
-  font-size: 40px;
+  font-size: 4rem;
   color: rgb(255, 255, 255);
 
 }
@@ -105,7 +102,7 @@ body{
 .statement{
   width: 60%;
   max-width: 1200px;
-  font-size: 60px;
+  font-size: 4rem;
   font-weight: bold;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -116,7 +113,6 @@ body{
 #about-us{
   width: 100%;
   max-width: 1980px;
-  max-height: 900px;
   margin: auto;
   background-image: url(../images/img1.jpg);
   background-repeat: no-repeat;
@@ -139,50 +135,50 @@ body{
   margin: auto;
   text-align: center;
 }
-.abt-us-title{
-  font-weight: bolder;
-  font-size: 60px;
-  color: rgb(70, 0, 110);
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+
 .abt-us-card-row{
   margin: auto;
-  display: flex;
   width: 90%;
+}
+.abt-us-card{
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-.abt-us-card{
-  width: 49%;
   height: 450px;
-  background: rgba(48, 0, 80, 0.8);
-  color: rgb(255, 254, 255);
-  border-radius: 8px;
-  box-shadow: 3px 3px 3px rgba(5, 0, 8,0.3);
+  color: rgb(28, 0, 71);
+  text-align: left;
+  padding-bottom: 40px;
+
 
 }
+.card-img{
+  height: 100%;
+  width: 100%;
+  border: 1px solid purple;
+}
+.abt-us-card-content{
+  margin-left: 30px;
+  flex: 60%;
+}
 .abt-us-card-title{
-  padding-top: 50px;
   font-size: 30px;
   font-weight: bolder;
   
   
 }
 .abt-us-card p{
-  padding:20px 10px 50px 10px;
-  font-size: 17px;
-  font-weight: 100;
+  font-size: 2rem;
+  font-weight: 200;
+  padding-bottom: 50px;
   width: 90%;
-  height: 45%;
-  margin: auto;
   
 }
-.abt-us-card a{
+.card-link{
   width: 300px;
-  padding: 5px 30px 5px 30px;
+  font-size: 1.5rem;
   background: none;
+  font-weight: bolder;
   text-decoration: none;
 }
 
@@ -338,22 +334,33 @@ iframe{
     text-align: center;
     left: 0;
   }
+  .banner-title{
+    font-size: 3rem;
+  }
+  .statement{
+    font-size: 2rem;
+  }
   #about-us{
     padding-bottom: 250px;
   }
   .about-us-container{
     padding-bottom: 62px;
   }
-  .abt-us-title{
-    padding-top: 0;
-    font-size: 40px;
-  }
+
   .abt-us-card-row{
-    flex-direction: column;
     width: 100%;
+    height: 1000px;
   }
+  .card-img{
+    height: 400px;
+  }
+ .abt-us-card-content{
+  flex: 40%;
+  font-size: 1.5rem;
+ }
   .abt-us-card{
     width: 100%;
+    flex-direction: column;
     margin-bottom: 30px;
   }
   .statement{
