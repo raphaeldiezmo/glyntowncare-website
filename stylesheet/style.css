@@ -4,8 +4,10 @@
 }
 
 body{
-  background: linear-gradient(to right, rgb(255, 255, 255), rgb(219, 157, 255));
   position          :relative;
+  background: #2b0063;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(187, 69, 255));
+  background-position: center;
   font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
@@ -24,7 +26,6 @@ body{
 #home{
   max-width: 1980px;
   margin: auto;
-  overflow: hidden;
 }
 
 
@@ -32,7 +33,7 @@ body{
   width: 100%;
   max-width: 1980px;
   margin: auto;
-  height: 100vh;
+  height: 80vh;
   background:linear-gradient(
     rgba(0, 0, 0, 0.3), 
     rgba(0, 0, 0, 0.6)
@@ -96,7 +97,7 @@ body{
   width: 100%;
   max-width: 1980px;
   margin:auto;
-  background: linear-gradient(to right, rgb(255, 255, 255), rgb(219, 157, 255));
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(186, 88, 243));
   text-align: center;
 }
 .statement{
@@ -202,6 +203,7 @@ body{
 #location{
   width: 100%;
   position: inherit;  
+
 }
 
 .location-header{
@@ -334,8 +336,43 @@ iframe{
 
 }
 
+/* hiqa section */
+#hiqa{
+  width: 100%;
+  background-color: #2b0063;
+  padding: 50px 0 50px 0;
+}
+.hiqa-container{
+  width: 80%;
+  margin: auto;
+  text-align: center;  
+  
+}
+.hiqa-title{
+  font-size: 2rem;
+  color: rgb(0, 140, 255);
+}
+.hiqa-link-statement{
+  font-size: 1.1rem;
+  color: white;
+  width: 50%;
+  font-weight: 100;
+  margin: auto;
+  padding: 40px;
+}
+.hiqa-link-container{
+  flex: 10%;
+  text-align: right;
+  justify-content: center;
+}
 
-
+.hiqa-sect-link{
+  font-size: 1.4rem;
+  text-decoration: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bolder;
+} 
 /* responsive elements */
 @media (max-width: 800px){
   .img-container{

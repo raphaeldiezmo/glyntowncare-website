@@ -23,9 +23,12 @@ header{
     width: 170px;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgb(255, 255, 255);
     height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     text-align: center;
+    
     border-radius: 0 0 40% 50%;
     
   }
@@ -38,7 +41,7 @@ header{
     display: flex;
     align-items: center;
     gap: 40px;
-    background: rgba(41, 0, 101, 0.8);
+    /* background: rgba(41, 0, 101, 0.8); */
     padding: 20px;
     border-radius: 30px;
   }
@@ -51,7 +54,7 @@ header{
     position: relative;
     text-decoration   :none;
     font-size: 1rem;
-    color: white;
+    color: rgb(255, 255, 255);
     letter-spacing: 1px;
     font-weight: 500;
     padding-bottom: 0.5em;
@@ -74,7 +77,6 @@ header{
     
   }
   .active-nav{
-    color: rgb(208, 166, 255);
     border-bottom: rgb(208, 166, 255) 0.14em solid;
 
   }
