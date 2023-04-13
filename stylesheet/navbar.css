@@ -41,9 +41,10 @@ header{
     display: flex;
     align-items: center;
     gap: 40px;
-    /* background: rgba(41, 0, 101, 0.8); */
-    padding: 20px;
-    border-radius: 30px;
+    background-image: linear-gradient(to right, rgb(190, 93, 246) , rgb(49, 30, 255));
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .nav-item{

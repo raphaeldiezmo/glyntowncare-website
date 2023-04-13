@@ -1,3 +1,4 @@
+
 /* contact style / contact Us page */
 .timeline-photo-container{
     height: 100px;
@@ -11,14 +12,10 @@
   #contact-container{
     width: 100%;
     text-align: center;
-    
     justify-content: center;
   }
 
-  /* timeline of the contact-us */
-  .timeline-photo-container{
-    margin: 30px 0 30px 0;
-  }
+ 
   .contact-us-title{
     color: rgb(53, 0, 83);
     text-align: center;
@@ -52,7 +49,7 @@
 
   }
   .contact-form form{
-    background-color: rgba(183, 120, 255, 0.2);
+    background-color: rgba(233, 205, 255, 0.9);
     padding: 5px 20px 0px 20px;
     border-radius: 8px;
   }
@@ -108,7 +105,7 @@
 }
 .contact-card-container{
   margin: 0px 30px 30px 0px;
-  background-color: rgba(183, 120, 255, 0.2);
+  background-color: rgba(233, 205, 255, 0.9);
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
@@ -138,7 +135,7 @@
   background-color: rgb(255, 255, 255);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 30px;
-  background-color: rgba(183, 120, 255, 0.2);
+  background-color: rgba(233, 205, 255, 0.9);
   border-radius: 8px;
   width: 80%;
 }
@@ -184,3 +181,4 @@
     margin: 0px 0px 20px 2.5%;
   }
 }
+
