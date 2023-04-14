@@ -16,17 +16,7 @@ main{
     width: 100%;
     height: 100vh;
     margin: auto;
-    background:linear-gradient(
-        to right,
-        rgb(255, 255, 255), 
-        rgba(255, 255, 255, 0.7), 
-        rgba(255, 255, 255, 0.2), 
-        rgba(255, 255, 255, 0)
-      ), url(../images/about-us-header.jpg); 
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: scroll; 
-      background-size: 100%;
+
 }
 .abt-us-info-container{
     width: 100%;
@@ -36,16 +26,36 @@ main{
     display: grid;
     align-items: center;
 }
-
-.abt-us-info-title{
-    font-size: 4.5rem;
-    font-weight: 700;
+.abt-us-info-img-container{
     width: 50%;
+    position: absolute;
+    right: 10%;
+    top: 0%;
+    z-index: -1;
+    mix-blend-mode: multiply;
+
+}
+.abt-us-info-img-container img{
+    width: 100%;
+    mix-blend-mode: multiply;
+
+}
+.abt-us-info-text{
+    width: 40%;
+    position: absolute;
     margin-left: 5%;
     padding: 100px 0 100px 0;
+}
+.abt-us-info-title{
+    font-size: 8rem;
+    font-weight: 700;
+    
     color: rgb(75, 0, 150);
 }
-
+.abt-us-info-span{
+    font-size: 3rem;
+    font-weight: 300;
+}
 /* second part of the abt us section */
 .second-part-of-abt-us-section{
     width: 95%;
@@ -143,4 +153,15 @@ main{
     margin: auto;
     text-align: center;
 
+}
+
+
+/* animation */
+.abt-us-info-title{
+    display: block; opacity: 0;
+    animation: reveal 1s forwards var(--d);
+}
+@keyframes reveal{
+    from {transform: translateY(40px);}
+    to { opacity:1; transform: none;}
 }
