@@ -41,7 +41,7 @@ header{
     display: flex;
     align-items: center;
     gap: 40px;
-    background-image: linear-gradient(to right, rgb(190, 93, 246) , rgb(49, 30, 255));
+    background-image: linear-gradient(to right, rgba(190, 93, 246,0.7) , rgba(49, 30, 255,0.7));
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

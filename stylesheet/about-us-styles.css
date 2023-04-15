@@ -14,7 +14,8 @@ main{
 /* first part of the abt us section */
 .first-part-of-abt-us-section{
     width: 100%;
-    height: 100vh;
+    height: 70vh;
+    min-height: 600px;
     margin: auto;
 
 }
@@ -42,9 +43,10 @@ main{
 }
 .abt-us-info-text{
     width: 40%;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     margin-left: 5%;
-    padding: 100px 0 100px 0;
 }
 .abt-us-info-title{
     font-size: 8rem;
@@ -58,16 +60,16 @@ main{
 }
 /* second part of the abt us section */
 .second-part-of-abt-us-section{
-    width: 95%;
+    width: 80%;
     align-items: center;
     justify-content: center;
     margin:auto;
     color: black;
 }
-.abt-us-titles{
-    padding: 0 0 40px 0;
-    font-size: 3.5rem;
+.abt-us-content-container img{
+    mix-blend-mode: multiply;
 }
+
 .abt-us-contents{
     margin:auto;
     margin-top: 100px;
@@ -85,12 +87,10 @@ main{
     
 }
 .abt-us-statement-{
-    
     font-weight: 200;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     width: 90%;
-    text-align: left;
-    /* color: rgb(82, 0, 117); */
+    text-align: center;
     color: black;
 }
 
