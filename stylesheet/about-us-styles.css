@@ -10,7 +10,10 @@ main{
     width: 100%;
    
 }
-
+main{
+    max-width: 1500px;
+    margin: auto;
+}
 /* first part of the abt us section */
 .first-part-of-abt-us-section{
     width: 100%;
@@ -24,7 +27,7 @@ main{
     height: 100%;
     margin: auto;
     text-align: left;
-    display: grid;
+    min-height: 700px;
     align-items: center;
 }
 .abt-us-info-img-container{
@@ -32,7 +35,7 @@ main{
     position: absolute;
     right: 10%;
     top: 0%;
-    z-index: -1;
+    z-index: 200;
     mix-blend-mode: multiply;
 
 }
@@ -43,6 +46,7 @@ main{
 }
 .abt-us-info-text{
     width: 40%;
+    top: 250px;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -69,7 +73,9 @@ main{
 .abt-us-content-container img{
     mix-blend-mode: multiply;
 }
-
+.abt-us-cont-1-img{
+    margin-top: 100px;
+}
 .abt-us-contents{
     margin:auto;
     margin-top: 100px;
@@ -108,7 +114,8 @@ main{
 /* services section */
 .services-section{
     width: 100%;
-    margin-bottom: 50px;
+    max-width: 1700px;
+    margin:auto;
     text-align: center;
 }
 
@@ -122,15 +129,16 @@ main{
     display: flex;
     flex: row;
     margin: auto;
+    justify-content: space-between;
+
 }
 .service-item{
     width: 30%;
     padding: 30px;
-    background-color: rgb(199, 163, 255);
-    margin-right: 15px;
+    /* background-color: rgb(199, 163, 255); */
     border-radius: 8px;
     text-align: left;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     display: flex;
     flex-direction: column;
 }

@@ -6,7 +6,7 @@
 body{
   position          :relative;
   background-position: center;
-  background-color: #e8d7ff;
+  background-color: rgb(228, 240, 255);
   max-width: 1980px;
 
   font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
