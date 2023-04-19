@@ -49,7 +49,7 @@
 
   }
   .contact-form form{
-    background-color: rgba(191, 175, 255, 0.9);
+    background-color: rgba(239, 234, 255, 0.5);
     padding: 5px 20px 0px 20px;
     border-radius: 8px;
   }
@@ -81,11 +81,14 @@
   .form-item textarea{
     width: 96%;
     height: 200px;
+    background-color: rgb(219, 197, 255); 
+
   }
   
   .form-item input{
     width: 95%;
     margin-right: 20px;
+    background-color: rgb(219, 197, 255); 
   }
   /* left side of the body ( contact- us) */
   .contact-information{
@@ -105,7 +108,7 @@
 }
 .contact-card-container{
   margin: 0px 30px 30px 0px;
-  background-color: rgba(191, 175, 255, 0.9);
+  background-color: rgba(239, 234, 255, 0.5);
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
@@ -122,20 +125,17 @@
   padding-top: 30px;
 }
 .contact-card-phrase{
-  padding: 40px;
+  padding: 40px 40px 20px 40px;
   font-weight: 300;
 }
-.phone-number{
+.phone-number, .email{
   text-decoration: none;
   color: rgb(145, 55, 248);
   font-size: 1.2rem;
   font-weight: 500;
 }
 .location-in-contact-us{
-  /* background-color: rgb(255, 255, 255);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 30px; */
-  /* background-color: rgba(233, 205, 255, 0.9); */
+ 
   border-radius: 8px;
   width: 80%;
 }
