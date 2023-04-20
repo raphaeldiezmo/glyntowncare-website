@@ -1,25 +1,26 @@
 header{
   top:0;
   width: 100%;
+  max-width: 1980px;
   background: transparent;
   z-index : 10000;
   margin: auto;
   display: flex;
+  position: fixed;
   justify-content: center;
 }
 /* navbar styles */
 .nav-container{
-  max-width: 1980px;
-
+  width: 100%;
 }
+
 .navbar{
-    align-items: center;
     margin:auto;
+    display: flex;
+    flex-direction: row;
     min-height:100px;
-    display:flex;
     padding: 0 20px;
     justify-content: space-between;
-    position: fixed;
   }
   .navbar-brand-container{
     width: 170px;
@@ -36,10 +37,13 @@ header{
     width: 120px;
   }
 
+  .nav-list-container{
+    justify-content: center;
+  }
   .nav{
     display: flex;
     align-items: center;
-    justify-content: left;
+    margin-top: 5%;
     gap: 40px;
     background-image: linear-gradient(to right, rgba(190, 93, 246,0.7) , rgba(49, 30, 255,0.7));
     padding: 15px;
