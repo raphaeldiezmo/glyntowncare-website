@@ -43,18 +43,18 @@ main{
 
 }
 .abt-us-info-text{
-    width: 40%;
+    width: 30%;
     top: 250px;
     align-items: center;
     justify-content: center;
     position: absolute;
-    margin-left: 5%;
+    margin-left: 2.5%;
 }
 .abt-us-info-title{
     font-size: 8rem;
     font-weight: 700;
-    
     color: rgb(75, 0, 150);
+ 
 }
 .abt-us-info-span{
     font-size: 3rem;

@@ -11,8 +11,9 @@ footer{
   }
   
   .footer-title{
-    font-weight: 400;
-    font-size: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
   }
   
   .footer-container{
@@ -33,7 +34,7 @@ footer{
   }
   .footer-item-list{
     padding: 5px 0 0 0;
-    font-size: 13px;
+    font-size: 0.8rem;
   }
   .footer-item-list a{
     color: white;
