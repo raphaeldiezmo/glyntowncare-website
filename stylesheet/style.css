@@ -24,16 +24,23 @@ body{
   width: 90%;
   margin: auto;
 }
-/* home section style */
-#home{
-  
-  margin: auto;
+
+/* general styling */
+.font-size-1-{
+  font-size: 1rem;
 }
-
-
-.img-container{
+.letter-space-1-{
+  letter-spacing: 1px;
+}
+.margin-center{
+  margin:auto;
+}
+.width-max-percent{
   width: 100%;
   max-width: 1980px;
+}
+/* home section style */
+.img-container{
   margin: auto;
   min-height: 750px;
   background:linear-gradient(
@@ -119,15 +126,13 @@ body{
   width: 100%;
   max-width: 1980px;
   margin: auto;
-  background-image: url(../images/img1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   
 }
 .about-us-container{
-  padding-top: 50px;
-  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 100px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -189,7 +194,7 @@ body{
   
 }
 .abt-us-card p{
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 200;
   padding-bottom: 50px;
   width: 90%;
@@ -343,7 +348,7 @@ iframe{
 /* hiqa section */
 #hiqa{
   width: 100%;
-  background-color: #002f4b;
+  background-color: #013d60;
   padding: 50px 0 50px 0;
 }
 .hiqa-container{
@@ -353,7 +358,7 @@ iframe{
   text-align: center;  
 }
 .hiqa-link-statement{
-  font-size: 3rem;
+  font-size: 2rem;
   color: rgb(255, 255, 255);
   width: 60%;
   font-weight: 100;
@@ -393,11 +398,11 @@ iframe{
     font-size: 2rem;
   }
   #about-us{
-    padding-bottom: 250px;
+    padding-bottom: 0px;
   }
   .about-us-container{
-    padding-bottom: 62px;
-  }
+    padding: 20px 0px 20px 0px;
+    }
 
   .abt-us-card-row{
     width: 100%;
@@ -408,12 +413,13 @@ iframe{
   }
  .abt-us-card-content{
   flex: 40%;
+  padding-top: 20px;
+  margin-left: 0px;
   font-size: 1.5rem;
  }
   .abt-us-card{
     width: 100%;
     flex-direction: column;
-    margin-bottom: 30px;
   }
   .statement{
     width: 80%;
@@ -439,5 +445,14 @@ iframe{
     width: 95%;
     margin-left: 2.5%;
   }
+  .hiqa-container{
+    padding: 0px;
+    width: 100%;
+    text-align: center;
 
+  }
+  .hiqa-link-statement{
+    font-size: 1.5rem;
+    width: 99%;
+  }
 }

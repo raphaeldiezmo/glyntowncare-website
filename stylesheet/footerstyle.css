@@ -13,6 +13,7 @@ footer{
   .footer-title{
     font-size: 1rem;
     text-transform: uppercase;
+    color: rgb(188, 169, 243) ;
     font-weight: 700;
   }
   
@@ -41,8 +42,8 @@ footer{
     text-decoration: none;
   }
   .footer-span{
-    padding: 30px 0 0 0;
-    font-size: 11px;
+    padding: 30px 0 30px 0;
+    font-size: 1rem;
     text-align: center;
   }
   
