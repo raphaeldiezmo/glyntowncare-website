@@ -23,18 +23,19 @@ header{
     justify-content: space-between;
   }
   .navbar-brand-container{
-    width: 170px;
+    width: 300px;
     background: rgb(255, 255, 255);
-    height: 100px;
+    height: 150px;
+    backdrop-filter: blur(6px);
+
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
-    backdrop-filter: blur(6px);
     border-radius: 0 0 40% 50%;
     
   }
   .navbar-brand{
     mix-blend-mode: multiply;
-    width: 120px;
+    width: 200px;
   }
 
   .nav-list-container{
