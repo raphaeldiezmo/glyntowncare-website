@@ -68,9 +68,7 @@ main{
 .abt-us-content-container img{
     mix-blend-mode: multiply;
 }
-.abt-us-cont-1-img{
-    height: 350px;
-}
+
 .abt-us-contents{
     margin:auto;
     margin-top: 100px;
@@ -86,6 +84,10 @@ main{
     width: 100%;
     border-radius: 8px;
     
+}
+.mission-vision-img-container, .abt-us-cont-1-img{
+    height: 500px;
+
 }
 .abt-us-statement-{
     font-weight: 200;
