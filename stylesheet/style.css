@@ -267,7 +267,6 @@ iframe{
   max-width: 1980px;
   margin:auto;
   text-align: center;
-  border-radius: 60% 60% 0 0;
   overflow: hidden;
   background:linear-gradient(to right, rgb(9, 0, 17), rgb(83, 0, 131));
 }

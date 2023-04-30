@@ -69,7 +69,7 @@ main{
     mix-blend-mode: multiply;
 }
 .abt-us-cont-1-img{
-    margin-top: 100px;
+    height: 350px;
 }
 .abt-us-contents{
     margin:auto;
@@ -209,6 +209,18 @@ main{
 }
 
 
+@media (max-width: 1100px){
+   
+    .first-part-of-abt-us-section{
+        height: 550px;
+    }
+    .abt-us-info-text{
+        width: 60%;
+    }
+    .abt-us-info-img-container{
+        padding-top: 100px;
+    }
+}
 
 
 /* responsive styling */
@@ -225,7 +237,7 @@ main{
         flex-direction: column;
     }
     .abt-us-info-text{
-        width: 95%;
+        width: 70%;
         flex: 100%;
         top: 15%;
         margin: auto;
@@ -239,7 +251,7 @@ main{
         font-size: 2rem;
     }
     .abt-us-info-img-container{
-        width: 100%;
+        width: 60%;
         right: 0;
         padding-top: 70px;
         position: relative;
@@ -251,8 +263,16 @@ main{
     }
     .abt-us-contents{
         flex-direction: column;
+        padding-top: 100px;
+    
     }
-
+    .abt-us-content-container{
+        text-align: center;
+    }
+    .abt-us-contents img{
+        width: 60%;
+        margin:auto;
+    }
     /* services */
     .services-section-row{
         flex-direction: column;
@@ -286,4 +306,9 @@ main{
         flex-direction: column;
         width: 90%;
     }
+}
+
+
+@media (max-width: 400){
+
 }

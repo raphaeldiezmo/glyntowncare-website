@@ -21,56 +21,47 @@ main{
 .career-container-row{
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
     margin: auto;
-    justify-content: space-between;
+    height: 100%;
+
 }
 .career-item-container{
-    flex: 45%;
-    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+.career-img-container img{
+    width: 100%;
+    height: 400px;
+}
+.career-img-container{
+    flex: 60%;
+  
 }
 .career-item{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
 
-    padding: 30px;
-
-    border-radius: 8px;
-    background-color: rgba(239, 234, 255, 0.5);
 }
 
 
 .career-title{
-    padding: 0 0 40px 0;
-    font-size: 1.5rem;
+    padding: 20px;
+    font-size: 2rem;
     font-weight: 700;
 
 }
 
 .job-detail{
-    font-size: 1.05rem;
-    font-weight: 100;
+    font-size: 1.2rem;
+    font-weight: 300;
     height: 250px;
-}
-.btn-container{
-    width: 100%;
-    text-align: center;
-}
-.apply-now-btn{
-    font-size: 1rem;
-    padding: 5px;
-    width: 200px;
-    margin: auto;
-    cursor:pointer;
+    padding: 40px;
 
-    border-color: transparent;
-    background-color: rgb(187, 109, 255);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    color: white;
-    border-radius: 8px;
 }
 
-
+.row-2{
+    margin-top: 100px;
+}
 
 @media (max-width: 800px){
 

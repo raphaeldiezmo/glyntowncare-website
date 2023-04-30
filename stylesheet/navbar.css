@@ -46,6 +46,7 @@ header{
     align-items: center;
     margin-top: 5%;
     gap: 40px;
+    
     background-image: linear-gradient(to right, rgba(190, 93, 246,0.7) , rgba(49, 30, 255,0.7));
     padding: 15px;
     backdrop-filter: blur(2px);
@@ -121,10 +122,12 @@ header{
     }
     .nav{
       padding-top: 100px;
-      top:0;
+      top:-10%;
       border-radius: 0;
       right:-150%;
       gap: 0;
+      text-transform: uppercase;
+      font-size: 3rem;
       position: fixed;
       flex-direction: column;
       background: linear-gradient(to right, rgb(255, 255, 255), rgb(219, 157, 255));
@@ -135,6 +138,9 @@ header{
     }
     .nav-item{
       margin: 16px 0;
+      text-transform: uppercase;
+      font-size: 3rem;
+      padding-top: 100px;
       }
     .nav.active{
       right:0;
