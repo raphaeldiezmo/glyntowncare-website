@@ -30,27 +30,3 @@ document.querySelectorAll(".nav-link").forEach(n=>n.addEventListener("click"), (
     })
 
 
-
-// Scipting for emailing system
-var btn = document.getElementById('btn');
-
-btn.addEventListener('click', function(e) {
-    e.preventDefault()
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var message = document.getElementById (message).value;
-    var body = 'Name' + name + '<br/> email: ' + email +
-        '<br/>Message: <br/>' + message
-
-    Email.send({
-        Host : "smtp.gmail.com",
-        Username : "rap haeldiezmo@gmail.com",
-        Password : "reyspqsrobsjpgfs",
-        To : 'raphaeldiezmo@gmail.com',
-        From : email,
-        Subject : "Message from Glyntown Care website",
-        Body : body
-    }).then(
-      message => alert(message)
-    );
-})

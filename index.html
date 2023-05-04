@@ -81,7 +81,19 @@
           that feels just like home.</h2>
     </section>
     
+
     <!-- ---------------------------------------- -->
+    <!-- WORK WITH US SECTION -->
+    <!-- ---------------------------------------- -->
+    <!-- ---------------------------------------- -->
+
+    <section id="work-with-us">
+      <div class="work-with-us-container">
+        <p></p>
+      </div>
+    </section>
+    <!-- ---------------------------------------- -->
+
     <!-- ABOUT US SECTION -->
     <!-- ---------------------------------------- -->
     <!-- ---------------------------------------- -->
@@ -94,21 +106,23 @@
                 <div class="card-img service-card-img">
                 </div>
                 <div class="abt-us-card-content">
-                <p class="abt-us-card-info">
-                  At Glyntown Care, we offer a wide range of services 
-                  designed to meet the unique needs of our residents.
-                </p>
-                <a href="pages/about-us.html#services-section" class="card-link">Learn more about our Services ></a>
+                <h1 class="card-title">Services</h1>
+                  <p class="abt-us-card-info">
+                    At Glyntown Care, we offer a wide range of services 
+                    designed to meet the unique needs of our residents.
+                  </p>
+                <a href="pages/about-us.html#services-section" class="card-link">Learn more ></a>
               </div>
                 
               </div>
               <div class="abt-us-card ">
                 <div class="abt-us-card-content">
+                  <h1 class="card-title">Facilities</h1>
                   <p class="abt-us-card-info">
                     We offer a wide range of facilities designed to provide exceptional 
                     care and comfort to our residents.
                   </p>
-                  <a href="pages/about-us.html#facilities-section" class="card-link">Learn more about our Facilities ></a>
+                  <a href="pages/about-us.html#facilities-section" class="card-link">Learn more ></a>
                 </div>
                 <div class="card-img facilities-card-img">
                 </div>
@@ -120,6 +134,7 @@
       </div>
     </section>
 
+    <!-- HIQA SECTION -->
     <section id="hiqa">
       <div class="hiqa-container margin-center">
            <p class="hiqa-link-statement">We uphold a superior standard of care, providing exceptional services and amenities to ensure the health, comfort, and happiness of our residents.</p>
@@ -131,6 +146,7 @@
           </a>  
       </div>
     </section>
+
     <!-- ---------------------------------------- -->
     <!-- LOCATION SECTION -->
     <!-- ---------------------------------------- -->
@@ -189,25 +205,25 @@
     <section id="contact-form">
       <div class="contact-form-container">
         <div class="contact-form-inner-container">
-          <div class="form-title">
-            Send us a Message
-          </div>
-          <form method="post">
+          
+          <form  method="POST" action="https://formsubmit.co/64c222552461b7a949524fd4f4a8e867">
+            <input type="hidden" name="_next" value="index.html#contact-form">
+
+            <div class="form-title">
+              Send us a Message
+            </div>
+            <input type="hidden" name="_subject" value="New Message From the Website Glyntown Care">
+
+            <div class="form-item">
+              <input type="text" name="name" class="form-control" placeholder="Full Name" required>            </div>
+            <div class="form-item">
+              <input type="email" name="email" class="form-control" placeholder="Email Address" required>            </div>
+            <div class="form-item">
+              <input type="tel" id="phone" name="phone" placeholder="Phone number (Optional)">
+            </div>
             
             <div class="form-item">
-              <input type="text" id="name" placeholder="Name" >
-            </div>
-            <div class="form-item">
-              <input type="text" id="email" placeholder="Email" >
-            </div>
-            <!-- <div class="form-item">
-              <input type="tel" id="phone" name="phone" placeholder="Phone number (Optional)" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-            </div>
-            <div class="form-item">
-              <input type="text" id="topic" placeholder="Enter a Subject" >
-            </div> -->
-            <div class="form-item">
-              <textarea id="message" placeholder="Write Something" ></textarea>
+              <textarea placeholder="Message" class="form-control" name="message" required></textarea>
             </div>
             <div class="form-send-btn">
               <input id="btn" class="snd-msg-btn btn" type="submit" value="Send Message">
@@ -269,8 +285,7 @@
       </div>
     </div>
   </footer>
-  <!-- <script src="https://smtpjs.com/v3/smtp.js">
-  </script> -->
+
   <script type="text/javascript" src="scripts/script.js"></script>
 
 </body>
