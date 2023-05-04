@@ -189,27 +189,28 @@
     <section id="contact-form">
       <div class="contact-form-container">
         <div class="contact-form-inner-container">
-          <form action="">
-            <div class="form-title">
-              Send us a Message
+          <div class="form-title">
+            Send us a Message
+          </div>
+          <form method="post">
+            
+            <div class="form-item">
+              <input type="text" id="name" placeholder="Name" >
             </div>
             <div class="form-item">
-              <input type="text" id="name" placeholder="Name" required>
+              <input type="text" id="email" placeholder="Email" >
             </div>
-            <div class="form-item">
-              <input type="text" id="email" placeholder="Email" required>
-            </div>
-            <div class="form-item">
+            <!-- <div class="form-item">
               <input type="tel" id="phone" name="phone" placeholder="Phone number (Optional)" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
             </div>
             <div class="form-item">
-              <input type="text" id="topic" placeholder="Enter a Subject" required>
-            </div>
+              <input type="text" id="topic" placeholder="Enter a Subject" >
+            </div> -->
             <div class="form-item">
-              <textarea id="message" placeholder="Write Something" required></textarea>
+              <textarea id="message" placeholder="Write Something" ></textarea>
             </div>
             <div class="form-send-btn">
-              <input class="snd-msg-btn btn" type="submit" value="Send Message">
+              <input id="btn" class="snd-msg-btn btn" type="submit" value="Send Message">
             </div>
           </form>
           
@@ -268,7 +269,8 @@
       </div>
     </div>
   </footer>
-
+  <!-- <script src="https://smtpjs.com/v3/smtp.js">
+  </script> -->
   <script type="text/javascript" src="scripts/script.js"></script>
 
 </body>

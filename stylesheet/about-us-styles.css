@@ -68,7 +68,7 @@ main{
 .abt-us-content-container img{
     mix-blend-mode: multiply;
 }
-
+§
 .abt-us-contents{
     margin:auto;
     margin-top: 100px;
@@ -85,8 +85,14 @@ main{
     border-radius: 8px;
     
 }
-.mission-vision-img-container, .abt-us-cont-1-img{
-    height: 500px;
+.abt-us-content-img-container{
+    
+}
+.abt-us-cont-1-img{
+    height: 100%;
+}
+.mission-vision-img-container{
+    width:  inherit;
 
 }
 .abt-us-statement-{
