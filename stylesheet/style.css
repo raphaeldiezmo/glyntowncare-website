@@ -26,6 +26,10 @@ body{
 }
 
 /* general styling */
+.max-width-600{
+  max-width: 70%;
+  margin: auto;
+}
 .font-size-1-{
   font-size: 1rem;
 }

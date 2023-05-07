@@ -27,6 +27,7 @@ main{
 }
 .abt-us-info-img-container{
     width: 50%;
+    max-width: 800px;
     position: absolute;
     right: 1%;
     top: 0%;
@@ -86,17 +87,15 @@ main{
     border-radius: 8px;
     
 }
-.abt-us-content-img-container{
-    
-}
 .abt-us-cont-1-img{
     height: 100%;
 }
 .mission-vision-img-container{
     width:  inherit;
-
 }
-
+.abt-us-cont-1-img, .mission-vision-img-container{
+    max-width: 500px;
+}
 
 .sec-statement{
     padding-left: 3rem;
@@ -202,6 +201,7 @@ main{
     color: rgb(44, 0, 133);
 
 }
+
 .facility-item{
     flex: 90%;
     width: 100%;
@@ -290,6 +290,7 @@ main{
         width: 90%;
         margin: auto;
     }
+ 
     .abt-us-contents img{
         width: 100%;
         margin:auto;
@@ -297,6 +298,8 @@ main{
     /* services */
     .services-section-row{
         flex-direction: column;
+        width: 80%;
+        margin: auto;
     }
     .service-title{
         padding: 100px;
