@@ -232,7 +232,13 @@ body{
   font-size: 1.1rem;
   background: none;
   font-weight: bolder;
+  color: rgb(98, 0, 137);
   text-decoration: none;
+  transition: 0.6s ease;
+}
+.card-link:hover{
+  text-decoration: underline;
+  letter-spacing: 1px;
 }
 
 /* location style */
@@ -402,7 +408,12 @@ iframe{
   color: rgb(32, 152, 250);
   text-decoration: none;
   font-weight: bolder;
+  transition: 0.5s ease;
 } 
+.hiqa-sect-link:hover{
+  text-decoration: underline;
+  letter-spacing: 0.5px;
+}
 /* responsive elements */
 @media (max-width: 800px){
   .img-container{
@@ -443,9 +454,14 @@ iframe{
   margin-left: 0px;
   font-size: 1.5rem;
  }
+
   .abt-us-card{
     width: 100%;
     flex-direction: column;
+  }
+  .abt-us-card:nth-child(2){
+
+    flex-direction: column-reverse;
   }
   .statement{
     width: 80%;

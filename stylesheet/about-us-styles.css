@@ -8,53 +8,46 @@ main{
 }
 /* first part of the abt us section */
 #abt-us-header-section{
-    padding-bottom: 100px;
     width: 100%; 
+    display: flex;
+    flex-direction: column;
 }
 .first-part-of-abt-us-section{
     width: 100%;
-    height: 750px;
     margin: auto;
-
+    
 }
-.abt-us-info-container{
-    width: 100%;
-    height: 100%;
+.abt-us-header-container{
+    width: 90%;
     margin: auto;
+    display: flex;
+    flex-direction: row;
     text-align: left;
-    min-height: 700px;
     align-items: center;
 }
-.abt-us-info-img-container{
-    width: 50%;
+.abt-us-header-img-container{
     max-width: 800px;
-    position: absolute;
-    right: 1%;
-    top: 0%;
-    z-index: 200;
     mix-blend-mode: multiply;
 
 }
-.abt-us-info-img-container img{
+.abt-us-header-img-container img{
     width: 100%;
     mix-blend-mode: multiply;
 
 }
 .abt-us-info-text{
-    width: 40%;
-    top: 250px;
+    width: 50%;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    margin-left: 2.5%;
+    
 }
-.abt-us-info-title{
+.abt-us-header-title{
     font-size: 8rem;
     font-weight: 700;
     color: rgb(75, 0, 150);
  
 }
-.abt-us-info-span{
+.abt-us-header-span{
     font-size: 3rem;
     font-weight: 300;
 }
@@ -67,39 +60,31 @@ main{
     text-align: center;
     color: black;
 }
-.abt-us-content-container img{
-    mix-blend-mode: multiply;
-}
-§
-.abt-us-contents{
-    margin:auto;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-}
-
-.abt-us-content-container{
-    width: 60%;
+.mission-vision-container{
+    width: 90%;
+    justify-content: center;
+    align-items: center;
     margin: auto;
 }
-.abt-us-contents img{
-    width: 100%;
-    border-radius: 8px;
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.content-text-container{
+    text-align: left;
     
 }
-.abt-us-cont-1-img{
-    height: 100%;
+.content-img-container{
+    width: 100%;    
 }
-.mission-vision-img-container{
-    width:  inherit;
-}
-.abt-us-cont-1-img, .mission-vision-img-container{
-    max-width: 500px;
+.content-img-container img{
+    max-width: 600px;
+    mix-blend-mode: multiply;
+
 }
 
-.sec-statement{
-    padding-left: 3rem;
-}
 /* services section */
 .services-section{
     width: 100%;
@@ -210,7 +195,7 @@ main{
     font-size: 1.5rem;
 }
 /* animation */
-.abt-us-info-title{
+.abt-us-header-title{
     display: block; opacity: 0;
     animation: reveal 1s forwards var(--d);
 }
@@ -220,22 +205,53 @@ main{
 }
 
 
-@media (max-width: 1100px){
-   
-    .first-part-of-abt-us-section{
-        height: 550px;
+@media (max-width: 1378px){
+    body{
+        margin-top: 100px;
+
+    }
+    .abt-us-header-img-container{
+        flex: 80%;
     }
     .abt-us-info-text{
-        width: 60%;
+        width: 100%;
     }
-    .abt-us-info-img-container{
-        padding-top: 100px;
+    .abt-us-header-title{
+        font-size: 7rem;
     }
-    .abt-us-centents{
+    .abt-us-header-span{
+        font-size: 2.5rem;
+    }
+   
+   
+}
+@media (max-width: 1158px){
+    
+    .abt-us-info-text{
+        width: 100%;
+    }
+    .abt-us-header-title{
+        font-size: 6rem;
+
+    }
+    .abt-us-header-span{
+        font-size: 2.2rem;
+        font-weight: 300;
+    }
+    .mission-vision-container{
         width: 80%;
     }
-}
+    .content-text-container{
+        text-align: center;
 
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row:first-child{
+        flex-direction: column-reverse;
+    }
+}
 
 /* responsive styling */
 @media (max-width: 800px){
@@ -245,30 +261,22 @@ main{
     }
     .first-part-of-abt-us-section{
         padding-top: 60px;
-        height: 550px;
     }
-    .abt-us-info-container{
+    .abt-us-header-container{
         flex-direction: column;
     }
     .abt-us-info-text{
-        width: 70%;
-        flex: 100%;
-        top: 15%;
-        margin: auto;
-        position: relative;
+        width: 100%;       
         text-align: center;
     }
-    .abt-us-info-title{
+    .abt-us-header-title{
         font-size: 4rem;
     }
-    .abt-us-info-span{
+    .abt-us-header-span{
         font-size: 2rem;
     }
-    .abt-us-info-img-container{
-        width: 60%;
-        right: 0;
-        padding-top: 70px;
-        position: relative;
+    .abt-us-header-img-container{
+        width: 100%;
         margin: auto;
     }
     .second-part-of-abt-us-section{
@@ -276,26 +284,17 @@ main{
         min-width: 0;
         margin: auto;
     }
-    
-    .abt-us-contents{
-        flex-direction: column;
-        padding-top: 100px;
+    .mission-vision-container{
+        width: 95%;
     }
-
-    .abt-us-content-container{
-        text-align: center;
-        width: 90%;
-        margin: auto;
-    }
- 
-    .abt-us-contents img{
+  
+    .content-img-container img{
         width: 100%;
-        margin:auto;
     }
     /* services */
     .services-section-row{
         flex-direction: column;
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
 
@@ -308,9 +307,6 @@ main{
     #facilities-section{
         width: 95%;
     }
-
-
-
     .facility-list-container{
         padding:0;
         width: 90%;
@@ -323,5 +319,13 @@ main{
 
 
 @media (max-width: 400){
-
+    .abt-us-header-img-container{
+        width: 100%;
+    }
+    .abt-us-header-img-container img{
+        width: 100%;
+    }
+    .mission-vision-container{
+        width: 98%;
+    }
 }
