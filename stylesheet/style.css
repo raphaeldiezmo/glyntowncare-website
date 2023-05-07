@@ -30,6 +30,11 @@ body{
   max-width: 70%;
   margin: auto;
 }
+.center{
+  margin:auto;
+  text-align: center;
+
+}
 .font-size-1-{
   font-size: 1rem;
 }
@@ -47,6 +52,9 @@ body{
 .content-title{
   font-size: 1.7rem;
   letter-spacing: 0px;
+}
+.title-padding{
+  padding: 100px;
 }
 .title-padding-bottom-30{
   padding-bottom: 30px;
