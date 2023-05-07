@@ -39,6 +39,22 @@ body{
   width: 100%;
   max-width: 1980px;
 }
+
+.content-title{
+  font-size: 1.7rem;
+  letter-spacing: 0px;
+}
+.title-padding-bottom-30{
+  padding-bottom: 30px;
+}
+.heading-title{
+  font-size: 3rem;
+}
+.paragraph{
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: black;
+}
 /* home section style */
 .img-container{
   margin: auto;
