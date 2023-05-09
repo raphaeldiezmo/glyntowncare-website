@@ -6,7 +6,6 @@ main{
 }
 .logo-container{
     width: 50%;
-    min-width: 400px;
     margin: auto;
 }
 .logo-img{
@@ -123,6 +122,9 @@ main{
     mix-blend-mode: multiply;
 }
 @media (max-width: 1700px){
+    .career-content-img-container{
+        width: 70%;
+    }
     .career-list{
         width: 50%;
     }
@@ -133,6 +135,14 @@ main{
     }
 }
 @media (max-width: 1100px){
+    .career-img-container{
+        width: 100%;
+        margin: auto;
+    }
+    .career-description-container{
+        padding: 0;
+        margin: auto;
+    }
     .career-list{
         width: 65%;
     }
@@ -161,4 +171,9 @@ main{
     .career-list{
         width: 100%;
     }
+}
+@media (max-width: 600px){
+   .career-item{
+        font-size: 0.8rem;
+   }
 }
