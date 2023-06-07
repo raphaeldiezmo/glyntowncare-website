@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Lexend:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Candal&family=Lexend:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Candal&family=Lexend:wght@100;400&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap');
+
+
+
 *{
   margin:0;
   padding:0;
@@ -10,14 +18,13 @@ body{
   max-width: 1980px;
   margin: auto;
   scroll-behavior: smooth;
-  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Lexend', sans-serif;
+  font-weight: 100;
 }
-
-
 .container{
   position: relative;
   width: 100%;
-  max-width: 1600px;
   margin: auto;
 }
 .inner-container{
@@ -52,7 +59,7 @@ body{
 .content-title{
   font-size: 1.7rem;
   letter-spacing: 0px;
-}
+  font-family: 'Noto Nastaliq Urdu', serif;}
 .title-padding{
   padding: 100px;
 }
@@ -61,6 +68,7 @@ body{
 }
 .heading-title{
   font-size: 3rem;
+  font-family: 'Noto Nastaliq Urdu', serif;
 }
 .paragraph{
   font-size: 1.05rem;
@@ -73,7 +81,7 @@ body{
 /* home section style */
 .img-container{
   margin: auto;
-  min-height: 750px;
+  min-height: 800px;
   background:linear-gradient(
     rgba(0, 0, 0, 0.3), 
     rgba(0, 0, 0, 0.6)
@@ -88,14 +96,16 @@ body{
 
 .banner-container{
   position: relative;
-  top: 30%;
-  left: 5%;
-  width: 500px;
+  top: 100px;
+  width: 70%;
   animation: fadeDown 1s;
 }
 .banner-title{
-  font-weight: bold;
-  font-size: 4rem;
+  font-weight: normal;
+  font-size: 5rem;
+  letter-spacing: 0.01em;
+  margin-top: -40px;
+  font-family: 'Alfa Slab One', cursive;
   color: rgb(255, 255, 255);
 
 }
@@ -169,17 +179,10 @@ body{
   justify-content: center;
   padding-bottom: 100px;
 }
-.about-us-inner-container{
-  width: 90%;
-  max-width: 1500px;
-
-  margin: auto;
-  text-align: center;
-}
 
 .abt-us-card-row{
   margin: auto;
-  width: 90%;
+  width: 100%;
 }
 .abt-us-card{
   display: flex;
@@ -205,6 +208,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll; 
+  flex: 50%;
 }
 .facilities-card-img{
   background: url(../images/facilities-card.png);
@@ -212,15 +216,16 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll; 
+  flex: 50%;
+
 }
 
 .card-title{
   font-size: 2.5rem;
-  padding-bottom: 30px;
+  font-family: 'Noto Nastaliq Urdu', serif;  padding-bottom: 30px;
 }
 .abt-us-card-content{
-  margin-left: 30px;
-  flex: 60%;
+  flex: 50%;
 }
 
 .abt-us-card p{
@@ -269,28 +274,47 @@ body{
 }
 .location-container-inner{
   display: flex;
+  flex-direction: column;
 }
 .bus-route-title{
+  font-size: 3rem;
   padding-bottom: 30px;
+  font-family: 'Noto Nastaliq Urdu', serif;
 }
 .bus-info-container{
-  width: 80%;
+  width: 100%;
   color: rgb(78, 0, 97);
   align-items: center;
   justify-content: center;
   text-align: left;
-  padding-right: 30px;
 }
+.bus-route-info-container{
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
 
+}
+.bus-route-info-text-container{
+  flex: 50%;
+}
+.bus-route-info-important-links-container{
+  flex: 50%;
+  text-align: center;
+}
 .bus-information-step-by-step-list{
   list-style-type: decimal;
   padding-bottom: 50px;
+  padding-left:20px;
 }
 .bus-link{
   text-decoration: none;
   color: rgb(104, 0, 202);
   font-weight: 700;
+  font-size: 1.2rem;
   transition: 0.6s ease;
+}
+.bus-link h3{
+  padding: 20px
 }
 .bus-link:hover{
   text-decoration: underline;
@@ -298,7 +322,7 @@ body{
 }
 iframe{
   width: 100%;
-  height: 500px;
+  height: 700px;
   margin: auto;
   border-radius: 10px;
 }
@@ -312,6 +336,7 @@ iframe{
   background:linear-gradient(to right, rgb(9, 0, 17), rgb(83, 0, 131));
 }
 .form-title{
+  font-family: 'Noto Nastaliq Urdu', serif;
   font-size: 40px;
   font-weight: bolder;
   color:rgb(255, 255, 255);
@@ -386,41 +411,34 @@ iframe{
 }
 
 /* hiqa section */
-#hiqa{
+#join-us-section
+{
+  background-color: antiquewhite;
   width: 100%;
-  background-color: #013d60;
-  padding: 50px 0 50px 0;
-}
-.hiqa-container{
-  width: 80%;
-  margin: auto;
-  padding: 100px;
-  text-align: center;  
-}
-.hiqa-link-statement{
-  font-size: 2rem;
-  color: rgb(255, 255, 255);
-  width: 60%;
-  font-weight: 100;
-  margin: auto;
-  padding-bottom: 40px;
-}
-.hiqa-link-container{
-  flex: 10%;
-  text-align: right;
+  height: 700px;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
+.join-us-container{
+  width: 100%;
+  height: auto;
+}
+.join-us-text-content{
+  width: 80%;
+  
+}
+.join-us-title{
+  letter-spacing: 0.01em;
+  font-size: 8rem;
+  margin-top: -40px;
+  font-family: 'Alfa Slab One', cursive;
 
-.hiqa-sect-link{
-  font-size: 1.5rem;
-  color: rgb(32, 152, 250);
+}
+.join-us-link{
+  font-size: 2rem;
   text-decoration: none;
-  font-weight: bolder;
-  transition: 0.5s ease;
-} 
-.hiqa-sect-link:hover{
-  text-decoration: underline;
-  letter-spacing: 0.5px;
+  margin-top: 30px;
 }
 /* responsive elements */
 @media (max-width: 800px){
@@ -461,6 +479,7 @@ iframe{
   padding-top: 20px;
   margin-left: 0px;
   font-size: 1.5rem;
+  text-align: center;
  }
 
   .abt-us-card{

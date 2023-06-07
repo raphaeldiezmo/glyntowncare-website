@@ -12,6 +12,8 @@ header{
 /* navbar styles */
 .nav-container{
   width: 100%;
+  padding: 0 20px;
+
 }
 
 .navbar{
@@ -19,7 +21,7 @@ header{
     display: flex;
     flex-direction: row;
     min-height:100px;
-    padding: 0 20px;
+
     justify-content: space-between;
   }
   .navbar-brand-container{
@@ -40,11 +42,13 @@ header{
 
   .nav-list-container{
     justify-content: center;
+
   }
   .nav{
     display: flex;
     align-items: center;
     margin-top: 5%;
+
     gap: 40px;
     
     background-image: linear-gradient(to right, rgba(190, 93, 246,0.8) , rgba(49, 30, 255,0.8));
