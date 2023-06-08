@@ -1,10 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Lexend&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Lexend:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Candal&family=Lexend:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Candal&family=Lexend:wght@100;400&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@200;300;400;500&family=Russo+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@300;400;700;900&family=Lexend:wght@200;300;400;500&family=Quicksand:wght@300;400;500;600;700&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@300;400;700;900&family=Lexend:wght@200;300;400;500&family=Quicksand:wght@300;400;500;600;700&family=Russo+One&display=swap');
 
 *{
   margin:0;
@@ -19,7 +14,7 @@ body{
   margin: auto;
   scroll-behavior: smooth;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  font-family: 'Lexend', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 100;
 }
 .container{
@@ -40,7 +35,9 @@ body{
 .center{
   margin:auto;
   text-align: center;
-
+}
+.title{
+  font-family: 'Lato', sans-serif;
 }
 .font-size-1-{
   font-size: 1rem;
@@ -59,7 +56,7 @@ body{
 .content-title{
   font-size: 1.7rem;
   letter-spacing: 0px;
-  font-family: 'Noto Nastaliq Urdu', serif;}
+}
 .title-padding{
   padding: 100px;
 }
@@ -68,7 +65,6 @@ body{
 }
 .heading-title{
   font-size: 3rem;
-  font-family: 'Noto Nastaliq Urdu', serif;
 }
 .paragraph{
   font-size: 1.05rem;
@@ -95,19 +91,17 @@ body{
 }
 
 .banner-container{
+  margin-left: 5%;
   position: relative;
-  top: 100px;
-  width: 70%;
+  width: 50%;
   animation: fadeDown 1s;
 }
 .banner-title{
-  font-weight: normal;
-  font-size: 5rem;
+  font-size: 4rem;
+  margin-top: -1rem;
   letter-spacing: 0.01em;
-  margin-top: -40px;
-  font-family: 'Alfa Slab One', cursive;
   color: rgb(255, 255, 255);
-
+  font-weight: 700;
 }
 
 @keyframes fadeDown{
@@ -222,17 +216,24 @@ body{
 
 .card-title{
   font-size: 2.5rem;
-  font-family: 'Noto Nastaliq Urdu', serif;  padding-bottom: 30px;
+  padding-bottom: 30px;
+  font-family: 'Lato', sans-serif;
 }
 .abt-us-card-content{
   flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .abt-us-card p{
   font-size: 1.1rem;
   font-weight: 300;
+
   padding-bottom: 50px;
-  width: 90%;
+  width: 50%;
   
 }
 .card-link{
@@ -277,9 +278,9 @@ body{
   flex-direction: column;
 }
 .bus-route-title{
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding-bottom: 30px;
-  font-family: 'Noto Nastaliq Urdu', serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .bus-info-container{
   width: 100%;
@@ -324,7 +325,6 @@ iframe{
   width: 100%;
   height: 700px;
   margin: auto;
-  border-radius: 10px;
 }
 /* contact us form style */
 #contact-form{
@@ -336,7 +336,7 @@ iframe{
   background:linear-gradient(to right, rgb(9, 0, 17), rgb(83, 0, 131));
 }
 .form-title{
-  font-family: 'Noto Nastaliq Urdu', serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 40px;
   font-weight: bolder;
   color:rgb(255, 255, 255);
@@ -391,7 +391,7 @@ iframe{
   color: rgb(235, 186, 255);
   opacity: 0.7; /* Firefox */
   text-align: center;
-  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: 'Quicksand', sans-serif;
 
   font-weight: 300;
 }
@@ -426,21 +426,29 @@ iframe{
 }
 .join-us-text-content{
   width: 80%;
+  margin: auto;
+  text-align: center;
   
 }
 .join-us-title{
   letter-spacing: 0.01em;
-  font-size: 8rem;
-  margin-top: -40px;
-  font-family: 'Alfa Slab One', cursive;
+  font-size: 5rem;
+  font-family: 'Lato', sans-serif;
 
+}
+.join-us-link-container{
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
 }
 .join-us-link{
   font-size: 2rem;
+  padding: 10px 30px 10px 30px;
+  border-radius: 8px;
+  background: rgb(153, 0, 255);
   text-decoration: none;
   font-weight: 400;
-  font-family: 'Lexend', sans-serif;
-
+  color: white;
   margin-top: 30px;
 }
 /* responsive elements */
