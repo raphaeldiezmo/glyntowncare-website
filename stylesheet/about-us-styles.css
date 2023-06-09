@@ -1,6 +1,5 @@
 
 main{
-    max-width: 1500px;
     margin: auto;
     width: 100%;
     background-position: fixed;
@@ -11,6 +10,7 @@ main{
     width: 100%; 
     display: flex;
     flex-direction: column;
+
 }
 .first-part-of-abt-us-section{
     width: 100%;
@@ -18,31 +18,28 @@ main{
     
 }
 .abt-us-header-container{
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    height: 800px;
+    background-color: white;
     display: flex;
     flex-direction: row;
-    text-align: left;
-    align-items: center;
-}
-.abt-us-header-img-container{
-    max-width: 800px;
-    mix-blend-mode: multiply;
-
-}
-.abt-us-header-img-container img{
-    width: 100%;
-    mix-blend-mode: multiply;
-
-}
-.abt-us-info-text{
-    width: 50%;
-    align-items: center;
+    text-align: center;
     justify-content: center;
+    align-items: center;
+}
+
+
+.abt-us-info-text{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     
 }
 .abt-us-header-title{
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: 700;
     color: rgb(75, 0, 150);
  
@@ -61,8 +58,7 @@ main{
     color: black;
 }
 .mission-vision-container{
-    width: 90%;
-    justify-content: space-evenly;
+    width: 100%;
     align-items: center;
     margin: auto;
 }
@@ -76,11 +72,14 @@ main{
 }
 .content-text-container{
     text-align: left;
-    flex: 40%;
-    
+    flex: 50%;
+}
+.content-text-container p, .content-text-container h1{
+    width: 80%;
+    margin: auto;
 }
 .content-img-container{
-   
+   flex: 50%;
 }
 .content-img-container img{
     max-width: 700px;
@@ -91,8 +90,6 @@ main{
 /* services section */
 .services-section{
     width: 100%;
-    max-width: 1300px;
-    margin:auto;
     text-align: center;
 }
 
@@ -211,9 +208,7 @@ main{
         margin-top: 100px;
 
     }
-    .abt-us-header-img-container{
-        flex: 80%;
-    }
+    
     .abt-us-info-text{
         width: 100%;
     }
@@ -276,14 +271,9 @@ main{
     .abt-us-header-span{
         font-size: 2rem;
     }
-    .abt-us-header-img-container{
-        width: 100%;
-        margin: auto;
-    }
+  
     .second-part-of-abt-us-section{
-        width: 90%;
-        min-width: 0;
-        margin: auto;
+        width: 100%;
     }
     .mission-vision-container{
         width: 95%;
@@ -320,12 +310,7 @@ main{
 
 
 @media (max-width: 400){
-    .abt-us-header-img-container{
-        width: 100%;
-    }
-    .abt-us-header-img-container img{
-        width: 100%;
-    }
+  
     .mission-vision-container{
         width: 98%;
     }

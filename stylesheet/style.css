@@ -141,19 +141,18 @@ body{
 /* simple statement styles */
 #simple-statement{
   width: 100%;
-  max-width: 1980px;
-  margin:auto;
   background: linear-gradient(to right, rgb(255, 255, 255), rgb(186, 88, 243));
   text-align: center;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .statement{
   width: 40%;
   max-width: 1200px;
   font-size: 2.7rem;
   font-weight: bold;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin: auto;
   color: rgb(70, 0, 110);
 }
 /* card styles */
@@ -285,6 +284,8 @@ body{
 .bus-info-container{
   width: 100%;
   color: rgb(78, 0, 97);
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: left;
@@ -295,8 +296,13 @@ body{
   padding: 30px;
 
 }
-.bus-route-info-text-container{
+.bus-route-info-text-container, .bus-route-info-important-links-container{
   flex: 50%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .bus-route-info-important-links-container{
   flex: 50%;
@@ -304,7 +310,6 @@ body{
 }
 .bus-information-step-by-step-list{
   list-style-type: decimal;
-  padding-bottom: 50px;
   padding-left:20px;
 }
 .bus-link{
