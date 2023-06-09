@@ -1,11 +1,6 @@
 
 
-main{
-    margin: 100px 0 100px 0;
-    
-}
 .career-header-img-container{
-
     margin-top: -10px;
 
 }
@@ -73,8 +68,7 @@ main{
 /* career info design */
 
 .career-info-container{
-    width: 90%;
-    margin:auto;
+    width: 100%;
 }
 .career-description-container{
     width: 60%;

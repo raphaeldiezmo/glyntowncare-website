@@ -20,7 +20,7 @@ main{
 .abt-us-header-container{
     width: 100%;
     height: 800px;
-    background-color: white;
+    background-color: rgb(220, 235, 253);
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -69,6 +69,7 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 500px;
 }
 .content-text-container{
     text-align: left;
@@ -79,7 +80,12 @@ main{
     margin: auto;
 }
 .content-img-container{
-   flex: 50%;
+    flex: 50%;
+    height: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .content-img-container img{
     max-width: 700px;
@@ -91,6 +97,12 @@ main{
 .services-section{
     width: 100%;
     text-align: center;
+    background-color: rgb(220, 235, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
 }
 
 .service-title{
@@ -101,8 +113,7 @@ main{
     font-weight: 700;
 }
 .services-section-row{
-    width: 95%;
-    padding-bottom: 20px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -140,9 +151,6 @@ main{
     margin-bottom: 100px;
     justify-content: center;
     flex-direction: column;  
-    background: rgba(249, 245, 255, 0.5);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 .facility-section-header-container{
