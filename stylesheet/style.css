@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@300;400;700;900&family=Lexend:wght@200;300;400;500&family=Quicksand:wght@300;400;500;600;700&family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@300;400;700;900&family=Lexend:wght@200;300;400;500&family=Quicksand:wght@300;400;500;600;700&family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Great+Vibes&family=Lato:wght@300;400;700;900&family=Lexend:wght@200;300;400;500&family=Quicksand:wght@300;400;500;600;700&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Great+Vibes&family=Lato:wght@300;400;700;900&family=Lexend:wght@200;300;400;500&family=Quicksand:wght@300;400;500;600;700&family=Russo+One&display=swap');
+
+
 *{
   margin:0;
   padding:0;
@@ -93,17 +96,24 @@ body{
 .banner-container{
   margin-left: 5%;
   position: relative;
-  width: 50%;
+  width: 70vw;
   animation: fadeDown 1s;
 }
 .banner-title{
   font-size: 4rem;
-  margin-top: -1rem;
   letter-spacing: 0.01em;
   color: rgb(255, 255, 255);
   font-weight: 700;
 }
-
+.banner-text{
+  margin-top: 5px;
+  font-size: 2rem;
+  width: 40svw;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  color: rgb(255, 255, 255);
+ 
+}
 @keyframes fadeDown{
   0%{
     opacity: 0;
@@ -115,17 +125,7 @@ body{
     transform: translateY(0px) scale(1);
   }
 }
-.banner-text{
-  margin-top: 5px;
-  font-size: 2rem;
-  width: 75%;
-  font-weight: 300;
 
-  letter-spacing: 0.5px;
-  color: rgb(255, 255, 255);
-  font-weight: 300;
- 
-}
 
 
 .contact-us-btn, .learn-more-btn{
