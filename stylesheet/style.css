@@ -9,6 +9,8 @@
   padding:0;
 }
 
+/* body styling, this will be in general to all of the pages
+all body of each of the pages will have the same design */
 body{
   position          :relative;
   background-position: center;
@@ -20,6 +22,7 @@ body{
   font-family: 'Lato', sans-serif;
   font-weight: 100;
 }
+
 .container{
   position: relative;
   width: 100%;
