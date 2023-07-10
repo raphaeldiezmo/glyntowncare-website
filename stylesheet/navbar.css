@@ -1,6 +1,6 @@
 header{
   top:0;
-  width: 100%;
+  width: 100svw;
   max-width: 1980px;
   background: transparent;
   z-index : 10000;
@@ -25,19 +25,21 @@ header{
     justify-content: space-between;
   }
   .navbar-brand-container{
-    width: 300px;
-    background: rgb(255, 255, 255);
-    height: 150px;
-    backdrop-filter: blur(6px);
 
+    /* background: rgb(255, 255, 255); */
+ 
+    /* backdrop-filter: blur(6px);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
-    border-radius: 0 0 40% 50%;
+    border-radius: 0 0 40% 50%; */
     
   }
   .navbar-brand{
     mix-blend-mode: multiply;
-    width: 200px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(1px 1px 1px #ffffff);
+    width: 12vw;
+    min-width: 100px;
   }
 
   .nav-list-container{
@@ -120,9 +122,7 @@ header{
     .burger-menu.active .bar:nth-child(3){
       transform: translateY(-8px) rotate(-45deg);
     }
-    .navbar-brand-container{
-      margin-left: -30px;
-    }
+ 
     .nav{
       top:-3%;
       border-radius: 0;
