@@ -13,7 +13,7 @@ body{
   position          :relative;
   background-position: center;
   background-color: rgb(228, 240, 255);
-  max-width: 1980px;
+  max-width: 1960px;
   margin: auto;
   scroll-behavior: smooth;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -483,6 +483,9 @@ iframe{
       rgba(0, 0, 0, 0.6)
     ), url(../images/img2.jpg) no-repeat left center; 
   
+  }
+  .bus-route-info-container{
+    flex-direction: column;
   }
   .banner-container{
     width: 100%;
