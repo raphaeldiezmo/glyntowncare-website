@@ -92,10 +92,9 @@ body{
     rgba(0, 0, 0, 0.3), 
     rgba(0, 0, 0, 0.6)
   ), url(../images/img2.jpg); 
-  background-size: cover;
+  background-size: fit;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll; 
   justify-content: center;
   display: flex;
   align-items: center;
@@ -113,7 +112,7 @@ body{
   animation: fadeDown 1s;
 }
 .banner-title{
-  font-size: clamp(3rem, 5vw, 7rem);
+  font-size: clamp(3rem, 5vw, 5rem);
   color: rgb(255, 255, 255);
   font-weight: 700;
 }
@@ -192,6 +191,11 @@ body{
 .abt-us-card-row{
   margin: auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+
 }
 .abt-us-card{
   display: flex;
@@ -253,7 +257,7 @@ body{
   font-weight: 300;
 
   padding-bottom: 50px;
-  width: 50%;
+  width: 70%;
   
 }
 .card-link{
@@ -481,7 +485,7 @@ iframe{
     background:linear-gradient(
       rgba(0, 0, 0, 0.3), 
       rgba(0, 0, 0, 0.6)
-    ), url(../images/img2.jpg) no-repeat left center; 
+    ), url(../images/img2.jpg) no-repeat center fit; 
   
   }
   .bus-route-info-container{
@@ -493,18 +497,35 @@ iframe{
     left: 0;
   }
   .banner-title{
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+  .banner-text{
+    width: 90%;
   }
   .statement{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .about-us-container{
-    padding: 20px 0px 20px 0px;
+    height: auto;
+    padding-bottom: 0px;
     }
 
+  .card-title{
+    font-size: 1.5rem;
 
- 
+  }
+  .paragraph{
+    font-size: 0.9rem;
+  }
+  .bus-link{
+    font-size: 0.9rem;
+  }
+  
+  .abt-us-card p, .card-link{
+    width: 90%;
+    font-size: 0.9rem;
+  }
  .abt-us-card-content{
   flex: 40%;
   padding-top: 20px;
@@ -515,6 +536,8 @@ iframe{
 
   .abt-us-card{
     width: 100%;
+    margin-bottom: 30px;
+    height: auto;
     flex-direction: column;
   }
   .abt-us-card:nth-child(2){
@@ -527,10 +550,13 @@ iframe{
   .location-container-inner{
     flex-direction: column;
   }
-
+  /* bus information in media 800px */
   .bus-info-container{
     width: 100%;
     left: 2.5%;
+  }
+  .bus-route-title{
+    font-size: 1.5rem;
   }
   #contact-form{
     padding-top: 30px;

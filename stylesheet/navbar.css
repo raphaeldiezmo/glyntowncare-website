@@ -24,16 +24,7 @@ header{
 
     justify-content: space-between;
   }
-  .navbar-brand-container{
 
-    /* background: rgb(255, 255, 255); */
- 
-    /* backdrop-filter: blur(6px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-    border-radius: 0 0 40% 50%; */
-    
-  }
   .navbar-brand{
     mix-blend-mode: multiply;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
