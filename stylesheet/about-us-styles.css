@@ -329,7 +329,9 @@
 
     .service-item{
         flex: 100%;
-        width: 80%;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5vw;
         padding: 5vw;
     }
     /* facilities section */
