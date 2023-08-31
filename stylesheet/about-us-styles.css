@@ -49,6 +49,9 @@
     color: white;
 
 }
+.content-title{
+    font-size: clamp(1.8rem, 3.5vw, 2.2rem);
+}
 .abt-us-info-text{
     width: 70%;
     display: flex;
@@ -112,7 +115,7 @@
     margin: auto;
 }
 .paragraph{
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
 }
 
 .mission-card{
@@ -185,7 +188,7 @@
 .service-item-sentence{
     list-style: none;
     padding-top: 30px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 200;
 }
 
@@ -247,7 +250,7 @@
     margin-right: 15px;
     margin-bottom: 15px;
     justify-items: space-between;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 /* animation */
 .abt-us-header-title{
