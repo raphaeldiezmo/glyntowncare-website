@@ -81,6 +81,7 @@
 .section-content p 
 {
     text-align: center;
+    line-height: 2.5rem;
     padding-bottom: 30px;
 }
 .section-1{

@@ -11,7 +11,7 @@ footer{
   }
   
   .footer-title{
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     color: rgb(188, 169, 243) ;
     font-weight: 700;
@@ -35,7 +35,7 @@ footer{
   }
   .footer-item-list{
     padding: 5px 0 0 0;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .footer-item-list a{
     color: white;
