@@ -10,6 +10,9 @@
     flex-direction: column;
     margin: 0;
 }
+section{
+    position: relative;
+}
 .first-part-of-abt-us-section{
     height: 100vh;
     max-height: 1080px;
@@ -120,7 +123,7 @@
 
 .mission-card{
     background-image:  linear-gradient(rgba(157, 57, 214, 0.2),
-                        rgba(118, 69, 235, 0.4)),
+                        rgba(86, 8, 131, 0.7)),
                         url(../images/imghand.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,7 +134,7 @@
 }
 .vision-card{
     background-image: linear-gradient(rgba(22, 63, 12, 0.5),
-                    rgba(13, 56, 2, 0.5)),
+                    rgba(13, 56, 2, 0.7)),
                     url(../images/garden.JPG);
     background-repeat: no-repeat;
     background-size: cover;
@@ -250,7 +253,7 @@
     margin-right: 15px;
     margin-bottom: 15px;
     justify-items: space-between;
-    font-size: 1rem;
+    font-size: 1.7rem;
 }
 /* animation */
 .abt-us-header-title{
