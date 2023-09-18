@@ -1,17 +1,18 @@
 
 /* footer style */
 footer{
-    background:linear-gradient(to right, rgb(9, 0, 17), rgb(83, 0, 131));
+    background: rgb(0, 58, 31);
     margin-top: 100px;
     max-width: 1980px;
     margin: auto;
-    padding: 20px 0 0 0;
+    padding: 100px 0 100px 0;
     color: white;
     align-items: center;
   }
   
   .footer-title{
     font-size: 1.2rem;
+    margin-bottom: 5px;
     text-transform: uppercase;
     color: rgb(188, 169, 243) ;
     font-weight: 700;
