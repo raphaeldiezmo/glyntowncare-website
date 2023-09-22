@@ -137,7 +137,18 @@ body{
   }
 }
 
+.visiting-hours-link{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  padding: 10px 30px 10px 30px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+  font-weight: bolder;
+  background: rgba(0, 153, 0,0.9);
+}
 
 .contact-us-btn, .learn-more-btn{
   margin-top: 20px;
@@ -147,6 +158,7 @@ body{
   font-size: 15px;
   border-radius: 10px;
   background: rgb(128, 0, 202);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-weight: bold;
   color: white;
   border: none;
@@ -319,6 +331,19 @@ body{
   flex-direction: row;
   padding: 30px;
 
+}
+.bus-flex-container{
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  background: rgba(255, 255, 255,0.5);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  
 }
 .bus-route-info-text-container, .bus-route-info-important-links-container{
   flex: 50%;
