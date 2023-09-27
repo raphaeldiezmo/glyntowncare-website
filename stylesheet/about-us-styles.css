@@ -33,7 +33,6 @@ section{
 .abt-us-header-container{
     width: 100vw;
     max-width: 1920px;
-    height: 800px;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -52,9 +51,7 @@ section{
     color: white;
 
 }
-.content-title{
-    font-size: clamp(1.8rem, 3.5vw, 2.2rem);
-}
+
 .abt-us-info-text{
     width: 70%;
     display: flex;
@@ -112,9 +109,6 @@ section{
 .content-text-container p, .content-text-container h1{
     width: 80%;
     margin: auto;
-}
-.paragraph{
-    font-size: clamp(1.1rem, 2vw, 1.3rem);
 }
 
 /* services section */
@@ -224,7 +218,7 @@ section{
     margin-right: 15px;
     margin-bottom: 15px;
     justify-items: space-between;
-    font-size: 1.7rem;
+    font-size: clamp(1rem, 2vw, 1.7rem);
 }
 /* animation */
 .abt-us-header-title{
@@ -298,9 +292,6 @@ section{
         padding: 30px;
     }
 
-    .mission-vision-container{
-        max-height: 1200px;
-    }
     /* services */
     .services-section-row{
         flex-direction: column;
@@ -334,6 +325,17 @@ section{
   
     .mission-vision-container{
         width: 98%;
+    }
+    .content-text-container p, .content-text-container {
+        width: 100%;
+    }
+    .content-text-container p{
+        font-size: 1rem;
+    }
+    .facility-item{
+ 
+        margin-right: 0px;
+     
     }
 }
 
