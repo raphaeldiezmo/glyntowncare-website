@@ -11,7 +11,7 @@ header {
 }
 
 .nav-container {
-  width: 100%;
+  width: 80%;
   padding: 0 20px;
 }
 
@@ -27,6 +27,7 @@ header {
   filter: drop-shadow(1px 1px 1px #ffffff);
   width: 12vw;
   min-width: 100px;
+  max-width: 300px;
 }
 
 .nav-list-container {

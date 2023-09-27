@@ -97,6 +97,9 @@
 .section-2 em{
     background-color: rgb(228, 240, 255);
 }
+.service-3 .career-section-container .title{
+    padding: 30px;
+}
 
 .item-holder{
     display: flex;
