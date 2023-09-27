@@ -77,15 +77,15 @@ section{
 
 
 .mission-vision-container{
-    width: 100%;
+    width: 80%;
     max-width: 1960px;
     height: auto;
     display: flex;
+    padding-top: 30px;
     justify-content: center;
     align-items: center;
     margin: auto;
     text-align: center;
-    padding: 5vw, 2vw, 5vw, 2vw;
 }
 .row{
     width: 90%;
@@ -100,55 +100,27 @@ section{
     flex: 50%;
 }
 .content-text-container{
-    height: 60vh;
-    max-height: 700px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 40vw;
-    max-width: 862px;
     margin: auto;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+}
+.content-text-container h1{
+    padding: 30px;
 }
 .content-text-container p, .content-text-container h1{
     width: 80%;
-    color: white;
     margin: auto;
 }
 .paragraph{
     font-size: clamp(1.1rem, 2vw, 1.3rem);
 }
 
-.mission-card{
-    background-image:  linear-gradient(rgba(157, 57, 214, 0.2),
-                        rgba(86, 8, 131, 0.7)),
-                        url(../images/imghand.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-
-}
-.vision-card{
-    background-image: linear-gradient(rgba(22, 63, 12, 0.5),
-                    rgba(13, 56, 2, 0.7)),
-                    url(../images/garden.JPG);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-
-}
-
 /* services section */
 .services-section{
     width: 100%;
     text-align: center;
-    background-color: rgb(220, 235, 253);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,7 +129,6 @@ section{
 }
 
 .service-title{
-    padding: 30px;
     font-size: 2.5rem;
     width: 50%;
     margin:auto;

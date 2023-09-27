@@ -31,6 +31,7 @@ header {
 
 .nav-list-container {
   justify-content: center;
+  padding-top: 20px;
 }
 
 .nav {
@@ -50,7 +51,7 @@ header {
   color: #fff;
   font-weight: 500;
   text-shadow: 0.25px 0.25px 2px rgba(81, 67, 21, 0.8);
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding-bottom: 0.5em;
 }
 

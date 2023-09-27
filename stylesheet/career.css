@@ -42,10 +42,6 @@
 
 /* all section styles */
 .career-section{
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(186, 88, 243));
-    height: 700px;
-    color: rgb(70, 0, 110);
-    font-weight: 400;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -66,12 +62,12 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .career-section h2{
-    font-size: clamp(1.2rem, 3vw, 3rem);
+    font-size: clamp(1.2rem, 3vw, 2rem);
 
 }
 .career-section p{
     font-size: clamp(1.4rem, 3vw, 1.6rem);
-    width: 90%;
+    width: 80%;
     min-width: 320px;
     text-align: left;
     margin: auto;
@@ -80,32 +76,28 @@
 }
 .section-content p 
 {
+    font-size: 1.2rem;
     text-align: center;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
     padding-bottom: 30px;
 }
 .section-1{
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(186, 88, 243));
-    min-height: 700px;
-    color: rgb(70, 0, 110);
-    font-weight: 400;
+    width: 80%;
+    padding: 40px;
+    margin:auto;
 
 }
 .section-2{
-    background: rgb(228, 251, 252);
     padding: 30px;
-    height: 100vh;
-    max-height: 1080px;
+    width: 80%;
+    margin: auto;
     text-align: left;
     flex-direction: row-reverse;
 }
 .section-2 em{
     background-color: rgb(228, 240, 255);
-    font-weight: bold;
 }
-.section-3 {
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(186, 88, 243));
-}
+
 .item-holder{
     display: flex;
     list-style: none;
@@ -115,15 +107,16 @@
 }
 
 .item{
-    height: 300px;
+    height: 150px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 30px;
     align-items: center;
-    font-size: clamp(1.4rem, 3vw, 1.6rem);
+    font-size: clamp(1.2rem, 3vw, 1.2rem);
     min-width: 350px;
-    width: 25vw;
+    width: 20vw;
     max-width: calc(1960px*0.3);
     text-align: center;
     border-radius: 8px;
@@ -148,7 +141,6 @@
     text-align: center;
     margin: auto;
     color: rgb(70, 0, 110);
-    font-weight: bold;
 
 }
 .send-cv-title a{
@@ -168,7 +160,8 @@
 .why-choose-us-list{
     display: block;
     list-style: none;
-    width: 88vw;
+    width: 70%;
+    margin: auto;
     font-size: clamp(1.4rem, 3vw, 1.6rem);
 }
 .why-choose-us-item{
