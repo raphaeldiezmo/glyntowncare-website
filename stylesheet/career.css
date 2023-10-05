@@ -87,6 +87,18 @@
     margin:auto;
 
 }
+@media (max-width: 1200px){
+    .section-1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .section-1 img{
+        width: 90%;
+        margin: auto;
+    }
+}
 .section-2{
     padding: 30px;
     width: 80%;
