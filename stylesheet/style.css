@@ -75,15 +75,14 @@ body{
   padding-bottom: 10px;
 }
 .section-container{
-  height: 100svh;
   max-height: 1080px;
   min-height: 500px;
 }
 /* home section style */
 .landing-page-container{
   margin: auto;
-  height: 100svh;
-  max-height: 1080px;
+  height: 80svh;
+  max-height: 864px;
   min-height: 500px;
   background:linear-gradient(
     rgba(0, 0, 0, 0.3), 
@@ -166,7 +165,7 @@ body{
 #simple-statement{
   width: 100%;
   text-align: center;
-  height: 700px;
+  padding: 30px 0 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -466,9 +465,10 @@ iframe{
   .abt-us-card{
     margin-bottom: 30px;
     height: auto;
+    padding: 0;
     flex-direction: column;
   }
-  .abt-us-card:nth-child(2){
+  .card-2{
 
     flex-direction: column-reverse;
   }
@@ -518,3 +518,8 @@ iframe{
   }
 
 }
+
+
+
+
+

@@ -10,7 +10,6 @@
   
   }
   #contact-container{
-    width: 100%;
     text-align: center;
     justify-content: center;
   }
@@ -22,80 +21,20 @@
     font-size: 4rem;
     
   }
-  .contact-inner-container{
-    width: 70%;
-  
+  .contact-inner-container{  
     display: flex;
     flex-direction: row;
     margin: auto;
   }
 
-  /* right side of the body of contact us  */
-  .contact-form-title{
-    color: rgb(70, 0, 110);
-    padding-bottom: 20px;
-    margin-top: 20px;
-    font-size: 2rem;
-  }
-  .contact-form{
-    width: 100%;
-    flex: 50%;
-    height: 100%;
-    margin: 0;
-    text-align: left;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-
-  }
-  .contact-form form{
-    background-color: rgba(239, 234, 255, 0.5);
-    padding: 5px 20px 0px 20px;
-    border-radius: 8px;
-  }
-  .form-item{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 100%;
-    font-weight: 300;
-  }
-  .form-item label{
-    padding-bottom: 10px;
-
-  }
-  .first-row-form{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-
-  }
-  .form-rows{
-    width: 100%;
-  }
-  .second-row-form{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-  .form-item textarea{
-    width: 96%;
-    height: 200px;
-    background-color: rgb(219, 197, 255); 
-
-  }
-  
-  .form-item input{
-    width: 95%;
-    margin-right: 20px;
-    background-color: rgb(219, 197, 255); 
-  }
-  /* left side of the body ( contact- us) */
   .contact-information{
-    width: 100%;
+    width: 60%;
+    margin: auto;
     display: flex;
-    flex-direction: column;
-    flex: 30%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
   }
 .fa-facebook-square{
   color: blue;
@@ -107,14 +46,19 @@
   color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(158,27,104,1) 22%, rgba(0,212,255,1) 100%);;
 }
 .contact-card-container{
-  margin: 0px 30px 30px 0px;
+  padding-bottom: 30px;
+  width: 90%;
+  padding: 10px;
+  
+}
+.contact-card-container-inner{
+  margin: auto;
+  color: rgb(70, 0, 110);
   background-color: rgba(239, 234, 255, 0.5);
-  border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
-  padding-bottom: 30px;
-  color: rgb(70, 0, 110);
-  height: 230px;
+  height: 280px;
+  padding: 30px;
 }
 
 .contact-frm-btn{
@@ -148,15 +92,17 @@
   width: 80%;
   margin: auto;
 }
-#location{
-  background-color: rgb(220, 235, 253);
-}
+
 .location-in-contact-us{
   
   border-radius: 8px;
   width: 80%;
 }
-
+@media(max-width: 1200px){
+  .contact-information{
+    flex-direction: column;
+  }
+}
 @media (max-width: 800px){
   main{
     padding-top: 30px;
@@ -172,18 +118,26 @@
     font-size: 35px;
     padding: 40px;
   }
+  .contact-card-container-inner{
+    height: auto;
+    padding: 30px;
+    margin: auto;
+  }
   .timeline-photo-container{
     padding-bottom: 0;
   }
-  .form-item{
-    margin-left: 0px;
+ 
+}
+@media (max-width: 1500px){
+  .bus-route-text-content{
+    flex-direction: column;
+    padding: 20px;
   }
-  .form-item label{
-    margin-left: 7px;
+  .bus-route-links-container{
+    text-align: center;
+    padding-bottom: 30px;
   }
-  .form-item textarea{
-    width: 92%;
-  }
+  
 }
 
 @media (max-width: 1200px){
@@ -191,16 +145,11 @@
     flex-direction: column;
     width: 100%;
   }
+  
   .contact-card-container{
     width: 95%;
-    margin-left: 2.5%;
   }
-  .contact-form{
-    margin-top: 0px;
-    width: 95%;
-
-    margin: 0px 0px 20px 2.5%;
-  }
+  
   .location-in-contact-us{
     width: 100%;
   }

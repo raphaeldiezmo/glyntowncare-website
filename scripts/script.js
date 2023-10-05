@@ -30,3 +30,49 @@ document.querySelectorAll(".nav-link").forEach(n=>n.addEventListener("click"), (
     })
 
 
+
+// ========================================
+//                OBSERVERS
+// ========================================
+
+const fader = document.querySelectorAll('.fade-in');
+const slider = document.querySelectorAll('.slider');
+const appearOptions = {
+  threshold: 0, rootMargin: "0px 0px -250px 0px"
+};
+
+
+
+// Usage of Intersection Observer
+const appearOnScroll = new IntersectionObserver(
+  // contains function that has an entries and
+  // appearOnScroll parameter
+  function(
+    entries, appearOnScroll
+  ){
+    // running to every each entry
+    entries.forEach(entry => {
+      if(!entry.isIntersecting){
+        return;
+      }
+      // if an entry doesn't intersect, it'll
+      // add the appear class in the entry
+      else{
+        entry.target.classList.add('appear');
+        appearOnScroll.unobserve(entry.target);
+      }
+    })
+  }, appearOptions
+);
+
+fader.forEach(fader=>{
+  appearOnScroll.observe(fader);
+})
+
+slider.forEach(slider=>{
+  appearOnScroll.observe(slider);
+})
+
+
+
+//

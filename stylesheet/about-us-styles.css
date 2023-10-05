@@ -14,8 +14,8 @@ section{
     position: relative;
 }
 .first-part-of-abt-us-section{
-    height: 100vh;
-    max-height: 1080px;
+    height: 80vh;
+    max-height: 864px;
     width: 100vw;
     max-width: 1960px;
     background:linear-gradient(
@@ -99,15 +99,16 @@ section{
 .content-text-container{
     border-radius: 8px;
     display: flex;
+    padding: 20px;
     flex-direction: column;
     text-align: left;
     margin: auto;
 }
 .content-text-container h1{
-    padding: 30px;
+    padding: 0 0 30px 0;
 }
 .content-text-container p, .content-text-container h1{
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
