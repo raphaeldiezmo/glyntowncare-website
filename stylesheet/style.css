@@ -416,11 +416,15 @@ iframe{
   .bus-route-info-container{
     flex-direction: column;
   }
+  .bus-route-info-text-container{
+    margin-bottom: 30px;
+  }
   .banner-container{
     width: 100%;
     text-align: center;
     left: 0;
   }
+
   .banner-title{
     font-size: 2rem;
   }
@@ -460,7 +464,6 @@ iframe{
  }
 
   .abt-us-card{
-    width: 100%;
     margin-bottom: 30px;
     height: auto;
     flex-direction: column;
@@ -510,7 +513,7 @@ iframe{
 
 @media (max-width: 400px){
   .abt-us-card{
-    width: 90%;
+    width: 95%;
     padding: 0px;
   }
 
