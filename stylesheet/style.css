@@ -67,7 +67,7 @@ body{
   font-size: 3rem;
 }
 .paragraph{
-  font-size: clamp(0.9rem, 2vw, 1.3rem);
+  font-size: 1rem;
   font-weight: 200;
   color: black;
 }
@@ -165,7 +165,7 @@ body{
 #simple-statement{
   width: 100%;
   text-align: center;
-  padding: 60px 0 60px 0;
+  padding: 70px 0 70px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,7 +294,8 @@ body{
   font-family: 'Quicksand', sans-serif;
 }
 .bus-info-container{
-  width: 100%;
+  width: 90%;
+  margin: auto;
   color: rgb(78, 0, 97);
   display: flex;
   flex-direction: column;
@@ -305,8 +306,7 @@ body{
 .bus-route-info-container{
   display: flex;
   flex-direction: row;
-  padding: 30px;
-
+  width: 100%;
 }
 .bus-flex-container{
   width: 90%;
@@ -314,16 +314,18 @@ body{
   border-radius: 8px;
   background: rgba(255, 255, 255,0.5);
   height: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 70px 30px 70px 30px;
   
 }
+
 .bus-route-info-text-container, .bus-route-info-important-links-container{
   flex: 50%;
-  height: 500px;
+
   justify-content: center;
   align-items: center;
   display: flex;
@@ -335,7 +337,7 @@ body{
 }
 .bus-information-step-by-step-list{
   list-style-type: decimal;
-  padding-left:20px;
+  padding: 0 50px 0 50px;
 }
 .bus-link{
   text-decoration: none;
@@ -351,7 +353,7 @@ body{
   text-decoration: underline;
 }
 iframe{
-  width: 90%;
+  width: 100%;
   height: 50vw;
   max-height: 700px;
   border-radius: 8px;
@@ -364,17 +366,21 @@ iframe{
 /* join us section */
 #join-us-section
 {
-  margin: 50px 0 50px 0;
-  padding: 50px 0 50px 0;
+  margin: 70px 0 70px 0;
+  padding: 100px 0 100px 0;
   background:linear-gradient(
-    rgba(0, 0, 0, 0.1), 
-    rgba(0, 0, 0, 0.1)
+    rgba(224, 217, 217, 0.1), 
+    rgba(0, 0, 0, 0.7)
   ), url(../images/career1.jpg); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -392,9 +398,10 @@ iframe{
   text-align: center;
   
 }
+
 .join-us-title{
   letter-spacing: 0.01em;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Lato', sans-serif;
 
 }
