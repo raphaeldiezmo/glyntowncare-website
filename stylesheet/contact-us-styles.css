@@ -78,14 +78,21 @@
   font-size: 1.2rem;
   font-weight: 500;
 }
+.bus-route-title{
+  font-size: 1.5rem;
+}
 .bus-route-text-content{
   display: flex;
   flex-direction: row;
-  height: 400px;
+  padding: 30px 0 30px 0;
   align-items: center;
   justify-content: center;
 }
 .bus-route-list-container{
+  flex: 50%;
+}
+.bus-route-links-container{
+  text-align: center;
   flex: 50%;
 }
 .bus-information-step-by-step-list{
@@ -136,6 +143,7 @@
   .bus-route-links-container{
     text-align: center;
     padding-bottom: 30px;
+    
   }
   
 }

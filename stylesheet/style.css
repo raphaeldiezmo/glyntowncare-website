@@ -114,7 +114,7 @@ body{
 }
 .banner-text{
   margin-top: 5px;
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: 1.2rem;
   width: 50svw;
   font-weight: 100;
   letter-spacing: 0.5px;
@@ -151,7 +151,7 @@ body{
   margin-right: 10px;
   width: 200px;
   height: 35px;
-  font-size: 15px;
+  font-size: 1rem;
   border-radius: 10px;
   background: rgb(128, 0, 202);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -165,7 +165,7 @@ body{
 #simple-statement{
   width: 100%;
   text-align: center;
-  padding: 30px 0 30px 0;
+  padding: 60px 0 60px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,7 +173,7 @@ body{
 .statement{
   width: 50vw;
   max-width: 1200px;
-  font-size: 2.7rem;
+  font-size: 2rem;
   font-weight: bold;
   color: rgb(70, 0, 110);
 }
@@ -241,7 +241,7 @@ body{
 }
 
 .abt-us-card p{
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
 
   padding-bottom: 50px;
@@ -341,7 +341,7 @@ body{
   text-decoration: none;
   color: rgb(104, 0, 202);
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: 0.6s ease;
 }
 .bus-link h3{
@@ -364,8 +364,17 @@ iframe{
 /* join us section */
 #join-us-section
 {
+  margin: 50px 0 50px 0;
+  padding: 50px 0 50px 0;
+  background:linear-gradient(
+    rgba(0, 0, 0, 0.1), 
+    rgba(0, 0, 0, 0.1)
+  ), url(../images/career1.jpg); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   width: 100%;
-  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -375,14 +384,17 @@ iframe{
   height: auto;
 }
 .join-us-text-content{
-  width: 80%;
+  width: 80%; 
+  color: rgb(255, 255, 255);
+  text-shadow: 0.25px 0.25px 2px rgba(17, 17, 17, 0.5);
+
   margin: auto;
   text-align: center;
   
 }
 .join-us-title{
   letter-spacing: 0.01em;
-  font-size: clamp(3rem, 10vw, 5rem);
+  font-size: 4rem;
   font-family: 'Lato', sans-serif;
 
 }
@@ -392,9 +404,11 @@ iframe{
   text-align: center;
 }
 .join-us-link{
-  font-size: 2rem;
+  font-size: 1.2rem;
   padding: 10px 30px 10px 30px;
   border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   background: rgb(153, 0, 255);
   text-decoration: none;
   font-weight: 400;
