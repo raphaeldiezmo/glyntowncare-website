@@ -118,6 +118,9 @@
     flex-direction: column;
     width: 100%;
   }
+  .contact-information{
+    width: 95%;
+  }
   .form-rows{
     flex-direction: column;
   }

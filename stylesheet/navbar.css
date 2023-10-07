@@ -25,7 +25,7 @@ header {
 .navbar-brand {
   mix-blend-mode: multiply;
   filter: drop-shadow(1px 1px 1px #ffffff);
-  width: 12vw;
+  width: 10vw;
   min-width: 100px;
   max-width: 300px;
 }
