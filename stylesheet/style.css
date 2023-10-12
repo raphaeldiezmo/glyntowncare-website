@@ -10,10 +10,9 @@
 /* body styling, this will be in general to all of the pages
 all body of each of the pages will have the same design */
 body{
-  position          :relative;
+  margin: auto;
   background-position: center;
   max-width: 1960px;
-  margin: auto;
   scroll-behavior: smooth;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: 'Lato', sans-serif;
@@ -177,6 +176,13 @@ body{
   color: rgb(70, 0, 110);
 }
 
+.abt-us-card-container{
+  width: 100%;
+  max-width: 1960px;
+  margin: auto;
+  overflow: hidden;
+
+}
 .abt-us-card{
   display: flex;
   width: 80%;
@@ -264,6 +270,7 @@ body{
 #location{
   width: 100%;
   position: inherit;  
+  overflow: hidden;
 
 }
 
@@ -294,6 +301,7 @@ body{
 }
 .bus-info-container{
   width: 90%;
+
   margin: auto;
   color: rgb(78, 0, 97);
   display: flex;
@@ -549,8 +557,8 @@ iframe{
  .fade-in{
   opacity: 0;
   filter: blur(10px);
-  transform: translateY(-10%);
-  transition: opacity 1s;
+  transform: translateY(-5px);
+  transition: opacity 0.5s;
 }
 .delay-trans{
   transition-delay: 1s;
@@ -563,20 +571,20 @@ iframe{
 
 
 .from-left{
- transform: translateX(-50%);
+  transform: translateY(-10%);
 }
 .from-right{
- transform: translateX(50%);
+ transform: translateY(-5px);
 }
 .from-left, .from-right{
   filter: blur(5px);
  transition:
-     opacity 1s ease-in,
-     transform 1s ease-in;
+     opacity 0.5s ease-in,
+     transform 0.5s ease-in;
  opacity: 0;
 }
 .from-left.appear, .from-right.appear{
- transform: translateX(0);
+ transform: translateY(0);
  opacity: 1;
  filter: blur(0);
 }

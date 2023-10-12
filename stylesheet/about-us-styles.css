@@ -88,9 +88,11 @@ section{
 
 
 .mission-vision-container{
-    width: 80%;
+    width: 100%;
     max-width: 1960px;
     height: auto;
+    overflow: hidden;
+
     display: flex;
     padding-top: 30px;
     justify-content: center;
@@ -99,7 +101,7 @@ section{
     text-align: center;
 }
 .row{
-    width: 90%;
+    width: 70%;
     max-width: 1764px;
     margin: auto;
     display: flex;
@@ -129,6 +131,7 @@ section{
 /* services section */
 .services-section{
     width: 100%;
+    max-width: 1960px;
     text-align: center;
     display: flex;
     flex-direction: column;
