@@ -1,31 +1,48 @@
+
+
  /* ========================================== */
  /*            TRANSITIONS + ANIMATIONS        */
  /* ========================================== */
  .fade-in{
-    opacity: 0;
-    transition: opacity 0.4s ease-in;
-  }
-  .delay-trans{
-    transition-delay: 0.2s;
-  }
-  .fade-in.appear{
-    opacity:1;
-  }
- 
- 
- .from-left{
-   transform: translateX(-50%);
- }
- .from-right{
-   transform: translateX(50%);
- }
- .from-left, .from-right{
-   transition:
-       opacity 0.5s ease-in,
-       transform 0.7s ease-in;
-   opacity: 0;
- }
- .from-left.appear, .from-right.appear{
-   transform: translateX(0);
-   opacity: 1;
- }
+  opacity: 0;
+  filter: blur(1px);
+  transform: translateY(-20px);
+  transition: 0.5s;
+}
+.delay-trans{
+  transition-delay: 0.25s;
+}
+.delay-trans-2{
+  transition-delay: 0.5s;
+}
+.delay-trans-3{
+  transition-delay: 0.75s;
+}
+.delay-trans-4{
+  transition-delay: 1s;
+
+}
+.fade-in.appear{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+
+.from-left{
+  transform: translateY(20px);
+}
+.from-right{
+ transform: translateY(20px);
+}
+.from-left, .from-right{
+  filter: blur(5px);
+ transition:
+    0.5s ;
+ opacity: 0;
+}
+.from-left.appear, .from-right.appear{
+ transform: translateY(0);
+ opacity: 1;
+ filter: blur(0);
+}

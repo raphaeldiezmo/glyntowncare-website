@@ -555,10 +555,10 @@ iframe{
  /*            TRANSITIONS + ANIMATIONS        */
  /* ========================================== */
  .fade-in{
-  opacity: 0;
+  opacity: 1s;
   filter: blur(10px);
-  transform: translateY(20px);
-  transition: opacity 0.5s;
+  transform: translateY(10px);
+  transition: opacity 0.2s;
 }
 .delay-trans{
   transition-delay: 1s;
