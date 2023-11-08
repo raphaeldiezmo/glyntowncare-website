@@ -48,7 +48,7 @@ section{
     color: white;
 }
 .title-container p{
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: 1.2rem;
     width: 60vw;
     min-width: 300px;
     max-width: 900px;
