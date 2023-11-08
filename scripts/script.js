@@ -48,11 +48,21 @@ slider.forEach(slider=>{
   appearOnScroll.observe(slider);
 })
 
+// Making the navbar appear and disappear function
+// keep track of previous scroll position
+let prevScrollpos = window.pageYOffset;
 
+        window.onscroll = function() {
+            let currentScrollPos = window.pageYOffset;
 
-//
+            if (prevScrollpos > currentScrollPos) {
+                document.querySelector('header').classList.remove('hidden');
+            } else {
+                document.querySelector('header').classList.add('hidden');
+            }
 
-
+            prevScrollpos = currentScrollPos;
+        }
 // Variable Declarations
 const burgerMenu = document.querySelector(".burger-menu");
 const navMenu = document.querySelector(".nav");

@@ -89,15 +89,21 @@
 
 }
 @media (max-width: 1200px){
-    .section-1{
+    .section-1, .section-4{
         flex-direction: column;
         justify-content: center;
         padding: 30px 0 30px 0;
        
     }
-    .section-1 img{
+    .section-1 img, .section-4 img{
         width: 100%;
         margin: auto;
+    }
+
+}
+@media(max-width: 1000px){
+    .send-cv-container{
+        width: 90%;
     }
 }
 .section-2{
@@ -142,35 +148,36 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.send-cv-section{
-    width: 100%;
-    max-width: 1960px;
-    position: relative;
-    display: flex;
+.section-4{
+    min-height: 400px;
+    width: 90%;
+    margin: 70px auto 70px auto;
     justify-content: center;
-}
-.send-cv-title{
-    padding: 100px 0px 100px 0px;
-    width: 70%;
-    min-width: 400px;
     text-align: center;
-    margin: auto;
-    color: rgb(70, 0, 110);
-
 }
-.send-cv-title a{
+
+.send-cv-statement{
+    font-size: 1.5rem;
+    font-weight: 400;
+    transform: 0.5s;
+}
+
+.send-cv-link:hover{
+    text-decoration: underline;
+}
+.send-cv-statement-container{
+    padding: 50px;
+}
+.send-cv-link-container{
+    padding-bottom: 50px;
+}
+.send-cv-link{
     text-decoration: none;
-    color: rgb(116, 0, 183);
+    color: purple;
+    font-size: 1.2rem;
+    font-weight: 600;
     padding: 30px;
-
-    border-radius: 8px;
-    background: linear-gradient(0.25turn,
-    rgba(235, 106, 252, 0.7),
-    rgba(138, 106, 252, 0.7) );
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    font-size: clamp(1.5rem, 2vw, 3rem);
 }
-
 .why-choose-us-list{
     display: block;
     list-style: none;

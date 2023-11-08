@@ -10,6 +10,7 @@
 /* body styling, this will be in general to all of the pages
 all body of each of the pages will have the same design */
 body{
+  padding-top: 100px;
   margin: auto;
   background-position: center;
   max-width: 1960px;
@@ -17,6 +18,7 @@ body{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: 'Lato', sans-serif;
   font-weight: 100;
+  background: rgb(238, 238, 238);
 }
 
 .container{
@@ -84,8 +86,8 @@ body{
   max-height: 864px;
   min-height: 500px;
   background:linear-gradient(
-    rgba(0, 0, 0, 0.3), 
-    rgba(0, 0, 0, 0.6)
+    rgba(146, 146, 146, 0.1), 
+    rgba(0, 0, 0, 0.5)
   ), url(../images/img2.jpg); 
   background-size: cover;
   background-position: center;
@@ -422,16 +424,29 @@ iframe{
   padding: 10px 30px 10px 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
   background: rgb(153, 0, 255);
   text-decoration: none;
   font-weight: 400;
   color: white;
   margin-top: 30px;
 }
+@media(max-width:1544px){
+  .bus-route-info-container{
+    flex-direction: column;
+  }
+  .bus-route-info-text-container{
+    margin-bottom:30px;
 
+  }
+}
 
 /* responsive elements */
+@media(max-width:1200px){
+  .bus-route-info-container{
+    flex-direction: column;
+
+  }
+}
 @media (max-width: 800px){
   .landing-page-container{
     background:linear-gradient(
@@ -551,40 +566,6 @@ iframe{
 
 
 
- /* ========================================== */
- /*            TRANSITIONS + ANIMATIONS        */
- /* ========================================== */
- .fade-in{
-  opacity: 1s;
-  filter: blur(10px);
-  transform: translateY(10px);
-  transition: opacity 0.2s;
-}
-.delay-trans{
-  transition-delay: 1s;
-}
-.fade-in.appear{
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
-}
 
 
-.from-left{
-  transform: translateY(20px);
-}
-.from-right{
- transform: translateY(20px);
-}
-.from-left, .from-right{
-  filter: blur(5px);
- transition:
-     opacity 0.5s ease-in,
-     transform 0.5s ease-in;
- opacity: 0;
-}
-.from-left.appear, .from-right.appear{
- transform: translateY(0);
- opacity: 1;
- filter: blur(0);
-}
+

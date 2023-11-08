@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="stylesheet/navbar.css">
 <link rel="stylesheet" href="stylesheet/footerstyle.css">
 <link rel="stylesheet" href="stylesheet/animation.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Home - Glytown Care</title>
 <link rel="icon" type="image/x-icon" href="../images/logo.png">
 
@@ -27,9 +27,20 @@
       <li class="nav-item"> 
         <a class="nav-link active-nav" aria-current="page" href="#">Home</a>
       </li>
-      <li class="nav-item">
+      <div class="dropdown">
+        <li class="nav-item">
+          <a href="pages/about-us.html" class="nav-link">About Us <i class="fa fa-caret-down"></i></a>
+          
+        </li>
+        
+        <div class="dropdown-content">
+          <a href="pages/about-us.html#services-section">Services</a>
+          <a href="pages/about-us.html#facilities-section">Facilities</a>
+        </div>
+      </div> 
+      <!-- <li class="nav-item">
         <a class="nav-link" href="pages/about-us.html">About Us</a>
-      </li>    
+      </li>     -->
       <li class="nav-item">
         <a class="nav-link" href="pages/careers.html">Careers</a>
       </li>

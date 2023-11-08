@@ -19,8 +19,8 @@ section{
     width: 100vw;
     max-width: 1960px;
     background:linear-gradient(
-        rgba(224, 217, 217, 0.2), 
-        rgba(0, 0, 0, 0.5)
+        rgba(243, 243, 243, 0.1), 
+        rgba(0, 0, 0, 0.2)
       ), url(../images/front.JPG); 
     background-size: cover;
     background-position: center;
