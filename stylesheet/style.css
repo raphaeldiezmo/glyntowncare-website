@@ -114,10 +114,10 @@ body{
 }
 .banner-text{
   margin-top: 5px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   width: 50svw;
-  font-weight: 100;
-  letter-spacing: 0.5px;
+  font-weight: 300;
+  letter-spacing: 0.25px;
   color: rgb(255, 255, 255);
  
 }
@@ -167,6 +167,8 @@ body{
   text-align: center;
   padding: 70px 0 70px 0;
   display: flex;
+  background: url(/images/ai-generated-pic-1.jpg) cover no-repeat;
+  height: 400px;
   justify-content: center;
   align-items: center;
 }
