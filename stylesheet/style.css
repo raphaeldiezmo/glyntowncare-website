@@ -69,7 +69,7 @@ body{
 }
 .paragraph{
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 500;
   color: black;
 }
 .padding-bottom-10{
@@ -116,7 +116,7 @@ body{
   margin-top: 5px;
   font-size: 1.5rem;
   width: 50svw;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.25px;
   color: rgb(255, 255, 255);
  
@@ -199,7 +199,7 @@ body{
   max-height: 540px;
   color: rgb(28, 0, 71);
   text-align: left;
-
+  font-weight: 400;
 
 }
 
@@ -251,7 +251,7 @@ body{
 
 .abt-us-card p{
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 500;
 
   padding-bottom: 50px;
   width: 70%;
@@ -490,6 +490,7 @@ iframe{
   }
   .paragraph{
     font-size: 0.85rem;
+    
   }
   .bus-link{
     font-size: 0.85rem;

@@ -72,6 +72,7 @@
     width: 80%;
     min-width: 320px;
     text-align: left;
+    font-weight: 500;
     margin: auto;
     margin-top: 30px;
 
@@ -81,6 +82,7 @@
     font-size: 1.1rem;
     text-align: center;
     line-height: 1.5rem;
+    font-weight: 500;
     padding-bottom: 30px;
 }
 .section-1{
@@ -88,6 +90,10 @@
     margin:auto;
 
 }
+
+
+
+
 @media (max-width: 1200px){
     .section-1, .section-4{
         flex-direction: column;
@@ -106,6 +112,8 @@
         width: 90%;
     }
 }
+
+
 .section-2{
     padding: 30px;
     width: 80%;
@@ -136,6 +144,7 @@
     justify-content: space-evenly;
     padding: 30px;
     align-items: center;
+    font-weight: 400;
     font-size: 1.1rem;
     min-width: 350px;
     width: 20vw;
@@ -187,7 +196,38 @@
 }
 .why-choose-us-item{
     padding: 10px;
+    font-weight: 400;
 }
 .why-choose-us-item b{
     color: rgb(0, 110, 0);
 }
+.staff-perks-title
+{
+    width: 90%;
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+}
+.staff-perks-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.staff-perks-card img{
+    width: 100%;
+}
+.staff-perks-card h2{
+    padding: 15px 0 15px 0;
+}
+.staff-perks-card{
+    width: 30%;
+    min-width: 350px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+
+}
+
