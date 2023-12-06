@@ -132,13 +132,13 @@
     display: flex;
     list-style: none;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 .item{
     height: 150px;
-    margin-top: 20px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -212,7 +212,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     width: 90%;
     margin: auto;
 }
@@ -225,7 +225,6 @@
 .staff-perks-card{
     width: 30%;
     min-width: 350px;
-    margin: auto;
     padding: 20px;
     border-radius: 8px 8px 0 0;
 
