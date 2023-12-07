@@ -170,11 +170,10 @@ section{
 .service-item{
     width: 30%;
     overflow: hidden;
-    margin: max(20px, 2vw);
+    margin: 15px;
     background: linear-gradient(0.25turn,
                 rgba(235, 106, 252, 0.2),
                 rgba(138, 106, 252, 0.2) );    
-    border-radius: 8px;
     text-align: left;
     flex-basis: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

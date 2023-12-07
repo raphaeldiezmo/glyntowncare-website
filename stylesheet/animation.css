@@ -6,8 +6,8 @@
  .fade-in{
   opacity: 0;
   filter: blur(1px);
-  transform: translateY(-20px);
-  transition: 0.5s;
+  transform: translateY(-50px);
+  transition: 1.2s;
 }
 .delay-trans{
   transition-delay: 0.25s;
@@ -30,15 +30,15 @@
 
 
 .from-left{
-  transform: translateY(20px);
+  transform: translateY(50px);
 }
 .from-right{
- transform: translateY(20px);
+ transform: translateY(50px);
 }
 .from-left, .from-right{
   filter: blur(5px);
  transition:
-    0.5s ;
+    1.2s ;
  opacity: 0;
 }
 .from-left.appear, .from-right.appear{
