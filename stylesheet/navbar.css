@@ -121,29 +121,32 @@ header.hidden{
   .burger-menu.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
+  .dropdown{
+    display: inline-block;
+  }
   .nav {
     top: -3%;
-    border-radius: 0;
+    padding: 100px 0 100px 0;
     right: -150%;
-    gap: 0;
-    text-transform: capitalize;
-    font-size: 1rem;
     position: fixed;
     flex-direction: column;
-    background: linear-gradient(to right, #fff, #db9dff);
     width: 100%;
-    height: 100%;
-    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
     transition: 0.5s;
+    background: linear-gradient(to right, #fff, #db9dff);
+
   }
 
   .nav-item {
-    margin: 16px 0;
     text-transform: uppercase;
     font-size: 3rem;
   }
-
+  .nav-link{
+    font-size: 2rem;
+  }
   .nav.active {
     right: 0;
   }

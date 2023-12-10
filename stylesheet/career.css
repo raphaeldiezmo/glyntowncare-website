@@ -187,6 +187,8 @@
     font-weight: 600;
     padding: 30px;
 }
+
+
 .why-choose-us-list{
     display: block;
     list-style: none;
@@ -201,6 +203,9 @@
 .why-choose-us-item b{
     color: rgb(0, 110, 0);
 }
+
+
+/* staff perks section styles */
 .staff-perks-title
 {
     width: 90%;
@@ -222,10 +227,15 @@
 .staff-perks-card h2{
     padding: 15px 0 15px 0;
 }
+.staff-perk-text{
+    padding: 20px;
+}
 .staff-perks-card{
     width: 30%;
+    margin: 15px;
     min-width: 350px;
-    padding: 20px;
+    background-color: rgb(244, 242, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px 8px 0 0;
 
 }

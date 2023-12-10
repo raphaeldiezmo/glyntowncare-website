@@ -152,14 +152,17 @@ body{
   width: 200px;
   height: 35px;
   font-size: 1rem;
-  border-radius: 10px;
-  background: rgb(128, 0, 202);
+  background: rgba(177, 43, 255,0.5);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-weight: bold;
   color: white;
   border: none;
+  transition: 1s ease;
 }
-
+.contact-us-btn:hover, .learn-more-btn:hover{
+  background: rgba(177, 43, 255,1);
+  border-radius: 8px;
+}
 
 /* simple statement styles */
 #simple-statement{
@@ -175,7 +178,7 @@ body{
 .statement{
   width: 50vw;
   max-width: 1200px;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   color: rgb(70, 0, 110);
 }
