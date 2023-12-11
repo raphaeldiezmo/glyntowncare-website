@@ -10,7 +10,6 @@
 /* body styling, this will be in general to all of the pages
 all body of each of the pages will have the same design */
 body{
-  padding-top: 100px;
   margin: auto;
   background-position: center;
   max-width: 1960px;
@@ -86,9 +85,9 @@ body{
   max-height: 864px;
   min-height: 500px;
   background:linear-gradient(
-    rgba(6, 6, 6, 0.5), 
-    rgba(0, 0, 0, 0.3)
-  ), url(../images/img2.jpg); 
+    rgba(6, 6, 6, 0), 
+    rgba(0, 0, 0, 0)
+  ), url(../images/front-bg.jpg); 
   background-size: cover;
 
   background-position: center;
@@ -455,13 +454,14 @@ iframe{
     flex-direction: column;
 
   }
+  .landing-page-container{
+    background-image: url(../images/front-bg-smaller.jpg);
+    background-position: bottom right;
+  }
 }
 @media (max-width: 800px){
   .landing-page-container{
-    background:linear-gradient(
-      rgba(0, 0, 0, 0.3), 
-      rgba(0, 0, 0, 0.6)
-    ), url(../images/img2.jpg) no-repeat center fit; 
+  
     justify-content: center;
   
   }

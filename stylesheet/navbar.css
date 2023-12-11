@@ -8,17 +8,18 @@ header {
   display: flex;
   position: fixed;
   transition: 0.3s;
-backdrop-filter: blur(5px);
   justify-content: center;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
   /* background: linear-gradient(90deg, rgba(255, 255, 255,0.9) 0%, rgba(255, 255, 255, 0.8) 44%,rgba(143, 51, 219, 0.8) 100%); */
 }
 header.hidden{
   top: -110px;
+
 }
+
 .nav-container {
-  width: 90%;
+  width: 100%;
   padding: 0 20px;
 
 }
@@ -31,6 +32,7 @@ header.hidden{
 }
 .navbar-brand-container{
   width: 10vw;
+  margin-left: 2%;
 }
 .navbar-brand {
   mix-blend-mode: multiply;
@@ -63,19 +65,19 @@ header.hidden{
   position: relative;
   text-decoration: none;
   text-transform: capitalize;
-  color: #16004d;
-  /* text-shadow: 0.25px 0.25px 2px rgba(81, 67, 21, 0.8); */
+  color: #3d0073;
   font-size: 1rem;
   font-family:Helvetica, sans-serif;
   font-weight: 400;
   padding-bottom: 0.5em;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .nav-link:after {
   content: "";
   position: absolute;
-  background-color: #16004d;
+  background-color:#3d0073;
+  ;
   height: 2px;
   width: 0;
   left: 0;
@@ -88,7 +90,7 @@ header.hidden{
 }
 
 .active-nav {
-  border-bottom:#16004d 0.14em solid;
+  border-bottom:#3d0073 0.14em solid;
 }
 
 .burger-menu {
@@ -112,15 +114,16 @@ header.hidden{
 
 .career-link{
   background-color: rgba(209, 149, 255,0);
-  color: rgb(66, 0, 136);
-  border: 2px solid;
+  color: #3d0073;
+  border: 1px solid;
   padding:10px 30px 10px 30px;
-  border-radius: 10px;
   font-weight: 800;
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: capitalize;
   transition: 0.5 ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+
 
 }
 .career-link:hover{
@@ -161,15 +164,15 @@ header.hidden{
   }
   .career-link{
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
   }
   .nav-item {
-    text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 1.7rem;
   }
   .nav-link{
-    font-size: 2rem;
+    text-transform: capitalize;
+    font-size: 1.7rem;
   }
   .nav.active {
     right: 0;

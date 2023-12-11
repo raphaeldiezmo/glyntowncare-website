@@ -54,8 +54,13 @@ let prevScrollpos = window.pageYOffset;
 
         window.onscroll = function() {
             let currentScrollPos = window.pageYOffset;
+            let navs = document.querySelector('.nav-link');
+           
+
             if (currentScrollPos <= 100){
               document.querySelector('header').classList.remove('hidden');
+   
+
             }
             else{
               if (prevScrollpos > currentScrollPos) {
