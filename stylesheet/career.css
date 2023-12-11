@@ -157,20 +157,29 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
+/* SEND CV SECTION */
 .section-4{
     min-height: 400px;
     width: 90%;
     margin: 70px auto 70px auto;
     justify-content: center;
-    text-align: center;
+    text-align: right;
+    letter-spacing: 1px;
 }
 
-.send-cv-statement{
-    font-size: 1.5rem;
-    font-weight: 400;
+.send-cv-sentence{
+    font-size: 1.7rem;
+    font-weight: 500;
+    width: 80%;
+    text-align: right;
     transform: 0.5s;
 }
-
+.send-cv-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 .send-cv-link:hover{
     text-decoration: underline;
 }
@@ -182,13 +191,17 @@
 }
 .send-cv-link{
     text-decoration: none;
-    color: purple;
+    color: rgb(251, 251, 251);
+    text-align: center;
+    width: 200px;
     font-size: 1.2rem;
+    
+    background: purple;
     font-weight: 600;
-    padding: 30px;
+    padding: 10px 20px 10px 20px;
 }
 
-
+/* WHY CHOOSE US SECTION */
 .why-choose-us-list{
     display: block;
     list-style: none;
