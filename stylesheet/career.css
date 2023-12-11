@@ -113,7 +113,6 @@
     }
 }
 
-
 .section-2{
     padding: 30px;
     width: 80%;
@@ -253,3 +252,19 @@
 
 }
 
+
+
+@media(max-width: 550px){
+    .send-cv-sentence{
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        font-size: 1.2rem;
+        padding: 20px 0 20px 0;
+    }
+    .send-cv-content{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
