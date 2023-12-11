@@ -568,13 +568,13 @@ iframe{
 }
 
 
-@media (max-width: 400px){
+@media (max-width: 450px){
   .abt-us-card{
     width: 95%;
     padding: 0px;
   }
   .join-us-title{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
