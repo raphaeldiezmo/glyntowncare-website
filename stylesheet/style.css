@@ -151,8 +151,8 @@ body{
 }
 
 .contact-us-btn, .learn-more-btn{
-  margin-top: 20px;
-  margin-right: 10px;
+  
+  margin: 20px 10px 0px 10px;
   width: 200px;
   height: 35px;
   font-size: 1rem;
