@@ -90,7 +90,7 @@ body{
 /* home section style */
 .landing-page-container{
   margin: auto;
-  height: 80svh;
+  height: 90svh;
   max-height: 864px;
   min-height: 500px;
   background:linear-gradient(
@@ -197,24 +197,6 @@ body{
   width: 100%;
   
 }
-/* simple statement styles */
-#simple-statement{
-  width: 100%;
-  text-align: center;
-  padding: 70px 0 70px 0;
-  display: flex;
-  background: url(/images/ai-generated-pic-1.jpg) cover no-repeat;
-  height: 400px;
-  justify-content: center;
-  align-items: center;
-}
-.statement{
-  width: 50vw;
-  max-width: 1200px;
-  font-size: 3rem;
-  font-weight: bold;
-  color: rgb(70, 0, 110);
-}
 
 .card-img{
   height: 50vh;
@@ -235,6 +217,7 @@ body{
   width: 100%;
   max-width: 800px;
   flex: 40%;
+  background: white;
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
@@ -249,14 +232,13 @@ body{
   flex-direction: column;
   color: rgb(34, 0, 128);
   padding: 30px;
-  background: white;
 }
 
 
 
 .card-title{
   font-size: 2.5rem;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   font-family: 'Lato', sans-serif;
 }
 
@@ -461,12 +443,12 @@ iframe{
     background-position: bottom right;
   }
 }
-@media (max-width: 1057px){
-  .statement{
-    font-size: 2rem;
+
+@media (max-width: 947px){
+  .card-container{
+    min-width: 250px;
   }
 }
-
 @media (max-width: 800px){
   .landing-page-container{
   
@@ -494,9 +476,7 @@ iframe{
     width: 90%;
     text-align: center;
   }
-  .statement{
-    font-size: 1.5rem;
-  }
+
 
   .about-us-container{
     height: auto;
@@ -519,13 +499,13 @@ iframe{
     width: 90%;
     font-size: 0.9rem;
   }
- .abt-us-card-content{
-  flex: 40%;
-  padding-top: 20px;
-  margin-left: 0px;
-  font-size: 1.5rem;
-  text-align: center;
- }
+  .abt-us-card-content{
+    flex: 40%;
+    padding-top: 20px;
+    margin-left: 0px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
   .abt-us-card{
     margin-bottom: 30px;
@@ -533,13 +513,7 @@ iframe{
     padding: 0;
     flex-direction: column;
   }
-  .card-2{
-
-    flex-direction: column-reverse;
-  }
-  .statement{
-    width: 80%;
-  }
+  
   .location-container-inner{
     flex-direction: column;
   }
@@ -550,24 +524,6 @@ iframe{
   }
   .bus-route-title{
     font-size: 1.5rem;
-  }
-  #contact-form{
-    padding-top: 30px;
-  }
-  .form-item{
-    width: 95%;
-    margin-left: 2.5%;
-    padding: 0;
-  }
-  .form-item input, .form-item textarea{
-    width: 95%;
-    margin-left: 2.5%;
-  }
-  .hiqa-container{
-    padding: 0px;
-    width: 100%;
-    text-align: center;
-
   }
 
 }
@@ -588,8 +544,11 @@ iframe{
 
 
 
-
-
+@media (max-width: 480px){
+  .card-container{
+    margin-bottom: 20px;
+  }
+}
 
 
 
