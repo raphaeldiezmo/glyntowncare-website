@@ -1,5 +1,12 @@
 
-
+.flex-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 80%;
+    margin: auto;
+}
 .career-header-img-container{
     margin-top: -10px;
 
@@ -33,7 +40,7 @@
     font-size: clamp(3rem, 10vw, 10rem);
 }
 .title-container p{
-    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    font-size: 1.5rem;
     color: white;
     width: 70%;
     margin:auto;
@@ -51,11 +58,13 @@
     font-weight: 600;
     padding: 10px 40px 10px 40px;
     transition: 0.2s ease;
+
 }
 
 .send-cv-link-1:hover{
-    color: rgb(54, 1, 98);
+    color: rgb(248, 248, 248);
     background: rgba(108, 0, 249, 0.976);
+    transition: 0.2s ease;
 
 }
 
@@ -66,14 +75,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
-.career-section-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-}
 
 .career-section-photo img{
     flex-basis: 50%;
@@ -82,9 +86,10 @@
     max-width: calc(1960px/2);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.career-section h2{
+.career-section h2, .core-value-title{
     font-size: clamp(1.2rem, 3vw, 2rem);
-
+    width: 100%;
+    text-align: center;
 }
 .career-section p{
     font-size: clamp(1.4rem, 3vw, 1.6rem);
@@ -150,17 +155,17 @@
     display: flex;
     list-style: none;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .item{
     height: 150px;
-    margin: 10px;
+    margin: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 30px;
+    padding:30px;
     align-items: center;
     font-weight: 400;
     font-size: 1.1rem;
@@ -168,7 +173,7 @@
     width: 20vw;
     max-width: calc(1960px*0.3);
     text-align: center;
-    border-radius: 8px;
+    border-radius: 2px;
     background: linear-gradient(0.25turn,
                 rgba(235, 106, 252, 0.2),
                 rgba(138, 106, 252, 0.2) ); 
@@ -247,9 +252,9 @@
 .staff-perks-row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: stretch;
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 .staff-perks-card img{

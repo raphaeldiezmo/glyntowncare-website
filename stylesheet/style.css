@@ -29,6 +29,15 @@ body{
   width: 90%;
   margin: auto;
 }
+
+.flex-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 90%;
+  margin: auto;
+}
 /* general styling */
 .max-width-600{
   max-width: 70%;
@@ -136,18 +145,6 @@ body{
   }
 }
 
-.visiting-hours-link{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 1rem;
-  padding: 10px 30px 10px 30px;
-  margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-  font-weight: bolder;
-  background: rgba(0, 153, 0,0.9);
-}
 
 .contact-us-btn, .learn-more-btn{
   
@@ -167,6 +164,39 @@ body{
   border-radius: 8px;
 }
 
+/* socials and visiting times section styles */
+.img-cont{
+  width: 150px;
+  margin: auto;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.clock-img
+{
+  width: 15%;
+  min-width: 100px;
+}
+.item-container{
+  padding: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.item-card{
+  flex: 40%;
+  margin: 15px;
+  min-width: 350px;
+  text-align: center;
+  width: 100%;
+  
+}
 /* simple statement styles */
 #simple-statement{
   width: 100%;
@@ -186,29 +216,6 @@ body{
   color: rgb(70, 0, 110);
 }
 
-.abt-us-card-container{
-  width: 100%;
-  max-width: 1960px;
-  margin: auto;
-  overflow: hidden;
-
-}
-.abt-us-card{
-  display: flex;
-  width: 80%;
-  padding: 30px;
-  margin:auto;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  height: 50vh;
-  max-height: 540px;
-  color: rgb(28, 0, 71);
-  text-align: left;
-  font-weight: 400;
-
-}
-
 .card-img{
   height: 50vh;
   min-height: 300px;
@@ -219,53 +226,48 @@ body{
   align-items: center;
 
 }
-.service-card-img{
-  background: url(../images/img1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll; 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 8px;
-  flex: 50%;
+
+/* abt-us-card-container */
+.abt-us-card-container{
+  width: 100%;
 }
-.facilities-card-img{
-  background: url(../images/library.JPG);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.card-container{
+  width: 100%;
+  max-width: 800px;
+  flex: 40%;
+  overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 8px;
-  background-attachment: scroll; 
-  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+
 
 }
+
+.card-text-content{
+  display: flex;
+  flex-direction: column;
+  color: rgb(34, 0, 128);
+  padding: 30px;
+  background: white;
+}
+
+
 
 .card-title{
   font-size: 2.5rem;
   padding-bottom: 30px;
   font-family: 'Lato', sans-serif;
 }
-.abt-us-card-content{
-  flex: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 
-.abt-us-card p{
-  font-size: 1rem;
-  font-weight: 500;
 
-  padding-bottom: 50px;
-  width: 70%;
-  
+.card-img{
+  width: cover;
 }
 .card-link{
   width: 300px;
   font-size: 1.1rem;
+  margin-top: 30px;
   background: none;
   font-weight: bolder;
   color: rgb(98, 0, 137);
@@ -459,6 +461,12 @@ iframe{
     background-position: bottom right;
   }
 }
+@media (max-width: 1057px){
+  .statement{
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 800px){
   .landing-page-container{
   
@@ -561,10 +569,7 @@ iframe{
     text-align: center;
 
   }
-  .hiqa-link-statement{
-    font-size: 1.5rem;
-    width: 99%;
-  }
+
 }
 
 
