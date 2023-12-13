@@ -92,7 +92,9 @@ header.hidden{
 .active-nav {
   border-bottom:#3d0073 0.14em solid;
 }
-
+.spacer{
+  letter-spacing: 3px;
+}
 .burger-menu {
   display: none;
   cursor: pointer;

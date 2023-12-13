@@ -78,7 +78,7 @@ body{
 .paragraph{
   font-size: 1rem;
   font-weight: 500;
-  color: black;
+
 }
 .padding-bottom-10{
   padding-bottom: 10px;
@@ -87,6 +87,7 @@ body{
   max-height: 1080px;
   min-height: 500px;
 }
+
 /* home section style */
 .landing-page-container{
   margin: auto;
@@ -487,10 +488,7 @@ iframe{
     font-size: 1.5rem;
 
   }
-  .paragraph{
-    font-size: 0.85rem;
-    
-  }
+
   .bus-link{
     font-size: 0.85rem;
   }
@@ -549,6 +547,5 @@ iframe{
     margin-bottom: 20px;
   }
 }
-
 
 
