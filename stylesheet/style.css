@@ -76,7 +76,7 @@ body{
   font-size: 3rem;
 }
 .paragraph{
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
 
 }
@@ -166,50 +166,60 @@ body{
 }
 
 /* socials and visiting times section styles */
-.img-cont{
-  width: 150px;
-  margin: auto;
-  height: 70px;
+
+
+.item-container{
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  width: 100%;
+  flex-direction: column;
 
 }
-.clock-img
-{
-  width: 15%;
-  min-width: 100px;
-}
-.item-container{
-  padding: 70px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 60%;
-  margin: auto;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
 .item-card{
-  flex: 40%;
-  margin: 15px;
-  min-width: 350px;
+  display: flex;
+  flex-direction: row;
   text-align: center;
   width: 100%;
   
 }
+.img-cont{
+  flex: 50%;
+  width: 50%;
+}
+.img-cont img{
+  width: 100%;
+  
+  
+}
+.text-content-container{
+  flex: 50%;
+  width: 100%;
+  padding: 30px;
+  display: flex;
 
+  justify-content: center;
+  align-items:center;
+}
+.text-content{
+  padding: 30px;
+  margin: auto;
+  text-align: left;
+}
+.text-content h1{
+  padding: 0 0 30px 0;
+}
 .card-img{
   height: 50vh;
+  flex: 50%;
   min-height: 300px;
   max-height: 540px;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+
 
 }
-
+.card-info{
+  text-align: left;
+}
 /* abt-us-card-container */
 .abt-us-card-container{
   width: 100%;

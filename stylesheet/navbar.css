@@ -7,9 +7,10 @@ header {
   margin: auto;
   display: flex;
   position: fixed;
+  backdrop-filter: blur(8px);
   transition: 0.3s;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
   /* background: linear-gradient(90deg, rgba(255, 255, 255,0.9) 0%, rgba(255, 255, 255, 0.8) 44%,rgba(143, 51, 219, 0.8) 100%); */
 }

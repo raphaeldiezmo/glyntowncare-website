@@ -57,18 +57,18 @@ let prevScrollpos = window.pageYOffset;
             let navs = document.querySelector('.nav-link');
            
 
-            if (currentScrollPos <= 100){
-              document.querySelector('header').classList.remove('hidden');
+            // if (currentScrollPos <= 100){
+            //   document.querySelector('header').classList.remove('hidden');
    
 
-            }
-            else{
-              if (prevScrollpos > currentScrollPos) {
-                document.querySelector('header').classList.remove('hidden');
-            } else {
-                document.querySelector('header').classList.add('hidden');
-            }
-            }
+            // }
+            // else{
+            //   if (prevScrollpos > currentScrollPos) {
+            //     document.querySelector('header').classList.remove('hidden');
+            // } else {
+            //     document.querySelector('header').classList.add('hidden');
+            // }
+            // }
             
 
             prevScrollpos = currentScrollPos;
