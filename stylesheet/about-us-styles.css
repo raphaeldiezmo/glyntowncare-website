@@ -14,7 +14,7 @@ section{
     position: relative;
 }
 .first-part-of-abt-us-section{
-    height: 90vh;
+    height: 50vh;
     max-height: 864px;
     width: 100vw;
     max-width: 1960px;
@@ -356,8 +356,8 @@ section{
 }
 
 
-@media (max-width: 400px){
-  
+@media (max-width: 450px){
+    
     .mission-vision-container{
         width: 98%;
     }
@@ -372,6 +372,10 @@ section{
         margin-right: 0px;
      
     }
+    .service-item{
+        width: 100%;
+      }
+
 }
 
 

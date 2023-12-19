@@ -36,15 +36,7 @@
     justify-content: space-evenly;
     align-items: stretch;
   }
-.fa-facebook-square{
-  color: blue;
-}
-.fa-linkedin-square{
-  color: rgb(29, 146, 249);
-}
-.fa-instagram{
-  color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(158,27,104,1) 22%, rgba(0,212,255,1) 100%);;
-}
+
 .contact-card-container{
   padding-bottom: 30px;
   width: 90%;
@@ -53,7 +45,6 @@
 }
 .contact-card-container-inner{
   margin: auto;
-  color: rgb(70, 0, 110);
   background-color: rgba(239, 234, 255, 0.5);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
@@ -67,6 +58,8 @@
 }
 .contact-card-title{
   padding-top: 30px;
+  font-weight: 700;
+  font-size: 2rem;
 }
 .contact-card-phrase{
   padding: 40px 40px 20px 40px;
@@ -74,9 +67,9 @@
 }
 .phone-number, .email{
   text-decoration: none;
-  color: rgb(145, 55, 248);
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 700;
 }
 .bus-route-title{
   font-size: 1.5rem;
@@ -163,6 +156,21 @@
   
   .location-in-contact-us{
     width: 100%;
+  }
+}
+
+@media (max-width: 480px){
+  .inner-container{
+    width: 100%;
+  }
+  .bus-route-text-content{
+    padding: 0;
+  }
+  .bus-information-step-by-step-list{
+    width: 80%;
+  }
+  iframe{
+    margin: 0;
   }
 }
 

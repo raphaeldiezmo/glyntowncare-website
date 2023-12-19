@@ -27,7 +27,6 @@ header.hidden{
 .navbar {
   margin: auto;
   display: flex;
-  min-height: 100px;
   justify-content: space-between;
 }
 .navbar-brand-container{
@@ -65,10 +64,10 @@ header.hidden{
   position: relative;
   text-decoration: none;
   text-transform: capitalize;
-  color: #3d0073;
+  color: #1b0033;
   font-size: 1rem;
   font-family:Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   padding-bottom: 0.5em;
   letter-spacing: 1px;
 }
@@ -111,8 +110,13 @@ header.hidden{
   transition: all 0.3s ease;
   background-color: #4f00aa;
 }
+/* .bar:nth-last-child(1){
+  width: 10px;
+}
 
-
+.bar:nth-last-child(2){
+  width: 20px;
+} */
 
 .career-link{
   background-color: rgba(209, 149, 255,0);
@@ -179,6 +183,34 @@ header.hidden{
   .nav.active {
     right: 0;
   }
+}
+@media (max-width: 480px){
+  .navbar-brand-container{
+    margin-left: 0;
+  }
+  .navbar-brand {
+    mix-blend-mode: multiply;
+    width: 100%;
+    min-width: 90px;
+    max-width: 140px;
+  }
+
+  .burger-menu {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: #32006b;
+  }
+  
 }
 
 

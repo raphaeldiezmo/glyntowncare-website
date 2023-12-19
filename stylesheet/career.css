@@ -101,7 +101,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .career-section h2, .core-value-title{
-    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-size: 2rem;
     width: 100%;
     text-align: center;
 }
@@ -280,6 +280,7 @@
 .staff-perk-text{
     padding: 20px;
 }
+
 .staff-perks-card{
     width: 30%;
     margin: 15px;
@@ -307,5 +308,8 @@
     }
     .title-container p{
         font-size: 1rem;
+    }
+    .staff-perks-card{
+        width: 100%;
     }
 }
