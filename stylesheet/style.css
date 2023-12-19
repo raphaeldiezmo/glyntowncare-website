@@ -168,8 +168,8 @@ body{
   margin: auto;
   height: 150px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  width: 100%;
+  flex-direction: column;
 
 }
 .clock-img
@@ -188,22 +188,46 @@ body{
   justify-content: space-evenly;
 }
 .item-card{
-  flex: 40%;
-  margin: 15px;
-  min-width: 350px;
+  display: flex;
+  flex-direction: row;
   text-align: center;
   width: 100%;
   
 }
+.img-cont{
+  flex: 50%;
+  width: 50%;
+}
+.img-cont img{
+  width: 100%;
+  
+  
+}
+.text-content-container{
+  flex: 50%;
+  width: 100%;
+  padding: 30px;
+  display: flex;
 
+  justify-content: center;
+  align-items:center;
+}
+.text-content{
+  padding: 30px;
+  margin: auto;
+  text-align: left;
+}
+.text-content h1{
+  padding: 0 0 30px 0;
+}
 .card-img{
   height: 50vh;
+  flex: 50%;
   min-height: 300px;
   max-height: 540px;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+
 
 }
 .card-info{

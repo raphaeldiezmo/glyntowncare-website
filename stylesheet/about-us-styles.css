@@ -92,7 +92,6 @@ section{
     max-width: 1960px;
     overflow: hidden;
     display: flex;
-    padding-top: 30px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -107,6 +106,7 @@ section{
     flex-direction: row;
     justify-content:center;
     align-items: center;
+
 }
 
 .mission-vision-img{
@@ -114,9 +114,8 @@ section{
     flex: 50%;    
 }
 .mission-vision-img img{
-    width: 95%;
+    width: 100%;
     height: 100%;
-    border-radius: 9px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
@@ -124,20 +123,26 @@ section{
     flex: 50%;
 }
 
+
 .content-text-container{
     border-radius: 8px;
     display: flex;
-    padding: 20px;
+    padding: 30px;
     flex-direction: column;
     text-align: left;
     margin: auto;
 }
 .content-text-container h1{
     padding: 0 0 30px 0;
+    font-size: 3rem;
+}
+.content-text-container p{
+    font-size: 1.3rem;
 }
 .content-text-container p, .content-text-container h1{
     width: 100%;
     margin: auto;
+    color: rgb(35, 0, 95);
 }
 
 /* services section */
