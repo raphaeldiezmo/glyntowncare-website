@@ -14,7 +14,7 @@ section{
     position: relative;
 }
 .first-part-of-abt-us-section{
-    height: 50vh;
+    height: 90vh;
     max-height: 864px;
     width: 100vw;
     max-width: 1960px;
@@ -135,6 +135,7 @@ section{
 .content-text-container h1{
     padding: 0 0 30px 0;
     font-size: 3rem;
+    
 }
 .content-text-container p{
     font-size: 1.3rem;
@@ -142,7 +143,6 @@ section{
 .content-text-container p, .content-text-container h1{
     width: 100%;
     margin: auto;
-    color: rgb(35, 0, 95);
 }
 
 /* services section */

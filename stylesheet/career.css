@@ -291,7 +291,14 @@
 
 }
 
-
+@media(max-width: 754px){
+    .staff-perks-card, .item{
+        width: 80%;
+    }
+    .send-cv-sentence{
+        text-align: center;
+    }
+}
 
 @media(max-width: 550px){
     .send-cv-sentence{

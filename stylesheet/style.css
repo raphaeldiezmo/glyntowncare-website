@@ -168,20 +168,19 @@ body{
   margin: auto;
   height: 150px;
   display: flex;
-  width: 100%;
-  flex-direction: column;
-
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .clock-img
 {
-  width: 15%;
-  min-width: 100px;
+  width: 150px;
+  margin: auto;
 }
 .item-container{
-  padding: 100px;
+  padding: 100px 0 100px 0;
   display: flex;
-  flex-wrap: wrap;
-  width: 60%;
+  width: 70%;
   margin: auto;
   flex-direction: row;
   align-items: center;
@@ -189,24 +188,15 @@ body{
 }
 .item-card{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
-  width: 100%;
   
 }
-.img-cont{
-  flex: 50%;
-  width: 50%;
-}
-.img-cont img{
-  width: 100%;
-  
-  
-}
+
+
 .text-content-container{
   flex: 50%;
   width: 100%;
-  padding: 30px;
   display: flex;
 
   justify-content: center;
@@ -215,7 +205,7 @@ body{
 .text-content{
   padding: 30px;
   margin: auto;
-  text-align: left;
+  text-align: center;
 }
 .text-content h1{
   padding: 0 0 30px 0;
@@ -233,6 +223,7 @@ body{
 .card-info{
   color: rgb(73, 73, 73);
   font-size: 1.2rem;
+  padding: 0 30px 0 30px;
 }
 
 /* abt-us-card-container */
@@ -465,11 +456,20 @@ iframe{
     background-image: url(../images/front-bg-smaller.jpg);
     background-position: bottom right;
   }
+  .item-container{
+    width: 100%;
+  }
 }
 
 @media (max-width: 947px){
   .card-container{
     min-width: 250px;
+  }
+  .item-container{
+    flex-direction: column;
+  }
+  .banner-container{
+    width: 100%;
   }
 }
 @media (max-width: 800px){
@@ -567,7 +567,6 @@ iframe{
 
 @media (max-width: 480px){
   .card-container{
-    margin-bottom: 20px;
   }
   .item-container{
     width: 0;
@@ -575,7 +574,12 @@ iframe{
   .flex-wrapper{
     width: 100%;
   }
-
+  .item-card{
+    padding-bottom: 10px;
+  }
+  .text-content, .text-content p{
+    padding: 0;
+  }
   .content-title{
     font-size: 1.5rem;
   }
