@@ -91,13 +91,12 @@ body{
   height: 90svh;
   max-height: 864px;
   min-height: 500px;
-  background:linear-gradient(
-    rgba(6, 6, 6, 0), 
-    rgba(0, 0, 0, 0)
-  ), url(../images/front-bg.jpg); 
-  background-size: cover;
+  background: url(../images/front-bg.png); 
 
-  background-position: center;
+  background-size: clamp(400px, 90vw, 1176px);
+  background-color: rgba(152, 125, 252, 0.5);
+
+  background-position: bottom right;
   background-repeat: no-repeat;
   justify-content:flex-start;
   display: flex;
@@ -142,26 +141,36 @@ body{
     transform: translateY(0px) scale(1);
   }
 }
-
-
-.contact-us-btn, .learn-more-btn{
-  
-  margin: 20px 10px 0px 10px;
-  width: 200px;
-  height: 35px;
+.btn-container a{
+  text-decoration: none;
+}
+.btn-container{
+  width: 100%;
+  display: flex;  
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px 0px 0;
+  width: 220px;
+  padding: 10px 20px;
   font-size: 1.3rem;
-  background: rgba(177, 43, 255,0.5);
+  background: linear-gradient(to right, #8a4fff, #bd00ff); 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-weight: bold;
   color: white;
   border: none;
-  transition: 1s ease;
-}
-.contact-us-btn:hover, .learn-more-btn:hover{
-  background: rgba(177, 43, 255,1);
-  border-radius: 8px;
+  transition: 0.5s ease;
 }
 
+.btn:hover{
+  border-radius: 100px;
+}
+.btn img{
+  height: 2rem;
+}
 /* socials and visiting times section styles */
 .img-cont{
   width: 250px;
@@ -452,16 +461,14 @@ iframe{
     flex-direction: column;
 
   }
-  .landing-page-container{
-    background-image: url(../images/front-bg-smaller.jpg);
-    background-position: bottom right;
-  }
+
   .item-container{
     width: 100%;
   }
 }
 
 @media (max-width: 947px){
+
   .card-container{
     min-width: 250px;
   }
@@ -470,6 +477,7 @@ iframe{
   }
   .banner-container{
     width: 100%;
+    top: -15%;
   }
 }
 @media (max-width: 800px){
@@ -486,12 +494,16 @@ iframe{
   }
   .banner-container{
     width: 100%;
+    justify-content: center;
     align-items: center;
     margin: auto;
     text-align: center;
     left: 0;
   }
-
+  .btn-container{
+    justify-content: center;
+    align-items: center;
+  }
   .banner-title{
     font-size: 2rem;
   }
@@ -560,6 +572,9 @@ iframe{
   }
   .join-us-title{
     font-size: 1.5rem;
+  }
+  .btn-container{
+    flex-direction: column;
   }
 }
 
