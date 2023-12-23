@@ -14,47 +14,31 @@ section{
     position: relative;
 }
 .first-part-of-abt-us-section{
-    height: 90vh;
-    max-height: 864px;
-    width: 100vw;
-    max-width: 1960px;
-    background:linear-gradient(
-        rgba(243, 243, 243, 0.1), 
-        rgba(0, 0, 0, 0.2)
-      ), url(../images/front.JPG); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll; 
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    padding: 0 0 60px 0;
 }
-
-
 .abt-us-header-container{
     width: 100vw;
     max-width: 1920px;
     display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    justify-content: flex-start;
     align-items: center;
     animation: fadeDown;
 
 }
-.title-container h1{
-    font-size: clamp(3rem, 10vw, 10rem);
-    color: white;
+.abt-us-header-container span{
+    padding: 150px 0 30px 0;
+    font-weight: 400;
 }
-.title-container p{
-    font-size: 1.2rem;
-    width: 60vw;
-    min-width: 300px;
-    max-width: 900px;
-    color: white;
+.abt-us-content h2{
+    padding: 10px 0 20px 0;
+}
+.abt-us-content p{
+    padding: 10px 0 20px 0;
+}
 
-}
 @keyframes fadeDown{
     0%{
       opacity: 0;
@@ -82,7 +66,7 @@ section{
  
 }
 .abt-us-header-span{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
 }
 
@@ -138,7 +122,7 @@ section{
     
 }
 .content-text-container p{
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .content-text-container p, .content-text-container h1{
     width: 100%;
@@ -158,7 +142,7 @@ section{
 }
 
 .service-title{
-    font-size: 2.5rem;
+    font-size: 2rem;
     width: 50%;
     margin:auto;
     font-weight: 700;

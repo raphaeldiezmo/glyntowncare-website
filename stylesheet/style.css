@@ -71,7 +71,7 @@ body{
   font-size: 3rem;
 }
 .paragraph{
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   color: rgb(73, 73, 73);
 
@@ -121,13 +121,14 @@ body{
 }
 .banner-text{
   margin-top: 5px;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   width: 50svw;
+
   max-width: 600px;
   text-align: left;
   font-weight: 500;
   letter-spacing: 0.25px;
-  color: rgb(223, 223, 223);
+  color: rgb(255, 255, 255);
  
 }
 @keyframes fadeDown{
@@ -334,26 +335,18 @@ body{
 }
 .bus-flex-container{
   width: 90%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 8px;
-  background: rgba(255, 255, 255,0.5);
   height: 100%;
-
   display: flex;
-  flex-direction: column;
+  flex-wrap:wrap ;
   justify-content: center;
-  align-items: center;
-  padding: 70px 30px 70px 30px;
-  
+  /* align-items: center; */
 }
 
 .bus-route-info-text-container, .bus-route-info-important-links-container{
   flex: 50%;
-
   justify-content: center;
   align-items: center;
   display: flex;
-  flex-direction: column;
 }
 .bus-route-info-important-links-container{
   flex: 50%;
@@ -367,11 +360,12 @@ body{
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   transition: 0.6s ease;
 }
-.bus-link h3{
-  padding: 20px
+.bus-link-container{
+  display: flex;
+  flex-direction: column;
 }
 .bus-link:hover{
   text-decoration: underline;
@@ -446,9 +440,9 @@ iframe{
   margin-top: 30px;
 }
 @media(max-width:1544px){
-  .bus-route-info-container{
+  /* .bus-route-info-container{
     flex-direction: column;
-  }
+  } */
   .bus-route-info-text-container{
     margin-bottom:30px;
 
@@ -481,34 +475,35 @@ iframe{
   }
 }
 @media (max-width: 800px){
-  .landing-page-container{
-  
+  .landing-page-container, .banner-container, .btn-container{
     justify-content: center;
-  
   }
-  .bus-route-info-container{
+  .bus-route-info-container, .location-container-inner, .abt-us-card{
     flex-direction: column;
+  }
+  .banner-text, .abt-us-card p, .card-link, .bus-link{
+    width: 90%; 
+  }
+  .banner-container, .bus-info-container{
+    width: 100%;
+
   }
   .bus-route-info-text-container{
     margin-bottom: 30px;
   }
   .banner-container{
-    width: 100%;
-    justify-content: center;
     align-items: center;
     margin: auto;
     text-align: center;
     left: 0;
   }
   .btn-container{
-    justify-content: center;
     align-items: center;
   }
   .banner-title{
     font-size: 2rem;
   }
   .banner-text{
-    width: 90%;
     text-align: center;
   }
 
@@ -518,18 +513,12 @@ iframe{
     padding-bottom: 0px;
     }
 
-  .card-title{
+  .card-title, .bus-route-title{
     font-size: 1.5rem;
 
   }
-
-  .bus-link{
+  .abt-us-card p, .card-link, .bus-link{
     font-size: 1rem;
-  }
-  
-  .abt-us-card p, .card-link{
-    width: 90%;
-    font-size: 0.9rem;
 
   }
   .abt-us-card-content{
@@ -544,20 +533,12 @@ iframe{
     margin-bottom: 30px;
     height: auto;
     padding: 0;
-    flex-direction: column;
-  }
-  
-  .location-container-inner{
-    flex-direction: column;
   }
   /* bus information in media 800px */
   .bus-info-container{
-    width: 100%;
     left: 2.5%;
   }
-  .bus-route-title{
-    font-size: 1.5rem;
-  }
+
 
 }
 
@@ -592,16 +573,16 @@ iframe{
   .item-card{
     padding-bottom: 10px;
   }
-  .text-content, .text-content p{
+  .text-content, .text-content p, .bus-information-step-by-step-list{
     padding: 0;
   }
   .content-title{
     font-size: 1.5rem;
   }
-  .paragraph{
-    font-size: 1rem;
+  .bus-links-container{
+    padding: 30px 0;
   }
-  .contact-us-btn, .learn-more-btn{
+  .contact-us-btn, .learn-more-btn, .paragraph{
     font-size: 1rem;
   }
   iframe{
