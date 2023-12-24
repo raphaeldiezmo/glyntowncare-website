@@ -90,6 +90,8 @@
     padding: 50px 50px;
     width: 50%;
     margin: auto;
+    font-weight: 500;
+    color: rgb(55, 55, 55);
     text-align: center;
 }
 .career-section p{
@@ -196,37 +198,6 @@
     padding-bottom: 20px;
 }
 
-/* SEND CV SECTION */
-.section-4{
-    min-height: 400px;
-    width: 90%;
-    margin: 70px auto 70px auto;
-    justify-content: center;
-    text-align: right;
-    letter-spacing: 1px;
-}
-
-.send-cv-sentence{
-    font-size: 1.3rem;
-    font-weight: 500;
-    width: 80%;
-    text-align: right;
-    transform: 0.5s;
-}
-.send-cv-content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.send-cv-link:hover{
-    text-decoration: underline;
-}
-.send-cv-statement-container{
-    padding: 50px;
-}
-.send-cv-link-container{
-    padding-bottom: 50px;
-}
 .send-cv-link{
     text-decoration: none;
     color: rgb(251, 251, 251);

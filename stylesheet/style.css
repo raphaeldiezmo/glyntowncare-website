@@ -88,14 +88,12 @@ body{
 /* home section style */
 .landing-page-container{
   margin: auto;
-  height: 90svh;
+  height: 100dvh;
   max-height: 864px;
   min-height: 500px;
   background: url(../images/front-bg.png); 
 
-  background-size: clamp(400px, 90vw, 1176px);
-  background-color: rgba(152, 125, 252, 0.5);
-
+  background-size: clamp(400px, 60vw, 1176px);
   background-position: bottom right;
   background-repeat: no-repeat;
   justify-content:flex-start;
@@ -116,19 +114,19 @@ body{
 }
 .banner-title{
   font-size: clamp(3rem, 4vw, 5rem);
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-weight: 600;
 }
 .banner-text{
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: 1.1rem;
-  width: 50svw;
+  width: 55%;
 
   max-width: 600px;
   text-align: left;
   font-weight: 500;
   letter-spacing: 0.25px;
-  color: rgb(255, 255, 255);
+  color: rgb(82, 82, 82);
  
 }
 @keyframes fadeDown{
@@ -154,10 +152,10 @@ body{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 10px 10px 0px 0;
-  width: 220px;
-  padding: 10px 20px;
-  font-size: 1.3rem;
+  margin: 20px 10px 0px 0;
+  padding: 5px 10px 5px 0;
+  width: 180px;
+  font-size: 1rem;
   background: linear-gradient(to right, #8a4fff, #bd00ff); 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-weight: bold;
@@ -173,6 +171,18 @@ body{
   height: 2rem;
 }
 /* socials and visiting times section styles */
+.visiting-times-container{
+  padding: 70px 0;
+  width: 70vw;
+  /* background-color: RGB(134, 147, 117); */
+  margin: auto;
+}
+.visiting-times-container h1{
+  font-weight: 400;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(55,55,55);
+}
 .img-cont{
   width: 250px;
   margin: auto;
