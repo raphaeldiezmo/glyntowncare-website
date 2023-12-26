@@ -88,8 +88,8 @@ body{
 /* home section style */
 .landing-page-container{
   margin: auto;
-  height: 100dvh;
-  max-height: 864px;
+  height: 100vh;
+  max-height: 1080px;
   min-height: 500px;
   background: url(../images/front-bg.png); 
 
