@@ -36,9 +36,44 @@ section{
     padding: 10px 0 20px 0;
 }
 .abt-us-content p{
-    padding: 10px 0 20px 0;
+    padding: 10px 0;
+
+}
+.abt-us-content p:nth-child(1), .filler{
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+    margin: auto;
+    padding: 60px 0;
 }
 
+.filler:nth-child(2){
+    background: rgb(90, 76, 110);
+    color: white;
+}
+.filler:nth-child(2) p{
+    padding: 40px 0 0 0;
+    width: 60%;
+    margin: auto;
+    font-size: 1.5rem;
+    color: rgb(194, 194, 194);
+}
+.filler-3{
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    color: white;
+    padding: 60px 0;
+    background: rgb(89, 105, 89);
+}
+.filler-3 p{
+    padding: 40px 0 0 0;
+    width: 60%;
+    margin: auto;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    color: rgb(194, 194, 194);}
 @keyframes fadeDown{
     0%{
       opacity: 0;
@@ -353,7 +388,7 @@ section{
     .content-text-container p, .content-text-container {
         width: 100%;
     }
-    .content-text-container p{
+    .content-text-container p, .filler p{
         font-size: 1rem;
     }
     .facility-item{
@@ -361,10 +396,10 @@ section{
         margin-right: 0px;
      
     }
-    .service-item{
+    .service-item, .filler p, .filler-3 p{
         width: 100%;
-      }
-
+    }
+    
 }
 
 

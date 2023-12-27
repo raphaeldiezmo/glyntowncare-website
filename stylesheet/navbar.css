@@ -30,7 +30,6 @@ header.hidden{
   justify-content: space-between;
 }
 .navbar-brand-container{
-  width: 10vw;
   margin-left: 2%;
 }
 .navbar-brand {
@@ -200,7 +199,7 @@ header.hidden{
     height: 3px;
     margin: 5px 0;
     transition: all 0.3s ease;
-    background-color: #32006b;
+    background-color: #574d63;
   }
   
 }

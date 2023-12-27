@@ -73,11 +73,13 @@
     justify-content: center;
     align-items: center;
 }
-
+.career-section-container{
+    flex: 60%;
+}
 
 .career-section-photo img{
     flex-basis: 50%;
-    width: 50vw;
+    width: 100%;
     max-width: calc(1960px/2);
     border-radius: 50vw;
 }
@@ -158,6 +160,7 @@
 .service-3 .career-section-container .title{
     padding: 30px;
     text-align: left;
+   
 }
 
 

@@ -36,7 +36,7 @@ body{
   justify-content: flex-start;
   align-items: stretch;
   width: 85%;
-  margin: auto;
+  margin: 50px auto;
 }
 /* general styling */
 
@@ -172,83 +172,42 @@ body{
 }
 /* socials and visiting times section styles */
 .visiting-times-container{
-  padding: 70px 0;
-  width: 70vw;
-  /* background-color: RGB(134, 147, 117); */
+  padding: 100px 0;
+  width: 100%;
+  background-color: rgb(92, 87, 119);
   margin: auto;
 }
-.visiting-times-container h1{
-  font-weight: 400;
+.social-media-container{
+  background-color: rgb(185 187 189);
+  padding: 100px 0;
+  width: 100%;
+  margin: auto;
+}
+.visiting-times-container h1, .social-media-container h1{
+  font-weight: 300;
   text-align: center;
   font-size: 2rem;
-  color: rgb(55,55,55);
-}
-.img-cont{
-  width: 250px;
+  width: 60%;
   margin: auto;
-  height: 150px;
+  color: white;
+}
+.social-media-container h1{
+  color: black;
+}
+.socials{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.clock-img
-{
-  width: 150px;
-  margin: auto;
-}
-.item-container{
-  padding: 100px 0 100px 0;
-  display: flex;
-  width: 70%;
-  margin: auto;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.item-card{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  
-}
-
-
-.text-content-container{
-  flex: 50%;
-  width: 100%;
-  display: flex;
-
   justify-content: center;
-  align-items:center;
+  gap: 20px;
+  align-items: center;
 }
-.text-content{
-  padding: 30px;
-  margin: auto;
-  text-align: center;
+.socials .fa-facebook{
+  color: rgb(45, 45, 250);
 }
-.text-content h1{
-  padding: 0 0 30px 0;
-}
-.card-img{
-  height: 50vh;
-  flex: 50%;
-  min-height: 300px;
-  max-height: 540px;
-  width: 100%;
-  display: flex;
-
-
-}
-.card-info{
-  color: rgb(73, 73, 73);
-  font-size: 1.2rem;
-  padding: 0 30px 0 30px;
-}
-
 /* abt-us-card-container */
 .abt-us-card-container{
   width: 100%;
+
 }
 .card-container{
   width: 100%;
