@@ -35,11 +35,16 @@ section{
 .abt-us-content h2{
     padding: 10px 0 20px 0;
 }
-.abt-us-content p{
-    padding: 10px 0;
-
+.abt-us-content p {
+    padding: 10px 0;    
+    font-size: 2rem;
+    width: 60%;
+    font-weight: 400;
+    margin: auto;
+    text-align: center;
+    color: rgb(92, 92, 92);
 }
-.abt-us-content p:nth-child(1), .filler{
+.filler{
     font-size: clamp(1rem, 3vw, 1.5rem);
     text-align: center;
     width: 100%;
@@ -47,18 +52,21 @@ section{
     margin: auto;
     padding: 60px 0;
 }
-
+.filler p, .filler-3 p{
+    font-size: clamp(1rem, 0.9vw, 1.5rem);
+    width: 60%;
+    color: rgb(235, 235, 235);
+    margin: auto;
+    padding: 20px 0 0 0;
+}
+.filler h2, .filler-3 h2{
+    font-size: clamp(1.5rem, 5vw, 2rem);
+}
 .filler:nth-child(2){
     background: rgb(90, 76, 110);
     color: white;
 }
-.filler:nth-child(2) p{
-    padding: 40px 0 0 0;
-    width: 60%;
-    margin: auto;
-    font-size: 1.5rem;
-    color: rgb(194, 194, 194);
-}
+
 .filler-3{
     font-size: 2rem;
     text-align: center;
@@ -68,12 +76,7 @@ section{
     padding: 60px 0;
     background: rgb(89, 105, 89);
 }
-.filler-3 p{
-    padding: 40px 0 0 0;
-    width: 60%;
-    margin: auto;
-    font-size: clamp(1rem, 3vw, 1.5rem);
-    color: rgb(194, 194, 194);}
+
 @keyframes fadeDown{
     0%{
       opacity: 0;
@@ -293,7 +296,7 @@ section{
         margin-bottom: 20px;
         max-height: auto;
     }
-    .abt-us-info-text{
+    .abt-us-info-text, .mission-vision-container{
         width: 100%;
     }
     .abt-us-header-title{
@@ -304,10 +307,7 @@ section{
         font-size: 2.2rem;
         font-weight: 300;
     }
-    .mission-vision-container{
-        width: 80%;
-        
-    }
+   
     .content-text-container{
         text-align: center;
 
@@ -323,18 +323,17 @@ section{
 
 /* responsive styling */
 @media (max-width: 800px){
-
-    .row{
-        width: 100%;
+    .abt-us-content p, .service-item, .facility-list-container, .filler p, .filler-3 p{
+        width: 90%;
     }
-    .content-container{
+   
+    .content-container, .row, .abt-us-info-text, .abt-us-content{
         width: 100%;
     }
     .abt-us-header-container{
         flex-direction: column;
     }
     .abt-us-info-text{
-        width: 100%;       
         text-align: center;
     }
     .abt-us-header-title{
@@ -344,9 +343,6 @@ section{
         font-size: 2rem;
     }
 
-    .mission-vision-container{
-        width: 95%;
-    }
     .content-text-container{
         padding: 30px;
     }
@@ -361,7 +357,6 @@ section{
 
     .service-item{
         flex: 100%;
-        width: 90%;
         margin: auto;
         margin-bottom: 5vw;
     }
@@ -371,7 +366,6 @@ section{
     }
     .facility-list-container{
         padding:0;
-        width: 90%;
         padding-bottom: 30px;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -382,13 +376,14 @@ section{
 
 @media (max-width: 450px){
     
-    .mission-vision-container{
-        width: 98%;
-    }
+
     .content-text-container p, .content-text-container {
         width: 100%;
     }
-    .content-text-container p, .filler p{
+    .content-text-container p{
+        font-size: 1rem;
+    }
+    .filler p{
         font-size: 1rem;
     }
     .facility-item{
@@ -396,8 +391,12 @@ section{
         margin-right: 0px;
      
     }
-    .service-item, .filler p, .filler-3 p{
+    .service-item, .filler p, .filler-3 p, .filler, .filler-3{
         width: 100%;
+    }
+    .abt-us-content p{
+        width: 100%;
+        font-size: 1.5rem;
     }
     
 }

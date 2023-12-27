@@ -178,7 +178,7 @@ body{
   margin: auto;
 }
 .social-media-container{
-  background-color: rgb(185 187 189);
+  background-color: rgb(186, 202, 219);
   padding: 100px 0;
   width: 100%;
   margin: auto;
@@ -475,7 +475,9 @@ iframe{
   .banner-text{
     text-align: center;
   }
-
+  .visiting-times-container h1, .social-media-container h1{
+    width: 90%;
+  }
 
   .about-us-container{
     height: auto;
@@ -545,7 +547,7 @@ iframe{
   .text-content, .text-content p, .bus-information-step-by-step-list{
     padding: 0;
   }
-  .content-title{
+  .content-title, .visiting-times-container h1, .social-media-container h1{
     font-size: 1.5rem;
   }
   .bus-links-container{
@@ -553,6 +555,9 @@ iframe{
   }
   .contact-us-btn, .learn-more-btn, .paragraph{
     font-size: 1rem;
+  }
+  .visiting-times-container h1, .social-media-container h1{
+    width: 100%;
   }
   iframe{
     height: 500px;
