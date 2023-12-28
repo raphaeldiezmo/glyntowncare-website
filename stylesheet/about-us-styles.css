@@ -44,36 +44,33 @@ section{
     text-align: center;
     color: rgb(92, 92, 92);
 }
-.filler{
+.filler, .filler-3{
     font-size: clamp(1rem, 3vw, 1.5rem);
     text-align: center;
     width: 100%;
     font-weight: 500;
     margin: auto;
-    padding: 60px 0;
+    padding: 100px 0;
+    color: white;
+
 }
 .filler p, .filler-3 p{
-    font-size: clamp(1rem, 0.9vw, 1.5rem);
+    font-size: clamp(1rem, 3vw, 1.8rem);
     width: 60%;
+    font-weight: 300;
     color: rgb(235, 235, 235);
     margin: auto;
     padding: 20px 0 0 0;
 }
 .filler h2, .filler-3 h2{
-    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
 .filler:nth-child(2){
     background: rgb(90, 76, 110);
-    color: white;
 }
 
 .filler-3{
-    font-size: 2rem;
-    text-align: center;
-    width: 100%;
-    margin: auto;
-    color: white;
-    padding: 60px 0;
+   
     background: rgb(89, 105, 89);
 }
 
@@ -159,9 +156,7 @@ section{
     font-size: 3rem;
     
 }
-.content-text-container p{
-    font-size: 1rem;
-}
+
 .content-text-container p, .content-text-container h1{
     width: 100%;
     margin: auto;
