@@ -19,7 +19,8 @@ header.hidden{
 }
 
 .nav-container {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   padding: 0 20px;
 
 }
@@ -29,14 +30,11 @@ header.hidden{
   display: flex;
   justify-content: space-between;
 }
-.navbar-brand-container{
-  margin-left: 2%;
-}
+
 .navbar-brand {
   mix-blend-mode: multiply;
   filter: drop-shadow(0.1px 0.1px 0.1px #000000);
-  width: 100%;
-  min-width: 130px;
+  width:10vw;
   max-width: 140px;
 }
 
@@ -68,7 +66,7 @@ header.hidden{
   color: #3b3640;
   font-size: 0.85rem;
   font-family:Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   padding-bottom: 0.5em;
   letter-spacing: 1px;
 }
@@ -128,7 +126,21 @@ header.hidden{
   transition: 0.5 ease;
   color: white;
 }
-
+.contact-item{
+  font-weight: 700;
+}
+.paragraph-menu{
+  font-weight: 500;
+  width: 87.5%;
+  padding: 0;
+  text-align: center;
+}
+.navbar-brand-menu, .paragraph-menu, .contact-item{
+  display: none;
+}
+.navbar-brand-menu{
+  width: 40vw;
+}
 @media only screen and (max-width:1024px) {
   .burger-menu {
     display: block;
@@ -143,7 +155,16 @@ header.hidden{
     transform: translateY(-8px) rotate(-45deg);
   }
   
- 
+  .career-container{
+    display: none;
+  }
+  .nav-container{
+    width: 100%;
+  }
+  .contact-item, .navbar-brand-menu, .paragraph-menu{
+    display: block;
+  }
+  
   .nav {
     top: -3%;
     padding: 100px 0 100px 0;
@@ -160,19 +181,25 @@ header.hidden{
 
   }
   .career-link{
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.5rem;
 
   }
   .nav-item {
-    font-size: 1.7rem;
+    
+    font-size: 1.4rem;
   }
   .nav-link{
     text-transform: capitalize;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   .nav.active {
     right: 0;
+  }
+}
+@media (max-width: 950px){
+  .navbar-brand{
+    width: 30vw;
   }
 }
 @media (max-width: 480px){
@@ -181,8 +208,7 @@ header.hidden{
   }
   .navbar-brand {
     mix-blend-mode: multiply;
-    width: 100%;
-    min-width: 90px;
+    width: 25vw;
     max-width: 140px;
   }
 

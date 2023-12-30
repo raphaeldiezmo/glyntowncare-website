@@ -15,7 +15,14 @@
     text-align: center;
     font-size: 2rem;
 }
-
+@media(max-width:1240px){
+    .content-title{
+        font-size: 1.5rem;
+    }
+    .services-section-row {
+        width: 100%;
+    }
+}
 @media(max-width:550px){
     
     .heading-sentence p{
