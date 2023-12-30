@@ -371,29 +371,33 @@ section{
 
 @media (max-width: 450px){
     
-
+    .content-text-container h1{
+        font-size: 1.5rem;
+        padding: 0 0 10px 0;
+    }
     .content-text-container p, .content-text-container {
         width: 100%;
+        text-align: left;
     }
-    .content-text-container p{
-        font-size: 1rem;
-    }
-    .filler p{
-        font-size: 1rem;
+    .content-text-container p, .filler p{
+        font-size: 1.1rem;
     }
     .facility-item{
  
         margin-right: 0px;
-     
     }
-    .service-item, .filler p, .filler-3 p, .filler, .filler-3{
+    .filler p, .filler-3 p , .filler-3 h2{
+        width: 87.5%;
+        margin: auto;
+    }
+   
+    .service-item, .filler, .filler-3{
         width: 100%;
     }
     .abt-us-content p{
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
-    
 }
 
 

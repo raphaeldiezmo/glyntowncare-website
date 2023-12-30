@@ -26,7 +26,7 @@
 }
 .title-container{
     width: 100%;
-    padding-top: 100px;
+    padding-top: 150px;
     display: flex;
     color: rgb(0, 0, 0);
     flex-direction: column;
@@ -40,7 +40,7 @@
 .title-container p{
     font-size: 2rem;
     width: 50%;
-    margin: 20px auto 50px auto;
+    margin: 40px auto 50px auto;
 }
 .send-cv-link-1{
     text-decoration: none;
@@ -286,6 +286,12 @@
     width: 100%;
     margin: auto;
 }
+
+@media(max-width: 947px){
+    .career-flex-wrapper{
+        width: 100%;
+    }
+}
 @media(max-width: 754px){
     .staff-perks-card, .item{
         width: 80%;
@@ -301,7 +307,6 @@
 @media(max-width: 550px){
     .send-cv-sentence{
         text-align: center;
-        width: 90%;
         margin: auto;
         font-size: 1.2rem;
         padding: 20px 0 20px 0;
@@ -311,17 +316,21 @@
         justify-content: center;
         text-align: center;
     }
-    .title-container p{
+    .title-container p, .section-content p{
         font-size: 1rem;
     }
-  
+    
     .core-value-title{
         padding: 50px 0;
         text-align: left;
+        font-size: 1.5rem;
     }
-   
-    .title-text-container p, .career-flex-wrapper
-    ,.staff-perks-card, .item, .core-value-title{
+    .send-cv-sentence, .core-value-title,.title-text-container p {
+        width: 87.5%;
+
+    }
+    .career-flex-wrapper, .staff-perks-card, .item{
         width: 100%;
     }
+   
 }
