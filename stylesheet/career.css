@@ -126,7 +126,11 @@
     text-align: left;
     padding: 10px 30px;
 }
-
+/* why choose us section */
+.why-choose-us-section{
+    background: rgb(235, 235, 235);
+    padding: 0 0 50px 0;
+}
 
 @media (max-width: 1200px){
     .section-1, .section-4{
@@ -217,7 +221,7 @@
 .why-choose-us-list{
     display: block;
     list-style: none;
-    width: 90%;
+    width: 55%;
     margin: auto;
     font-size: 1.1rem;
 }
@@ -243,7 +247,7 @@
 {
     width: 90%;
     text-align: center;
-    padding: 30px 0px 30px 0px;
+    padding: 0px 0px 20px 0px;
     margin: auto;
 }
 .staff-perks-row{
@@ -275,7 +279,7 @@
 }
 
 /* core value  */
-.core-value-section{
+.core-value-section, .core-value-flex-wrapper{
     width: 100%;
 }
 .core-value-flex-wrapper{
@@ -283,7 +287,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-    width: 100%;
     margin: auto;
 }
 
@@ -291,16 +294,17 @@
     .career-flex-wrapper{
         width: 100%;
     }
+    .why-choose-us-list{
+        width: 70%;
+    }
+
 }
 @media(max-width: 754px){
-    .staff-perks-card, .item{
+    .staff-perks-card, .item, .why-choose-us-list, .title-container p{
         width: 80%;
     }
     .send-cv-sentence{
         text-align: center;
-    }
-    .title-container p{
-        width: 80%;
     }
 }
 
@@ -325,7 +329,7 @@
         text-align: left;
         font-size: 1.5rem;
     }
-    .send-cv-sentence, .core-value-title,.title-text-container p {
+    .send-cv-sentence, .core-value-title,.title-text-container p, .why-choose-us-list , .career-section p{
         width: 87.5%;
 
     }

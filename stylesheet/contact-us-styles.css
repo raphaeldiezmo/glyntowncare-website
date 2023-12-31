@@ -98,6 +98,12 @@
   border-radius: 8px;
   width: 80%;
 }
+
+@media(max-width: 1548px){
+  .contact-information{
+    width: 80%;
+  }
+}
 @media(max-width: 1200px){
   .contact-information{
     flex-direction: column;
