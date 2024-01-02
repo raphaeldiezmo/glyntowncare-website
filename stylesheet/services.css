@@ -32,3 +32,8 @@
         font-size: 1.5rem;
     }
 }
+@media(max-width:480px){
+    .heading-sentence p{
+        font-size: 1.25rem;
+    }
+}

@@ -420,6 +420,7 @@ iframe{
     margin-bottom:30px;
 
   }
+
 }
 
 /* responsive elements */
@@ -428,7 +429,9 @@ iframe{
     flex-direction: column;
 
   }
-
+  .landing-page-container{
+    height: 80vh;
+  }
   .item-container{
     width: 100%;
   }

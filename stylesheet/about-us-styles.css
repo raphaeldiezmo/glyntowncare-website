@@ -386,9 +386,10 @@ section{
  
         margin-right: 0px;
     }
-    .filler p, .filler-3 p , .filler-3 h2{
+    .filler p, .filler-3 p , .filler-3 h2, .filler h2{
         width: 87.5%;
         margin: auto;
+        text-align: left;
     }
    
     .service-item, .filler, .filler-3{

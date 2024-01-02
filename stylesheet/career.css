@@ -338,3 +338,8 @@
     }
    
 }
+@media(max-width:480px){
+    .title-text-container .paragraph{
+        font-size: 1.25rem;
+    }
+}
