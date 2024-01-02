@@ -93,7 +93,7 @@ body{
   min-height: 500px;
   background: url(../images/front-bg.png); 
 
-  background-size: clamp(400px, 60vw, 1176px);
+  background-size: clamp(400px, 100vw, 1100px);
   background-position: bottom right;
   background-repeat: no-repeat;
   justify-content:flex-start;
