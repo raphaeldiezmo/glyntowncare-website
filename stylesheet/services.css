@@ -8,13 +8,19 @@
     font-weight: 500;
 }
 .heading-sentence p{
-    width: 60%;
-    padding: 40px 0;
+    width: clamp(200px, 87.5%, 600px);
+    padding: 70px 0 50px 0;    
     margin: auto;
+    font-size: clamp(1.2rem, 10vw, 1.5rem);
+    color: rgb(92, 92, 92);
     font-weight: 400;
-    text-align: center;
-    font-size: 2rem;
+    text-align: left;
 }
+
+.content-title{
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+}
+
 @media(max-width:1240px){
     .content-title{
         font-size: 1.5rem;

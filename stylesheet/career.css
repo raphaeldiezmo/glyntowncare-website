@@ -34,12 +34,21 @@
 
 }
 
+.title-text-container .paragraph{
+    width: clamp(200px, 87.5%, 600px);
+    margin: auto;
+    text-align: left;
+    font-size: clamp(1.2rem, 10vw, 1.5rem);
+    padding: 70px 0 50px 0;    
+
+}
 .title-container span{
     font-weight: 400;
+    text-align: center;
 }
 .title-container p{
+    
     font-size: 2rem;
-    width: 50%;
     margin: 40px auto 50px auto;
 }
 .send-cv-link-1{
@@ -108,7 +117,8 @@
 }
 .section-content p 
 {
-    font-size: 1.3rem;
+    width: clamp(200px, 87.5%, 600px);
+    font-size: clamp(1rem, 10vw, 1.2rem);
     line-height: 1.7rem;
     font-weight: 500;
     padding-bottom: 30px;
@@ -221,7 +231,7 @@
 .why-choose-us-list{
     display: block;
     list-style: none;
-    width: 55%;
+    width: clamp(200px, 87.5%, 600px);
     margin: auto;
     font-size: 1.1rem;
 }

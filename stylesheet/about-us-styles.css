@@ -32,21 +32,22 @@ section{
     padding: 150px 0 30px 0;
     font-weight: 400;
 }
+
 .abt-us-content h2{
     padding: 10px 0 20px 0;
 }
 .abt-us-content p {
-    padding: 10px 0;    
-    font-size: 2rem;
-    width: 60%;
+    padding: 50px 0;    
+    font-size: clamp(1.2rem, 10vw, 1.5rem);
+    width: clamp(200px, 87.5%, 600px);
     font-weight: 400;
     margin: auto;
-    text-align: center;
+    text-align: left;
     color: rgb(92, 92, 92);
 }
 .filler, .filler-3{
-    font-size: clamp(1rem, 3vw, 1.5rem);
-    text-align: center;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    text-align: left;
     width: 100%;
     font-weight: 500;
     margin: auto;
@@ -55,15 +56,17 @@ section{
 
 }
 .filler p, .filler-3 p{
-    font-size: clamp(1rem, 3vw, 1.8rem);
-    width: 60%;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    width: clamp(200px, 87.5%, 600px);
     font-weight: 300;
     color: rgb(235, 235, 235);
     margin: auto;
     padding: 20px 0 0 0;
 }
 .filler h2, .filler-3 h2{
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    width: clamp(200px, 87.5%, 600px);
+    margin: auto;
+    font-size: clamp(1.5rem, 5vw, 1.5rem);
 }
 .filler:nth-child(2){
     background: rgb(90, 76, 110);
@@ -118,8 +121,8 @@ section{
     text-align: center;
 }
 .row{
-    width: 90%;
-    max-width: 1960px;
+    width: clamp(200px, 90%, 1960px);
+    padding: 100px 0;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -153,12 +156,12 @@ section{
 }
 .content-text-container h1{
     padding: 0 0 30px 0;
-    font-size: 3rem;
+    font-size: clamp(1.2rem, 10vw, 2rem);
     
 }
 
 .content-text-container p, .content-text-container h1{
-    width: 100%;
+    width: clamp(200px, 87.5%, 600px);
     margin: auto;
 }
 

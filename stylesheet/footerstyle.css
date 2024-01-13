@@ -1,20 +1,22 @@
 
 /* footer style */
 footer{
-    background: rgb(0, 58, 31);
+    background: rgb(230, 230, 230);
     margin-top: 100px;
     max-width: 1980px;
     margin: auto;
     padding: 100px 0 100px 0;
-    color: white;
+    color: rgb(76, 76, 76);
+    font-weight: 400;
+
     align-items: center;
   }
   
   .footer-title{
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 5px;
     text-transform: uppercase;
-    color: rgb(188, 169, 243) ;
+    color: rgb(40, 40, 40) ;
     font-weight: 700;
   }
   
@@ -37,10 +39,13 @@ footer{
   .footer-item-list{
     padding: 5px 0 0 0;
     font-size: 1rem;
+
   }
   .footer-item-list a{
-    color: white;
+    color: rgb(76, 76, 76);
     text-decoration: none;
+    font-weight: 400;
+
   }
   .footer-span{
     padding: 30px 0 30px 0;
