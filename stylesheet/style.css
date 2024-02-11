@@ -223,6 +223,10 @@ body{
 
 }
 
+.card-container img{
+  width: 100%;
+}
+
 .card-text-content{
   display: flex;
   flex-direction: column;
