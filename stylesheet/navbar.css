@@ -139,7 +139,10 @@ header.hidden{
   display: none;
 }
 .navbar-brand-menu{
-  width: 40vw;
+  width: 20vw;
+  max-width: 150px;
+  min-width: 100px;
+  margin-right: 10%;
 }
 @media only screen and (max-width:1024px) {
   .burger-menu {
@@ -165,19 +168,24 @@ header.hidden{
     display: block;
   }
   
+
+  
   .nav {
     top: -3%;
     padding: 100px 0 100px 0;
     right: -150%;
     position: fixed;
     flex-direction: column;
-    width: 100%;
+    width: 300px;
     height: 100vh;
     justify-content: flex-start;
-    align-items: center;
-    text-align: left;
+    align-items: end;
+    text-align: right;
     transition: 0.5s;
-    background: linear-gradient(to right, #fff, #db9dff);
+
+    box-shadow: -8px 0 15px rgba(0, 0, 0, 0.1); /* Added shadow effect */
+
+    background: rgb(241, 241, 241);
 
   }
   .career-link{
@@ -186,7 +194,7 @@ header.hidden{
 
   }
   .nav-item {
-    
+    margin-right: 10%;
     font-size: 1.4rem;
   }
   .nav-link{
@@ -196,6 +204,7 @@ header.hidden{
   .nav.active {
     right: 0;
   }
+  
 }
 @media (max-width: 950px){
   .navbar-brand{
