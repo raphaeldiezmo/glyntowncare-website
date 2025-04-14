@@ -22,17 +22,17 @@ const appearOptions = {
 const appearOnScroll = new IntersectionObserver(
   // contains function that has an entries and
   // appearOnScroll parameter
-  function(
+  function (
     entries, appearOnScroll
-  ){
+  ) {
     // running to every each entry
     entries.forEach(entry => {
-      if(!entry.isIntersecting){
+      if (!entry.isIntersecting) {
         return;
       }
       // if an entry doesn't intersect, it'll
       // add the appear class in the entry
-      else{
+      else {
         entry.target.classList.add('appear');
         appearOnScroll.unobserve(entry.target);
       }
@@ -40,11 +40,11 @@ const appearOnScroll = new IntersectionObserver(
   }, appearOptions
 );
 
-fader.forEach(fader=>{
+fader.forEach(fader => {
   appearOnScroll.observe(fader);
 })
 
-slider.forEach(slider=>{
+slider.forEach(slider => {
   appearOnScroll.observe(slider);
 })
 
@@ -55,11 +55,11 @@ slider.forEach(slider=>{
 //         window.onscroll = function() {
 //             let currentScrollPos = window.pageYOffset;
 //             let navs = document.querySelector('.nav-link');
-           
+
 
 //             // if (currentScrollPos <= 100){
 //             //   document.querySelector('header').classList.remove('hidden');
-   
+
 
 //             // }
 //             // else{
@@ -69,7 +69,7 @@ slider.forEach(slider=>{
 //             //     document.querySelector('header').classList.add('hidden');
 //             // }
 //             // }
-            
+
 
 //             prevScrollpos = currentScrollPos;
 //         }
@@ -83,20 +83,63 @@ const navMenu = document.querySelector(".nav");
 // This function makes the element active, by clicking the burger menu class
 // it will activate the burger-menu and contain a customized attributes 
 // as well as the .nav class
-burgerMenu.addEventListener("click", ()=> 
-{
-    burgerMenu.classList.toggle("active"); // adding .active to .burger-menu class
-    navMenu.classList.toggle("active");// adding .active to .nav class
+burgerMenu.addEventListener("click", () => {
+  burgerMenu.classList.toggle("active"); // adding .active to .burger-menu class
+  navMenu.classList.toggle("active");// adding .active to .nav class
 })
 
 // This function takes out the .active attributes. The following elements are 
 // .burger-menu and .nav 
-document.querySelectorAll(".nav-link").forEach(n=>n.addEventListener("click"), ()=>
-    {
-    burgerMenu.classList.remove("active");
-    navMenu.classList.remove("active");
-    })
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click"), () => {
+  burgerMenu.classList.remove("active");
+  navMenu.classList.remove("active");
+})
 
 
 
-    
+
+
+// carousel
+const carousel = document.getElementById("ser");
+const track = carousel.querySelector(".carousel-track");
+const items = track.children;
+const total = items.length;
+let index = 0;
+let interval;
+
+// Make sure videos loop
+[...items].forEach(item => {
+  if (item.tagName === "VIDEO") item.play();
+});
+
+function showSlide(i) {
+  track.style.transform = `translateX(-${i * 100}%)`;
+
+  // Pause all videos
+  [...items].forEach(el => {
+    if (el.tagName === "VIDEO") el.pause();
+  });
+
+  // Play current if it's a video
+  const current = items[i];
+  if (current.tagName === "VIDEO") current.play();
+}
+
+function startCarousel() {
+  interval = setInterval(() => {
+    index = (index + 1) % total;
+    showSlide(index);
+  }, 4000); // Change slide every 4 seconds
+}
+
+function stopCarousel() {
+  clearInterval(interval);
+}
+
+// Start on load
+showSlide(index);
+startCarousel();
+
+// Pause on hover
+carousel.addEventListener("mouseenter", stopCarousel);
+carousel.addEventListener("mouseleave", startCarousel);

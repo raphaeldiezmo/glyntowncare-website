@@ -1,172 +1,213 @@
-.header{
+.header {
     width: 100vw;
-    
+
 }
+
 /* first t of the abt us section */
-#abt-us-header-section{
+#abt-us-header-section {
     width: 100%;
     max-width: 1980px;
     display: flex;
     flex-direction: column;
     margin: 0;
 }
-section{
-    position: relative;
-}
-.first-part-of-abt-us-section{
-    padding: 0 0 60px 0;
-}
-.abt-us-header-container{
-    width: 100vw;
-    max-width: 1920px;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: auto;
-    justify-content: flex-start;
-    align-items: center;
-    animation: fadeDown;
 
-}
-.abt-us-header-container span{
-    padding: 150px 0 30px 0;
-    font-weight: 400;
-}
-
-.abt-us-content h2{
-    padding: 10px 0 20px 0;
-}
-.abt-us-content p {
-    padding: 50px 0;    
-    font-size: clamp(1.2rem, 10vw, 1.5rem);
-    width: clamp(200px, 87.5%, 600px);
-    font-weight: 400;
-    margin: auto;
-    text-align: left;
-    color: rgb(92, 92, 92);
-}
-.filler, .filler-3{
-    font-size: clamp(1rem, 5vw, 1.5rem);
-    text-align: left;
-    width: 100%;
-    font-weight: 500;
-    margin: auto;
-    padding: 100px 0;
-    color: white;
-
-}
-.filler p, .filler-3 p{
-    font-size: clamp(1rem, 3vw, 1.5rem);
-    width: clamp(200px, 87.5%, 600px);
-    font-weight: 300;
-    color: rgb(235, 235, 235);
-    margin: auto;
-    padding: 20px 0 0 0;
-}
-.filler h2, .filler-3 h2{
-    width: clamp(200px, 87.5%, 600px);
-    margin: auto;
-    font-size: clamp(1.5rem, 5vw, 1.5rem);
-}
-.filler:nth-child(2){
-    background: rgb(90, 76, 110);
-}
-
-.filler-3{
-   
-    background: rgb(89, 105, 89);
-}
-
-@keyframes fadeDown{
-    0%{
-      opacity: 0;
-      transform: translateY(100px) scale(0.9);
-  
-    }
-    100%{
-      opacity: 1;
-      transform: translateY(0px) scale(1);
-    }
-  }
-.abt-us-info-text{
-    width: 70%;
+.abt-us-landing {
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: end;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+
+}
+
+
+
+
+.abt-us-landing video {
+    width: 70%;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    mix-blend-mode: lighten;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    /* Softens the top */
+    mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 0.2%, rgba(255, 255, 255, 1) 100%);
+    filter: brightness(1.5) contrast(1.2) saturate(1.1);
+}
+
+.abt-us-landing h1 {
+    font-size: clamp(2rem, 15vh, 6rem);
+    font-weight: 600;
     text-align: center;
-    
-}
-.abt-us-header-title{
-    font-size: 5rem;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
- 
-}
-.abt-us-header-span{
-    font-size: 2rem;
-    font-weight: 300;
+    color: transparent;
+    margin: auto;
+    filter: brightness(1.2);
+    letter-spacing: -1px;
+    -webkit-text-stroke: 2px rgb(135, 74, 239);
+    text-stroke: 2.5px rgb(204, 196, 196);
 }
 
 
-.mission-vision-container{
+section {
+    position: relative;
+}
+
+
+
+.filler,
+.filler-3 {
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+    margin: auto;
+    padding: 200px 0;
+    color: white;
+
+}
+
+.filler p,
+.filler-3 p {
+    font-size: clamp(1rem, 3vw, 1.6rem);
+    width: clamp(200px, 87.5%, 600px);
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    padding: 100px 0 0 0;
+}
+
+.filler h2 {
+    background: linear-gradient(to right, black, rgb(184, 1, 184));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.filler-3 h2 {
+    background: linear-gradient(to right, black, rgb(1, 184, 80));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.filler h2,
+.filler-3 h2 {
+    width: clamp(200px, 87.5%, 600px);
+    margin: auto;
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(100px) scale(0.9);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+
+
+
+.mission-vision-container {
     width: 100%;
     max-width: 1960px;
     overflow: hidden;
     display: flex;
+    padding: 100px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
     text-align: center;
+    background: linear-gradient(rgba(238, 238, 238, 0.2), rgba(103, 30, 191, 0.2), rgba(238, 238, 238, 0.2));
 }
-.row{
+
+.row {
     width: clamp(200px, 90%, 1960px);
     padding: 100px 0;
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 
 }
 
-.mission-vision-img{
+.mission-vision-img {
     width: 100%;
-    flex: 50%;    
-}
-.mission-vision-img img{
-    width: 95%;
-    height: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-.content-container{
     flex: 50%;
 }
 
+.mission-vision-img img {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-.content-text-container{
+}
+
+
+.content-text-container {
     border-radius: 8px;
+    flex: 50%;
     display: flex;
+    font-size: 1.7rem;
+    font-weight: 400;
     padding: 30px;
+    color: rgb(10, 10, 10);
     flex-direction: column;
     text-align: left;
     margin: auto;
 }
-.content-text-container h1{
-    padding: 0 0 30px 0;
-    font-size: clamp(1.2rem, 10vw, 2rem);
-    
+
+.content-text-container span {
+    font-weight: 800;
 }
 
-.content-text-container p, .content-text-container h1{
+.gradient-text {
+    background: linear-gradient(90deg, rgb(76, 60, 219), rgb(4, 90, 136), rgb(26, 171, 108));
+    background-size: 200% 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradientAnimation 10s linear infinite;
+    -webkit-text-stroke: 0px rgb(135, 74, 239);
+    text-stroke: 0px rgb(204, 196, 196);
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+.content-text-container p,
+.content-text-container h1 {
     width: clamp(200px, 87.5%, 600px);
     margin: auto;
 }
 
 /* services section */
-.services-section{
+.services-section {
     width: 100%;
     max-width: 1960px;
     text-align: center;
@@ -177,13 +218,14 @@ section{
     height: auto;
 }
 
-.service-title{
+.service-title {
     font-size: 2rem;
     width: 50%;
-    margin:auto;
+    margin: auto;
     font-weight: 700;
 }
-.services-section-row{
+
+.services-section-row {
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -191,182 +233,226 @@ section{
     justify-content: space-between;
 
 }
-.service-item{
+
+.service-item {
     width: 30%;
     overflow: hidden;
     margin: 15px;
     background: linear-gradient(0.25turn,
-                rgba(235, 106, 252, 0.2),
-                rgba(138, 106, 252, 0.2) );    
+            rgba(235, 106, 252, 0.2),
+            rgba(138, 106, 252, 0.2));
     text-align: left;
     flex-basis: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: column;
 }
-.service-item-title{
+
+.service-item-title {
     font-size: 1.7rem;
 }
-.service-item-sentence{
+
+.service-item-sentence {
     list-style: none;
     padding-top: 30px;
     font-size: 1rem;
     font-weight: 200;
 }
-.service-item img{
+
+.service-item img {
     width: 100%;
 }
-.service-content{
+
+.service-content {
     padding: 30px;
 }
-#facilities-section{
+
+#facilities-section {
     width: 100%;
-    margin:auto;
-    
+    margin: auto;
+
 }
-.facilities-section-container{
+
+#facilities-section .paragraph {
+    font-size: 1.5rem
+}
+
+.facilities-section-container {
     text-align: left;
     width: 100%;
     margin-bottom: 100px;
     justify-content: center;
-    flex-direction: column;  
+    flex-direction: column;
 
 }
-.facility-section-header-container{
-    width: 100%;;
+
+.facility-section-header-container {
+    width: 100%;
     text-align: center;
     padding-top: 100px;
 }
 
-.facility-list-container{
+.facility-list-container {
     padding: 50px;
-    width: 50%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    gap: 2rem;
+
+}
+
+.facility-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.fac-item-col {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-}
-.facility-list-row{
-    display: flex;    
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: center;
+    text-align: start;
+    width: clamp(300px, 40%, 400px);
+    gap: 20px;
+    padding: 30px;
 }
 
-.fac-item-col{
-    display: flex;
-    flex-direction: row;
-}
-.faci-num{
-    flex: 10%;
-    width: 100%;
-    font-weight: bolder;
-}
-.fac-item-col span{
-    font-size: 4rem;
+
+.fac-item-col span {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: sans-serif;
     color: rgb(44, 0, 133);
 
+
 }
 
-.facility-item{
+.facility-item {
     flex: 90%;
     width: 100%;
     font-weight: 400;
-    padding: 20px;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    color: rgb(68, 68, 68);
     justify-items: space-between;
-    font-size: clamp(1rem, 2vw, 1.7rem);
-}
-/* animation */
-.abt-us-header-title{
-    display: block; opacity: 0;
-    animation: reveal 1s forwards var(--d);
-}
-@keyframes reveal{
-    from {transform: translateY(40px);}
-    to { opacity:1; transform: none;}
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
 }
 
-@media (max-width: 1158px){
-    .content-text-container{
+
+
+@keyframes reveal {
+    from {
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (max-width: 1158px) {
+    .content-text-container {
         width: 80vw;
         max-width: 80vw;
         height: auto;
         margin-bottom: 20px;
         max-height: auto;
     }
-    .abt-us-info-text, .mission-vision-container{
+
+    .abt-us-info-text,
+    .mission-vision-container {
         width: 100%;
     }
-    .abt-us-header-title{
+
+    .abt-us-header-title {
         font-size: 6rem;
 
     }
-    .abt-us-header-span{
+
+    .abt-us-header-span {
         font-size: 2.2rem;
         font-weight: 300;
     }
-   
-    .content-text-container{
+
+    .content-text-container {
         text-align: center;
 
     }
-    .row{
-        flex-direction: column; 
 
-    }   
-    .vision-row{
+    .row {
+        flex-direction: column;
+
+    }
+
+    .vision-row {
         flex-direction: column-reverse;
+        text-align: center;
     }
 }
 
 /* responsive styling */
-@media (max-width: 800px){
-    .abt-us-content p, .service-item, .facility-list-container, .filler p, .filler-3 p{
+@media (max-width: 800px) {
+
+    .abt-us-content p,
+    .service-item,
+    .facility-list-container,
+    .filler p,
+    .filler-3 p {
         width: 90%;
     }
-   
-    .content-container, .row, .abt-us-info-text, .abt-us-content{
+
+    .content-container,
+    .row,
+    .abt-us-info-text,
+    .abt-us-content {
         width: 100%;
     }
-    .abt-us-header-container{
+
+    .abt-us-header-container {
         flex-direction: column;
     }
-    .abt-us-info-text{
+
+    .abt-us-info-text {
         text-align: center;
     }
-    .abt-us-header-title{
+
+    .abt-us-header-title {
         font-size: 4rem;
     }
-    .abt-us-header-span{
+
+    .abt-us-header-span {
         font-size: 2rem;
     }
 
-    .content-text-container{
+    .content-text-container {
         padding: 30px;
     }
 
     /* services */
-    .services-section-row{
+    .services-section-row {
         flex-direction: column;
         width: 90%;
         margin: auto;
-        
+
     }
 
-    .service-item{
+    .service-item {
         flex: 100%;
         margin: auto;
         margin-bottom: 5vw;
     }
+
     /* facilities section */
-    #facilities-section{
+    #facilities-section {
         width: 95%;
     }
-    .facility-list-container{
-        padding:0;
+
+    .facility-list-container {
+        padding: 0;
         padding-bottom: 30px;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -375,36 +461,88 @@ section{
 }
 
 
-@media (max-width: 450px){
-    
-    .content-text-container h1{
+@media (max-width: 450px) {
+    .abt-us-landing {
+        height: 100dvh;
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+        justify-content: flex-end;
+        margin: auto;
+        gap: 0;
+    }
+
+    .abt-us-landing video {
+        width: 100%;
+        transform: scale(1.7);
+        height: auto;
+        margin: auto;
+        margin-top: 300px;
+    }
+
+    .abt-us-landing h1 {
+        font-size: 17vw;
+        margin: auto;
+        text-align: left;
+        padding: 0;
+        width: 95vw;
+
+    }
+
+
+
+    .content-text-container h1 {
         font-size: 1.5rem;
         padding: 0 0 10px 0;
     }
-    .content-text-container p, .content-text-container {
+
+    .content-text-container p,
+    .content-text-container {
         width: 100%;
         text-align: left;
     }
-    .content-text-container p, .filler p{
+
+    .mission-vision-container {
+        padding: 0;
+    }
+
+    .content-text-container p,
+    .filler p {
         font-size: 1.1rem;
     }
-    .facility-item{
- 
+
+    .filler {
+        padding-top: 100px;
+    }
+
+    .facility-item {
         margin-right: 0px;
     }
-    .filler p, .filler-3 p , .filler-3 h2, .filler h2{
+
+    .filler p,
+    .filler-3 p,
+    .filler-3 h2,
+    .filler h2 {
         width: 87.5%;
         margin: auto;
         text-align: left;
     }
-   
-    .service-item, .filler, .filler-3{
-        width: 100%;
+
+    .filler p,
+    .filler-3 p {
+        padding: 20px;
+
     }
-    .abt-us-content p{
+
+    .service-item,
+    .filler,
+    .filler-3 {
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .abt-us-content p {
         width: 100%;
         font-size: 1.25rem;
     }
 }
-
-
