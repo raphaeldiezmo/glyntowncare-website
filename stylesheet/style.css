@@ -102,11 +102,7 @@ body {
   height: 100dvh;
   max-height: 1100px;
   min-height: 500px;
-  background: url(../images/front-bg.png);
-
-  background-size: clamp(400px, 100vw, 1000px);
-  background-position: bottom right;
-  background-repeat: no-repeat;
+  overflow: hidden;
   justify-content: flex-start;
   display: flex;
   align-items: center;
@@ -141,6 +137,18 @@ body {
   letter-spacing: 0.25px;
   color: rgb(82, 82, 82);
 
+}
+
+.landing-page-container figure {
+  width: 65%;
+  display: flex;
+  overflow: hidden;
+  align-items: end;
+  justify-self: end;
+}
+
+.hero-vid {
+  width: 97.5%;
 }
 
 @keyframes fadeDown {
@@ -774,6 +782,24 @@ iframe {
 }
 
 @media (max-width: 947px) {
+  .landing-page-container {
+    flex-direction: column-reverse;
+    height: 100dvh;
+    width: 100%;
+    gap: 100px;
+
+  }
+
+  .landing-page-container figure {
+    padding-top: 100px;
+
+    width: 95%;
+  }
+
+
+  .hero-vid {
+    width: 100%;
+  }
 
   .card-container {
     min-width: 250px;
