@@ -119,11 +119,15 @@ body {
   align-items: flex-start;
   text-align: center;
 }
+.banner-title-container{
+  overflow: hidden;
 
+}
 .banner-title {
   font-size: clamp(3rem, 4vw, 5rem);
   color: rgb(0, 0, 0);
   font-weight: 600;
+  opacity: 0;
 }
 
 .banner-text {
@@ -214,6 +218,7 @@ body {
   position: absolute;
   border: 0;
   display: flex;
+  overflow: hidden;
   justify-content: center;
   align-items: flex-end;
   /* adds spacing from the bottom */
@@ -230,6 +235,7 @@ body {
 .filler-section-text {
   height: inherit;
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
   justify-content: end;
   text-align: right;
@@ -244,10 +250,9 @@ body {
   color: transparent;
 }
 
-.filler-section-text h1 {
-  width: 50%;
+.filler-h1-container{
+  width: auto;
 }
-
 
 
 /* services sneak peek */
@@ -461,6 +466,8 @@ body {
   gap: 20px;
   width: 50%;
   color: rgb(60, 60, 60);
+  font-weight: 400;
+  font-size: 1.2rem;
 
 }
 

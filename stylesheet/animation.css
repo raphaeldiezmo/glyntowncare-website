@@ -5,22 +5,55 @@
  /* ========================================== */
  .fade-in{
   opacity: 0;
-  filter: blur(1px);
-  transform: translateY(-50px);
-  transition: 1.2s;
+  animation: bottomToTop 1s forwards;  
+  animation-fill-mode: both;
 }
+@keyframes bottomToTop{
+  0%{
+    opacity: 0;
+    transform: translateY(120%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+.appear-with-on-scroll-animation {
+  animation: bottomToTop 2s linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0%;
+}
+
+/* small to big animation */
+
+@keyframes apr {
+    0% {
+        opacity: 0;
+        /* Start fully transparent */
+        transform: scale(0);
+        /* Start small */
+    }
+
+    100% {
+        opacity: 1;
+        /* End fully opaque */
+        transform: scale(1);
+        /* End at original size */
+    }
+}
+
 .delay-trans{
-  transition-delay: 0.25s;
+  animation-delay: 0.5s;
 }
 .delay-trans-2{
-  transition-delay: 0.5s;
+  animation-delay: 1s;
 }
 .delay-trans-3{
-  transition-delay: 0.75s;
+  animation-delay: 1.5s;
 }
 .delay-trans-4{
-  transition-delay: 1s;
-
+  animation-delay: 2s;
 }
 .fade-in.appear{
   opacity: 1;
@@ -30,19 +63,52 @@
 
 
 .from-left{
-  transform: translateY(50px);
+  animation: fromLeft 1s forwards;
+  opacity: 0;
+
 }
+@keyframes fromLeft{
+  0%{
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .from-right{
  transform: translateY(50px);
 }
-.from-left, .from-right{
-  filter: blur(5px);
- transition:
-    1.2s ;
- opacity: 0;
-}
+
 .from-left.appear, .from-right.appear{
  transform: translateY(0);
  opacity: 1;
  filter: blur(0);
+}
+
+
+@keyframes from-top-to-bottom{
+  0%{
+
+  }
+}
+
+
+.scale-in{
+  opacity:0;
+  animation: scaleIn 1s forwards ease-in;
+}
+
+
+@keyframes scaleIn{
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
