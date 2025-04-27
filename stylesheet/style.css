@@ -119,10 +119,12 @@ body {
   align-items: flex-start;
   text-align: center;
 }
-.banner-title-container{
+
+.banner-title-container {
   overflow: hidden;
 
 }
+
 .banner-title {
   font-size: clamp(3rem, 4vw, 5rem);
   color: rgb(0, 0, 0);
@@ -250,7 +252,7 @@ body {
   color: transparent;
 }
 
-.filler-h1-container{
+.filler-h1-container {
   width: auto;
 }
 
