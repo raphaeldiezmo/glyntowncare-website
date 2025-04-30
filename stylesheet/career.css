@@ -1,30 +1,33 @@
-
-
-@media(max-width:1426px){
-    .career-flex-wrapper{
+@media(max-width:1426px) {
+    .career-flex-wrapper {
         width: 90%;
     }
 }
-@media(max-width:1265px){
-    .career-flex-wrapper{
+
+@media(max-width:1265px) {
+    .career-flex-wrapper {
         width: 100%;
     }
 }
-@media(max-width:1140px){
-    .career-flex-wrapper{
+
+@media(max-width:1140px) {
+    .career-flex-wrapper {
         justify-content: center;
     }
 }
-.career-header-img-container{
+
+.career-header-img-container {
     margin-top: -10px;
 
 }
-.career-img{
+
+.career-img {
     width: 100%;
     height: 50%;
     mix-blend-mode: multiply;
 }
-.title-container{
+
+.title-container {
     width: 100%;
     padding-top: 150px;
     display: flex;
@@ -34,70 +37,76 @@
 
 }
 
-.title-text-container .paragraph{
+.title-text-container .paragraph {
     width: clamp(200px, 87.5%, 600px);
     margin: auto;
     text-align: left;
     font-size: clamp(1.2rem, 10vw, 1.5rem);
-    padding: 70px 0 50px 0;    
+    padding: 70px 0 50px 0;
 
 }
-.title-container span{
+
+.title-container span {
     font-weight: 400;
     text-align: center;
 }
-.title-container p{
-    
+
+.title-container p {
+
     font-size: 2rem;
     margin: 40px auto 50px auto;
 }
-.send-cv-link-1{
+
+.send-cv-link-1 {
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-align: center;
     width: 200px;
     margin-top: 30px;
     font-size: 1rem;
-    background: rgba(229, 180, 255,0.0);
+    background: rgba(229, 180, 255, 0.0);
     font-weight: 600;
     padding: 10px 40px 10px 40px;
     transition: 0.5s ease;
-    background: linear-gradient(to right, #8a4fff, #bd00ff); 
+    background: linear-gradient(to right, #8a4fff, #bd00ff);
 
 
 }
 
-.send-cv-link-1:hover{
+.send-cv-link-1:hover {
     color: rgb(248, 248, 248);
-    background: linear-gradient(to right, #8a4fff, #bd00ff); 
+    background: linear-gradient(to right, #8a4fff, #bd00ff);
     transition: 0.5s ease;
 
 }
 
 /* all section styles */
-.career-section{
+.career-section {
     display: flex;
     overflow: hidden;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 100px 0;
 }
-.career-section-container{
+
+.career-section-container {
     flex: 60%;
 }
 
-.career-section-photo img{
-    flex-basis: 50%;
+.career-section-photo .vid {
+    flex-basis: 40%;
     width: 100%;
-    max-width: calc(1960px/2);
-    border-radius: 50vw;
+    max-width: 1000px;
 }
-.career-section h2{
+
+.career-section h2 {
     font-size: 2rem;
     width: 100%;
     text-align: center;
 }
-.core-value-title{
+
+.core-value-title {
     padding: 50px 50px;
     width: 50%;
     margin: auto;
@@ -105,7 +114,8 @@
     color: rgb(55, 55, 55);
     text-align: center;
 }
-.career-section p{
+
+.career-section p {
     font-size: 1rem;
     width: 80%;
     min-width: 320px;
@@ -115,8 +125,8 @@
     margin-top: 30px;
 
 }
-.section-content p 
-{
+
+.section-content p {
     width: clamp(200px, 87.5%, 600px);
     font-size: clamp(1rem, 10vw, 1.2rem);
     line-height: 1.7rem;
@@ -125,61 +135,71 @@
     margin: 0;
     color: rgb(55, 55, 55);
 }
-.section-1{
+
+.section-1 {
     padding: 40px;
-    margin:auto;
+    margin: auto;
 
 
 }
 
-.section-1 h2, .section-1 p{
+.section-1 h2,
+.section-1 p {
     text-align: left;
     padding: 10px 30px;
 }
+
 /* why choose us section */
-.why-choose-us-section{
+.why-choose-us-section {
     background: rgb(235, 235, 235);
     padding: 0 0 50px 0;
 }
 
-@media (max-width: 1200px){
-    .section-1, .section-4{
+@media (max-width: 1200px) {
+
+    .section-1,
+    .section-4 {
         flex-direction: column;
         justify-content: center;
         padding: 30px 0 30px 0;
-       
+
     }
-    .section-1 img, .section-4 img{
+
+    .section-1 img,
+    .section-4 img {
         width: 100%;
         margin: auto;
     }
 
 }
-@media(max-width: 1000px){
-    .send-cv-container{
+
+@media(max-width: 1000px) {
+    .send-cv-container {
         width: 90%;
     }
 }
 
-.section-2{
+.section-2 {
     padding: 30px;
     width: 80%;
     margin: auto;
     text-align: left;
     flex-direction: row-reverse;
 }
-.section-2 em{
+
+.section-2 em {
     background-color: rgb(228, 240, 255);
 }
-.service-3 .career-section-container .title{
+
+.service-3 .career-section-container .title {
     padding: 30px;
     text-align: left;
-   
+
 }
 
 
 
-.item{
+.item {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -189,78 +209,88 @@
     font-size: 1rem;
     min-width: 216px;
     text-align: center;
- 
+
 }
-.item:nth-child(1){
+
+.item:nth-child(1) {
     background: RGB(134, 147, 117);
 }
-.item:nth-child(2){
+
+.item:nth-child(2) {
     background: RGB(123, 159, 178);
 }
-.item:nth-child(3){
+
+.item:nth-child(3) {
     background: RGB(210, 140, 131);
 }
-.item:nth-child(4){
+
+.item:nth-child(4) {
     background: RGB(193, 193, 193);
 
 }
-.item:nth-child(5){
+
+.item:nth-child(5) {
     background: RGB(169, 168, 182);
 
 }
-.item-content{
+
+.item-content {
     padding: 60px 10px;
 }
-.item-content h3{
+
+.item-content h3 {
     padding-bottom: 20px;
 }
 
-.send-cv-link{
+.send-cv-link {
     text-decoration: none;
     color: rgb(251, 251, 251);
     text-align: center;
     width: 200px;
     font-size: 1.2rem;
-    
+
     background: purple;
     font-weight: 600;
     padding: 10px 20px 10px 20px;
 }
 
 /* WHY CHOOSE US SECTION */
-.why-choose-us-list{
+.why-choose-us-list {
     display: block;
     list-style: none;
     width: clamp(200px, 87.5%, 600px);
     margin: auto;
     font-size: 1.1rem;
 }
-.why-choose-us-item{
+
+.why-choose-us-item {
     padding: 10px;
     font-weight: 400;
 }
-.why-choose-us-item b{
+
+.why-choose-us-item b {
     color: rgb(0, 110, 0);
 }
 
 
 /* staff perks section styles */
-.career-flex-wrapper{
+.career-flex-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     align-items: stretch;
     width: 80%;
     margin: auto;
 }
-.staff-perks-title
-{
+
+.staff-perks-title {
     width: 90%;
     text-align: center;
     padding: 0px 0px 20px 0px;
     margin: auto;
 }
-.staff-perks-row{
+
+.staff-perks-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -268,17 +298,20 @@
     width: 80%;
     margin: auto;
 }
-.staff-perks-card img{
+
+.staff-perks-card img {
     width: 100%;
 }
-.staff-perks-card h2{
+
+.staff-perks-card h2 {
     padding: 15px 0 15px 0;
 }
-.staff-perk-text{
+
+.staff-perk-text {
     padding: 20px;
 }
 
-.staff-perks-card{
+.staff-perks-card {
     width: 30%;
     margin: 15px;
     min-width: 350px;
@@ -289,10 +322,12 @@
 }
 
 /* core value  */
-.core-value-section, .core-value-flex-wrapper{
+.core-value-section,
+.core-value-flex-wrapper {
     width: 100%;
 }
-.core-value-flex-wrapper{
+
+.core-value-flex-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -300,56 +335,75 @@
     margin: auto;
 }
 
-@media(max-width: 947px){
-    .career-flex-wrapper{
+@media(max-width: 947px) {
+    .career-flex-wrapper {
         width: 100%;
     }
-    .why-choose-us-list{
+
+    .why-choose-us-list {
         width: 70%;
     }
 
 }
-@media(max-width: 754px){
-    .staff-perks-card, .item, .why-choose-us-list, .title-container p{
+
+@media(max-width: 754px) {
+
+    .staff-perks-card,
+    .item,
+    .why-choose-us-list,
+    .title-container p {
         width: 80%;
     }
-    .send-cv-sentence{
+
+    .send-cv-sentence {
         text-align: center;
     }
 }
 
-@media(max-width: 550px){
-    .send-cv-sentence{
+@media(max-width: 550px) {
+    .send-cv-sentence {
         text-align: center;
         margin: auto;
         font-size: 1.2rem;
         padding: 20px 0 20px 0;
     }
-    .send-cv-content{
+
+    .send-cv-content {
         align-items: center;
         justify-content: center;
         text-align: center;
     }
-    .title-container p, .section-content p{
+
+    .title-container p,
+    .section-content p {
         font-size: 1rem;
     }
-    
-    .core-value-title{
+
+    .core-value-title {
         padding: 50px 0;
         text-align: left;
         font-size: 1.5rem;
     }
-    .send-cv-sentence, .core-value-title,.title-text-container p, .why-choose-us-list , .career-section p{
+
+    .send-cv-sentence,
+    .core-value-title,
+    .title-text-container p,
+    .why-choose-us-list,
+    .career-section p {
         width: 87.5%;
 
     }
-    .career-flex-wrapper, .staff-perks-card, .item{
+
+    .career-flex-wrapper,
+    .staff-perks-card,
+    .item {
         width: 100%;
     }
-   
+
 }
-@media(max-width:480px){
-    .title-text-container .paragraph{
+
+@media(max-width:480px) {
+    .title-text-container .paragraph {
         font-size: 1.25rem;
     }
 }
