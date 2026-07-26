@@ -13,7 +13,7 @@
 }
 
 .abt-us-landing {
-    height: 100dvh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,7 +61,21 @@ section {
     position: relative;
 }
 
-
+.glyntown-abt-us{
+    padding: 100px 0;
+    width: clamp(300px, 95%, 1000px);
+    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+.glyntown-abt-us p{
+    font-size: clamp(1rem, 3vh, 2rem);
+    font-weight: 400;
+    width: clamp(300px, 90%, 700px);
+    margin: auto;
+}
 
 .filler,
 .filler-3 {
@@ -70,7 +84,9 @@ section {
     width: 100%;
     font-weight: 500;
     margin: auto;
-    padding: 200px 0;
+    padding: 100px 0;
+    background-color: rgb(223, 241, 245);
+
     color: white;
 
 }
@@ -128,7 +144,7 @@ section {
     max-width: 1960px;
     overflow: hidden;
     display: flex;
-    padding: 100px 0;
+    padding: 0 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
