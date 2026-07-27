@@ -1,378 +1,335 @@
-<!DOCTYPE html>
+                          <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- style sheet link -->
+
+  <!-- Preload critical assets -->
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="stylesheet/style.css">
   <link rel="stylesheet" href="stylesheet/navbar.css">
   <link rel="stylesheet" href="stylesheet/footerstyle.css">
   <link rel="stylesheet" href="stylesheet/animation.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Home - Glyntown Care</title>
+
+  <title>Home - Glyntown Care Centre</title>
   <link rel="icon" type="image/x-icon" href="images/logo.png">
 
+  <meta name="description" content="Glyntown Care Centre offers compassionate, person-centred care in Glanmire, Co. Cork. Residential care, respite, and dementia support in a warm, welcoming environment.">
 </head>
 
 <body>
-  <!-- Header elements -->
+  <!-- Header / Navigation -->
   <header>
     <div class="nav-container">
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Main navigation">
         <div class="navbar-brand-container">
-          <img class="navbar-brand" src="images/logo-nobg.png" alt="">
+          <a href="/">
+            <img class="navbar-brand" src="images/logo-nobg.png" alt="Glyntown Care Centre" loading="eager">
+          </a>
         </div>
         <div class="nav-list-container">
           <ul class="nav">
-
-            <img class="navbar-brand-menu" src="images/logo-nobg.png" alt="">
-
+            <img class="navbar-brand-menu" src="images/logo-nobg.png" alt="Glyntown Care Centre" loading="lazy">
             <li class="nav-item">
-              <a class="nav-link active-nav" aria-current="page" href="#">
-                Home
-              </a>
+              <a class="nav-link active-nav" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a href="about-us" class="nav-link">
-                About Us
-              </a>
+              <a class="nav-link" href="about-us">About Us</a>
             </li>
             <li class="nav-item">
-              <a class=" nav-link" href="wellness">
-                Wellness
-              </a>
+              <a class="nav-link" href="wellness">Wellness</a>
             </li>
             <li class="nav-item">
-              <a class=" nav-link" href="careers">
-                Careers
-              </a>
+              <a class="nav-link" href="careers">Careers</a>
             </li>
-
             <li class="nav-item contact-item">
-              <a class="nav-link" href="contact-us">
-                Contact Us
-              </a>
+              <a class="nav-link" href="contact-us">Contact Us</a>
             </li>
-
           </ul>
-
         </div>
-        <div class="career-container on">
-          <a class="career-link" href="contact-us">
-            Contact Us
-          </a>
+        <div class="career-container">
+          <a class="career-link" href="contact-us">Contact Us</a>
         </div>
-        <div class="burger-menu">
+        <div class="burger-menu" aria-label="Toggle navigation menu" role="button" tabindex="0">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
       </nav>
-
-
-
     </div>
   </header>
+
   <main>
-    <!-- Section elements -->
-    <section id="home" class="margin-center">
-      <div class="section-container ">
-        <div class="landing-page-container">
-          <div class="banner-container ">
-            <div class="banner-title-container">
-              <h1 class="banner-title fade-in">Years of Compassion</h1>
-            </div>
-            <div class="banner-title-container">
-              <h1 class="banner-title fade-in delay-trans">care and Unwavering </h1>
-            </div>
-            <div class="banner-title-container">
-              <h1 class="banner-title fade-in delay-trans-2">Dedication</h1>
-
-            </div>
-            <p class=" banner-text scale-in delay-trans ">
-              "Ta aidhm simpli again, se sin chun ait compordach,
-              cairdiuil a chothu, ait slan sabhailte conaithe le
-              curam den scoth ar faill."
-            </p>
-            <div class="btn-container">
-              <a href="contact-us"><button class="contact-us-btn btn scale-in delay-trans-3"><img src="images/phone.png"
-                    alt=""> Get in
-                  Touch</button></a>
-              <a href="about-us"><button class="learn-more-btn btn scale-in delay-trans-4"><img src="images/book.png"
-                    alt="">Learn
-                  more</button></a>
-            </div>
+    <!-- Hero Section -->
+    <section id="home" class="section-container">
+      <div class="landing-page-container">
+        <div class="banner-container">
+          <span class="badge">Welcome to Glyntown Care Centre</span>
+          <div class="banner-title-container">
+            <h1 class="banner-title">Years of Compassion</h1>
           </div>
-          <figure>
-            <video class="hero-vid from-left delay-trans" autoplay muted loop playsinline
-              src="images/walking.mp4"></video>
-          </figure>
+          <div class="banner-title-container">
+            <h1 class="banner-title" style="animation-delay: 0.2s">Care and Unwavering</h1>
+          </div>
+          <div class="banner-title-container">
+            <h1 class="banner-title" style="animation-delay: 0.4s">Dedication</h1>
+          </div>
+          <p class="banner-text" style="animation-delay: 0.6s">
+            "Ta aidhm simpli again, se sin chun ait compordach, cairdiuil a chothu, ait slan sabhailte conaithe le curam den scoth ar faill."
+          </p>
+          <div class="btn-container" style="animation-delay: 0.8s">
+            <a href="contact-us">
+              <button class="btn btn-primary btn-lg">
+                <img src="images/phone.png" alt="" width="20" height="20" loading="lazy"> Get in Touch
+              </button>
+            </a>
+            <a href="about-us">
+              <button class="btn btn-secondary btn-lg">
+                <img src="images/book.png" alt="" width="20" height="20" loading="lazy"> Learn More
+              </button>
+            </a>
+          </div>
         </div>
-      </div>
-      </div>
-    </section>
-
-
-    <section class="filler-section-text">
-      <div class="filler-h1-container">
-        <h1 class="filler-h1 bottom-to-top">Relax.</h1>
-      </div>
-      <div class="filler-h1-container">
-        <h1>Recharge.</h1>
-      </div>
-      <div class="filler-h1-container">
-        <h1>Rejuvenate.</h1>
-      </div>
-    </section>
-
-
-    </section>
-    <section class="services-section">
-      <section class="services-section-text">
-        <h1>Where care meets comfort, and every day feels like home.</h1>
-      </section>
-      <section class="services-section-figures">
-        <figure class="appear-with-on-scroll-animation">
-          <img src="images/laundry-service.jpg" alt="">
-        </figure>
         <figure>
-          <video class="animate-this" autoplay muted loop playsinline src="images/vid2.mp4">
-          </video>
+          <video class="hero-vid" autoplay muted loop playsinline src="images/walking.mp4" loading="lazy" poster="images/landing.jpg"></video>
         </figure>
-        <div class="btn-hover-section">
+      </div>
+    </section>
+
+    <!-- Filler Section: Relax. Recharge. Rejuvenate. -->
+    <section class="filler-section-text">
+      <div class="filler-h1-container"><h1 class="filler-word filler-word--1">Relax.</h1></div>
+      <div class="filler-h1-container"><h1 class="filler-word filler-word--2">Recharge.</h1></div>
+      <div class="filler-h1-container"><h1 class="filler-word filler-word--3">Rejuvenate.</h1></div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-section">
+      <div class="services-section-text">
+        <span class="badge">Our Services</span>
+        <h1>Where care meets comfort, and every day feels like home.</h1>
+      </div>
+      <div class="services-section-figures">
+        <figure class="reveal">
+          <img src="images/laundry-service.jpg" alt="Laundry service at Glyntown Care Centre" loading="lazy">
+        </figure>
+        <figure class="reveal delay-2">
+          <video autoplay muted loop playsinline src="images/vid2.mp4" loading="lazy"></video>
+        </figure>
+        <div class="btn-hover-section reveal delay-3">
           <h3>Discover the care you deserve</h3>
           <div class="btn-hover-container">
             <span><a href="wellness">Learn more about our Services</a></span>
           </div>
         </div>
-      </section>
+      </div>
     </section>
 
-    <!--  -->
+    <!-- Visiting Times -->
     <div class="visiting-times-container">
       <div class="visiting-times-container-inner">
-        <div class="text-content">
-          <h1 class="fade-in delay-trans-3">
-            Visiting Times
-          </h1>
-          <p class="fade-in delay-trans-3">
-            Glyntown Care warmly invites visitors during designated hours: <b>11:30 am to 12:45 pm</b> and <b>2:30 pm to
-              4:30 pm</b>. Beyond that, a flexible open visiting period begins at <b>6:00 pm</b> , allowing families and
-            friends the opportunity to spend quality time with residents.
-
+        <div class="text-content reveal-left">
+          <span class="badge">Visiting Hours</span>
+          <h1>Visiting Times</h1>
+          <p>
+            Glyntown Care warmly invites visitors during designated hours: <b>11:30 am to 12:45 pm</b> and <b>2:30 pm to 4:30 pm</b>. Beyond that, a flexible open visiting period begins at <b>6:00 pm</b>, allowing families and friends the opportunity to spend quality time with residents.
           </p>
-          <a href="contact-us"><button class="contact-us-btn btn ">Give us a call</button></a>
+          <a href="contact-us"><button class="btn btn-teal">Give us a call</button></a>
         </div>
-
-        <figure>
-          <video class="animate-this" autoplay muted loop playsinline src="images/visiting.mp4"></video>
+        <figure class="reveal-right">
+          <video autoplay muted loop playsinline src="images/visiting.mp4" loading="lazy" poster="images/entrance.JPG"></video>
         </figure>
       </div>
     </div>
-    <div class="social-media-container">
 
-      <figure>
-        <img src="images/social-media.png" alt="">
-      </figure>
-      <section class="text-section">
-        <h1 class="fade-in delay-trans-3">
-          If you wish to stay informed about the latest updates and news from our nursing home, we invite you to check
-          out
-          our social media channels for regular updates. </h1>
+    <!-- Social Media -->
+    <div class="social-media-container">
+      <div class="social-3d-icons reveal-left">
+        <div class="float-3d-card float-3d-card--facebook" aria-label="Facebook">
+          <div class="float-3d-card-inner">
+            <div class="float-3d-icon-wrap">
+              <i class="fa fa-facebook"></i>
+            </div>
+          </div>
+          <div class="float-3d-glow"></div>
+        </div>
+        <div class="float-3d-card float-3d-card--instagram" aria-label="Instagram">
+          <div class="float-3d-card-inner">
+            <div class="float-3d-icon-wrap">
+              <i class="fa fa-instagram"></i>
+            </div>
+          </div>
+          <div class="float-3d-glow"></div>
+        </div>
+        <div class="float-3d-card float-3d-card--linkedin" aria-label="LinkedIn">
+          <div class="float-3d-card-inner">
+            <div class="float-3d-icon-wrap">
+              <i class="fa fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="float-3d-glow"></div>
+        </div>
+      </div>
+      <section class="text-section reveal-right">
+        <span class="badge">Stay Connected</span>
+        <h1>If you wish to stay informed about the latest updates and news from our nursing home, we invite you to check out our social media channels for regular updates.</h1>
         <div class="socials">
-          <a href="https://www.facebook.com/profile.php?id=61555276798054" target="_blank"> <i
-              class="fa fa-facebook-square" style="font-size:3rem;"></i></a>
-          <a href="https://www.instagram.com/glyntowncarecentre/" target="_blank"><i class="fa instagram fa-instagram"
-              style="font-size:3rem"></i> </a>
-          <a href="https://www.linkedin.com/company/glyntown-care-centre/about/" target="_blank"><i
-              class="fa fa-linkedin-square" style="font-size:3rem"> </i></a>
+          <a href="https://www.facebook.com/profile.php?id=61555276798054" target="_blank" rel="noopener" aria-label="Facebook">
+            <i class="fa fa-facebook-square" style="font-size:1.8rem;"></i>
+          </a>
+          <a href="https://www.instagram.com/glyntowncarecentre/" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fa fa-instagram" style="font-size:1.8rem"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/glyntown-care-centre/about/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fa fa-linkedin-square" style="font-size:1.8rem"></i>
+          </a>
         </div>
       </section>
-
     </div>
 
-
-
-
-
-
-    <!-- JOIN US SECTION -->
-    <section id="join-us-section">
-      <div class="join-us-container fade-in ">
-        <div class="join-us-inner-container">
+    <!-- Join Us Section -->
+    <section id="join-us-section" class="reveal">
+      <div class="join-us-container">
+        <div class="join-us-bg-shapes">
+          <div class="join-us-shape join-us-shape--1"></div>
+          <div class="join-us-shape join-us-shape--2"></div>
+          <div class="join-us-shape join-us-shape--3"></div>
+        </div>
+        <div class="join-us-grid">
           <div class="join-us-text-content">
-            <h1 class="join-us-title">Join the Glyntown Care Team</h1>
-            <h1 class="join-us-title">and Experience the Difference</h1>
-            <p class="paragraph" style="color:white;">Experience a workplace where caring thrives and work feels like
-              family. Our benefits make a real difference in your life and well-being</p>
+            <span class="badge" style="background: rgba(255,255,255,0.15); color: #fff;">Careers</span>
+            <h2 class="join-us-title">Join the Glyntown Care Team &amp; Experience the Difference</h2>
+            <p class="join-us-description">Experience a workplace where caring thrives and work feels like family. Our benefits make a real difference in your life and well-being.</p>
+            <ul class="join-us-perks-list">
+              <li class="join-us-perk-item">
+                <span class="join-us-perk-icon">🍽️</span>
+                <span class="join-us-perk-text"><strong>Free Meals</strong> — Complimentary delicious meals daily</span>
+              </li>
+              <li class="join-us-perk-item">
+                <span class="join-us-perk-icon">👕</span>
+                <span class="join-us-perk-text"><strong>Free Uniforms</strong> — Comfortable, professional attire provided</span>
+              </li>
+              <li class="join-us-perk-item">
+                <span class="join-us-perk-icon">💰</span>
+                <span class="join-us-perk-text"><strong>Pension Plan</strong> — Secure your financial future with us</span>
+              </li>
+              <li class="join-us-perk-item">
+                <span class="join-us-perk-icon">🅿️</span>
+                <span class="join-us-perk-text"><strong>Free Parking</strong> — Hassle-free parking on site</span>
+              </li>
+            </ul>
+            <div class="join-us-link-container">
+              <a href="/careers" class="join-us-link">Join our Team</a>
+              <a href="/careers" class="join-us-link-secondary">Learn more about careers →</a>
+            </div>
           </div>
-          <div class="join-us-link-container">
-            <a href="/careers" class="join-us-link">Join us Today!
-            </a>
+          <div class="join-us-visual">
+            <div class="join-us-image-wrapper">
+              <video autoplay muted loop playsinline src="images/work-with.mp4" poster="images/career1.jpg" class="join-us-image"></video>
+              <div class="join-us-image-overlay"></div>
+              <div class="join-us-experience-badge">
+                <span class="join-us-experience-number">9+</span>
+                <span class="join-us-experience-label">Years of Care Excellence</span>
+              </div>
+            </div>
+            <div class="join-us-testimonial-card">
+              <p class="join-us-testimonial-text">"Working at Glyntown has been a truly rewarding experience. The team feels like family."</p>
+              <div class="join-us-testimonial-author">
+                <span class="join-us-testimonial-name">— Sarah, Senior Care Assistant</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
     </section>
 
-    <!-- ---------------------------------------- -->
-    <!-- LOCATION SECTION -->
-    <!-- ---------------------------------------- -->
+    <!-- Location Section -->
     <section id="location">
-      <div class="location-container container">
-
-        <div class="location-container-inner">
-
-          <div class="bus-info-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.5030539028985!2d-8.389418684003196!3d51.92477718792069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48449a9e4aae304b%3A0xf5e729b0aebc63be!2sGlyntown%20Care%20Centre!5e0!3m2!1sen!2sie!4v1678902111606!5m2!1sen!2sie"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="bus-route-info-container">
-              <div class="bus-route-info-text-container">
-                <div class="bus-flex-container from-left slider">
-                  <h2 class="bus-route-title">
-                    Bus Route Option
-                  </h2>
-                  <ul class="bus-information-step-by-step-list">
-                    <li class="paragraph padding-bottom-10">Look for the nearest bus stop to <b>Glyntown Glanmire</b>
-                      that is serviced by the <b>bus 214</b>.
-                      you can use a map or a transportation app to locate the nearest stop. <i>You can google bus 214
-                        or install moovitapp</i>
-
-                    </li>
-
-                    <li class="paragraph padding-bottom-10">
-                      Board the bus 214 at the bus stop and make sure it is headed to hazelwood not Knockraha.
-                      always ask the driver if you're going to hazelwood instead of Knockraha.
-                    </li>
-                    <li class="paragraph padding-bottom-10">
-                      Stay on the bus until you reach the last stop.
-                    </li>
-                    <li class="paragraph padding-bottom-10">
-                      Open your google maps, or the easiest way is to just open the website
-                      glyntowncarecentre.ie. Scroll down and click the direction from our website's locate us through
-                      the end of the home page.
-                    </li>
-                  </ul>
-
-                </div>
-
-              </div>
-              <div class="bus-route-info-important-links-container">
-                <div class="bus-flex-container from-right slider">
-                  <h2 class="bus-route-title">
-                    Important Links
-                  </h2>
-                  <p class="paragraph">Before your bus journey, make sure to check the official transit website for
-                    useful links that provide information on routes, schedules, and any service updates to ensure a
-                    smooth and efficient trip</p>
-                  <div class="bus-links-container">
-                    <h3>
-                      <a class="bus-link" href="https://bustimes.org/services/214-cuh-a-and-e-cork-city-patrick-street">
-                        Bus 214 Schedule (Cork City) link >
-                      </a>
-                    </h3>
-
-                    <h3>
-                      <a class="bus-link"
-                        href="https://moovitapp.com/index/en/public_transit-line-214-Ireland-502-851897-228786-0">
-                        Moovit app link >
-                      </a>
-
-                    </h3>
-                  </div>
-
-                </div>
-
-              </div>
-
+      <div class="location-container-inner">
+        <div class="section-title text-center reveal">Find Us Here</div>
+        <div class="bus-info-container">
+          <iframe class="reveal-left"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.5030539028985!2d-8.389418684003196!3d51.92477718792069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48449a9e4aae304b%3A0xf5e729b0aebc63be!2sGlyntown%20Care%20Centre!5e0!3m2!1sen!2sie!4v1678902111606!5m2!1sen!2sie"
+            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Glyntown Care Centre location on Google Maps">
+          </iframe>
+          <div class="bus-route-info-container reveal-right">
+            <h2 class="bus-route-title">Bus Route Option</h2>
+            <ul class="bus-information-step-by-step-list">
+              <li>Look for the nearest bus stop to <b>Glyntown Glanmire</b> that is serviced by the <b>bus 214</b>. You can use a map or a transportation app to locate the nearest stop.</li>
+              <li>Board the bus 214 at the bus stop and make sure it is headed to hazelwood not Knockraha. Always ask the driver.</li>
+              <li>Stay on the bus until you reach the last stop.</li>
+              <li>Open Google Maps or visit glyntowncarecentre.ie and scroll down to the map at the end of the home page for directions.</li>
+            </ul>
+            <div class="bus-links-container">
+              <h3><a class="bus-link" href="https://bustimes.org/services/214-cuh-a-and-e-cork-city-patrick-street" target="_blank" rel="noopener">Bus 214 Schedule (Cork City) →</a></h3>
+              <h3><a class="bus-link" href="https://moovitapp.com/index/en/public_transit-line-214-Ireland-502-851897-228786-0" target="_blank" rel="noopener">Moovit app link →</a></h3>
             </div>
-
-
-
           </div>
         </div>
-
-
-
       </div>
     </section>
   </main>
 
-  <!-- Footer elements -->
+  <!-- Footer -->
   <footer>
     <div class="footer-container">
-      <div class="footer-container-inner inner-container">
-        <div class="footer-row">
-          <div class="footer-column">
-            <img src="images/logo.png" alt="">
-          </div>
-
-          <div class="footer-column">
-            <h4 class="footer-title">Address</h4>
-
-            <ul class="address-list list">
-              <li class="footer-item-list">Glyntown Care Centre</li>
-              <li class="footer-item-list">Glyntown, Glanmire</li>
-              <li class="footer-item-list">Co. Cork, T45 H795</li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4 class="footer-title">Contact Us</h4>
-
-            <ul class="reach-out-list list">
-              <li class="footer-item-list"><a href="mailto:info@glyntowncare.ie">E: info@glyntowncare.ie</a></li>
-              <li class="footer-item-list"><a href="tel:0874400603">M: 087 440 0603</a></li>
-              <li class="footer-item-list"><a href="tel:0214821500">T: 021 482 1500</a></li>
-
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4 class="footer-title">Socials</h4>
-
-            <ul class="social-list list">
-              <li class="footer-item-list"><a href="https://www.facebook.com/profile.php?id=61555276798054"
-                  target="_blank">Facebook</a></li>
-              <li class="footer-item-list"><a href="https://www.instagram.com/glyntowncarecentre/"
-                  target="_blank">Instagram</a></li>
-              <li class="footer-item-list"><a href="https://www.linkedin.com/company/glyntown-care-centre/about/"
-                  target="_blank">LinkedIn</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4 class="footer-title">Useful Links</h4>
-
-            <ul class="social-list list">
-              <li class="footer-item-list"><a href="wellness">Services</a></li>
-              <li class="footer-item-list"><a href="wellness#facilities">Facilities</a></li>
-              <li class="footer-item-list"><a href="complaint-procedure/">How to make a Complaint?</a></li>
-
-            </ul>
-
-
-
-          </div>
-          <div class="footer-column">
-
-            <ul class="social-list list">
-
-              <li class="footer-item-list"><a href="about-us">About Us</a></li>
-              <li class="footer-item-list"><a href="careers">Career Page</a></li>
-            </ul>
-          </div>
+      <div class="footer-row">
+        <div class="footer-col-brand">
+          <img src="images/logo.png" alt="Glyntown Care Centre" loading="lazy">
+          <p>Providing compassionate, person-centred care in Glanmire, Co. Cork since 2015.</p>
         </div>
-        <p class="footer-span"> © Copyright Glyntown Care Centre. All Rights Reserved.</p>
-
+        <div class="footer-column">
+          <h4 class="footer-title">Address</h4>
+          <ul class="address-list list">
+            <li class="footer-item-list">Glyntown Care Centre</li>
+            <li class="footer-item-list">Glyntown, Glanmire</li>
+            <li class="footer-item-list">Co. Cork, T45 H795</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Contact Us</h4>
+          <ul class="reach-out-list list">
+            <li class="footer-item-list"><a href="mailto:info@glyntowncare.ie">✉ info@glyntowncare.ie</a></li>
+            <li class="footer-item-list"><a href="tel:0874400603">📞 087 440 0603</a></li>
+            <li class="footer-item-list"><a href="tel:0214821500">📞 021 482 1500</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="social-list list">
+            <li class="footer-item-list"><a href="about-us">About Us</a></li>
+            <li class="footer-item-list"><a href="wellness">Services</a></li>
+            <li class="footer-item-list"><a href="careers">Careers</a></li>
+            <li class="footer-item-list"><a href="complaint-procedure/">Make a Complaint</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Socials</h4>
+          <ul class="social-list list">
+            <li class="footer-item-list"><a href="https://www.facebook.com/profile.php?id=61555276798054" target="_blank" rel="noopener">Facebook</a></li>
+            <li class="footer-item-list"><a href="https://www.instagram.com/glyntowncarecentre/" target="_blank" rel="noopener">Instagram</a></li>
+            <li class="footer-item-list"><a href="https://www.linkedin.com/company/glyntown-care-centre/about/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-span">© 2024 Glyntown Care Centre. All Rights Reserved.</span>
+        <div class="footer-social-links">
+          <a href="https://www.facebook.com/profile.php?id=61555276798054" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/glyntowncarecentre/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/glyntown-care-centre/about/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script type="text/javascript" src="scripts/script.js"></script>
-  <script type="text/javascript" src="scripts/observer.js"></script>
-
+  <script src="scripts/script.js" defer></script>
 </body>
-
 </html>
+

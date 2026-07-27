@@ -1,10 +1,3 @@
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add('bottom-to-top');
-//     }
-//   });
-// });
+// Observer functionality moved to script.js
+// This file is kept for backwards compatibility
 
-// const element = document.querySelector('.filler-h1');
-// observer.observe(element);

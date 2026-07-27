@@ -1,280 +1,266 @@
-.main {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+/* ============================================
+   Glyntown Care - Complaint Procedure Page
+   ============================================ */
 
+@import url('../stylesheet/global.css');
+
+/* === Hero === */
 .landing-section {
-
-    height: 100dvh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-20) var(--space-6);
 }
-
-
-.landing-section.text-container {
-    width: fit-content;
-    height: auto;
-    /* hat height (only shows this part) */
-    overflow: hidden;
-    /* hide the "below the hat" part */
-    position: relative;
-}
-
-.landing-section span {
-
-    font-size: 15vh;
-    font-weight: 700;
-    margin: auto;
-    text-align: center;
-    color: transparent;
-    /* make the fill invisible */
-    -webkit-text-stroke: 2px black;
-    /* outline color and width */
-    opacity: 0;
-    text-stroke: 2px black;
-    /* non-prefixed (for broader support) */
-
-
-    position: relative;
-    /* start below the "hat" */
-    animation: riseUp 2s ease-out forwards;
-}
-
-
 
 .text-container {
-    width: 97.5%;
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
+.span-container span {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 12vw, 7rem);
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-navy);
+  text-stroke: 2px var(--color-navy);
+  line-height: 1.1;
+}
+
+.span-container:last-child span {
+  -webkit-text-stroke: 2px var(--color-primary);
+  text-stroke: 2px var(--color-primary);
+}
+
+/* === Statement === */
 .statement {
-    width: clamp(300px, 97.5%, 800px);
-    margin: auto;
-    font-size: 2rem;
-    font-weight: 400;
-    display: flex;
-    flex-direction: column;
-    gap: 30vh;
-    padding-bottom: 100px;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: var(--space-16) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
 }
 
-.in-person-section,
-.by-letter-section {
-    display: flex;
-    flex-direction: column;
-    padding: 5vh 0 0 0;
+.statement p {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.9;
+  color: var(--color-text-secondary);
+}
 
+/* === Person Sections === */
+.person-section {
+  padding: var(--space-12) var(--space-6);
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .sec-title {
-    text-align: center;
-    font-size: 5rem;
-    margin: auto 50px;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, var(--text-5xl));
+  color: var(--color-navy);
+  text-align: center;
+  margin-bottom: var(--space-8);
 }
 
-.in-person,
-.by-letter {
-    width: 97.5%;
-    padding: 100px 0;
-    display: flex;
-    gap: 2vw;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+.person-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-10);
+  align-items: center;
 }
 
-.in-person figure,
-.by-letter figure {
-    width: 40%;
-    margin: auto;
-    flex: 40%;
+.person-content.reverse {
+  direction: rtl;
 }
 
-.in-person figure video,
-.by-letter figure img {
-    width: 100%;
+.person-content.reverse > * {
+  direction: ltr;
 }
 
-.in-person-text,
-.by-letter-text {
-    flex: 50%;
-    margin: auto;
-    display: flex;
-    width: clamp(300px, 95%, 300px);
-    flex-direction: column;
-    padding: 75px;
+.person-content figure {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
 }
 
-.in-person-text h1,
-.by-letter-text h1 {
-    font-size: 2.3rem;
-    background: linear-gradient(120deg, #000000, #14f873);
-    -webkit-background-clip: text;
-    color: transparent;
+.person-content figure video,
+.person-content figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.in-person-text p,
-.by-letter-text p {
-    font-size: 1.7rem;
-
-    font-weight: 400;
-    padding-bottom: 50px;
+.person-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
 }
 
-.by-letter-text a,
-.in-person-text a,
-.patrick-section a {
-    text-decoration: none;
-    background: linear-gradient(120deg, #26dc93, #7617c4);
-    -webkit-background-clip: text;
-    font-weight: 800;
-    color: transparent;
-
+.person-text h2 {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  color: var(--color-navy);
+  line-height: 1.3;
 }
 
-.in-person-text span {
-
-    font-size: 1.7rem;
-    font-weight: 400;
-
-
-    padding-bottom: 10px;
+.person-text p {
+  font-size: var(--text-lg);
+  line-height: 1.8;
+  color: var(--color-text-secondary);
 }
 
-.by-letter {
-    flex-direction: row-reverse;
+.person-text a,
+.review-section a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
 }
 
-
-.patrick-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 700px;
-    width: 97.5%;
-    min-width: 300px;
-    margin: auto;
-    text-align: center;
-    padding: 100px 0;
-
+.person-text a:hover,
+.review-section a:hover {
+  text-decoration: underline;
 }
 
-.patrick-section p {
-    font-size: 2rem;
-    font-weight: 400;
-    padding: 0 0 50px 0;
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--color-primary);
 }
 
-.patrick-section span {
-    font-size: 2rem;
-    font-weight: 500;
+.contact-detail span {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
 }
 
-.patrick-section a {
-    padding: 50px;
+.contact-detail strong {
+  font-size: var(--text-lg);
+  color: var(--color-navy);
 }
 
+/* === Review Section === */
+.review-section {
+  max-width: 750px;
+  margin: var(--space-16) auto;
+  padding: var(--space-10);
+  text-align: center;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+}
+
+.review-section p {
+  font-size: var(--text-lg);
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+.review-section strong {
+  color: var(--color-navy);
+  font-size: var(--text-xl);
+}
+
+/* === Advocacy Section === */
 .advocacy-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 700px;
-    margin: auto;
-    text-align: center;
-    font-size: 1.8rem;
-    padding: 100px 0;
-
+  padding: var(--space-12) var(--space-6);
+  max-width: 1000px;
+  margin: 0 auto var(--space-16);
+  text-align: center;
 }
 
-.sage-section,
-.ombudsman-section {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
+.advocacy-section h2 {
+  font-family: var(--font-heading);
+  font-size: var(--text-4xl);
+  color: var(--color-navy);
+  margin-bottom: var(--space-8);
 }
 
-.sage-section a,
-.ombudsman-section a {
-    text-decoration: none;
-    font-weight: 600;
-    background: linear-gradient(120deg, #26dc93, #7617c4);
-    -webkit-background-clip: text;
-    color: transparent;
-    padding: 20px;
+.advocacy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
 }
 
-@keyframes riseUp {
-    0% {
-        transform: translateY(-200);
-        opacity: 0;
-    }
-
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.advocacy-card {
+  background: var(--color-white);
+  padding: var(--space-8);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-base);
 }
 
-@media(max-width:700px) {
-    .landing-section .text-container .span-container span {
-        font-size: 5rem;
-    }
+.advocacy-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
 
-    .statement {
-        font-size: 1.5rem;
-        width: 90.5%;
-        margin: auto;
-        padding: 0;
-        gap: 100px;
-    }
+.advocacy-card h3 {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+}
 
-    .sec-title {
-        font-size: 3rem;
+.advocacy-card p {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2);
+}
 
-    }
+.advocacy-card a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
 
-    .in-person-section h1,
-    .by-letter-section h1 {
-        font-size: 2rem;
-        padding-top: 20px;
-    }
+.advocacy-card a:hover {
+  text-decoration: underline;
+}
 
-    .by-letter,
-    .in-person {
-        flex-direction: column;
-        width: 100%;
-    }
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .person-content {
+    grid-template-columns: 1fr;
+  }
 
-    .by-letter figure,
-    .in-person figure {
-        width: 100%;
-    }
+  .person-content.reverse {
+    direction: ltr;
+  }
 
-    .by-letter-text,
-    .in-person-text {
-        padding: 0;
-        width: 90%;
-        margin: auto;
-    }
+  .advocacy-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
-    .in-person-text p,
-    .by-letter-text p {
-        font-size: 1.5rem;
-        padding: 20px 0;
+@media (max-width: 768px) {
+  .span-container span {
+    -webkit-text-stroke: 1.5px var(--color-navy);
+    text-stroke: 1.5px var(--color-navy);
+  }
 
-    }
+  .person-text h2 {
+    font-size: var(--text-2xl);
+  }
+}
 
-    .patrick-section p {
-        font-size: 1.5rem;
-    }
+@media (max-width: 480px) {
+  .review-section {
+    padding: var(--space-6);
+  }
+
+  .advocacy-card {
+    padding: var(--space-6);
+  }
 }

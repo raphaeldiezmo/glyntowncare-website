@@ -1,564 +1,711 @@
-.header {
-    width: 100vw;
+/* ============================================
+   Glyntown Care - About Us Page Styles
+   Modern, refined with better typography
+   ============================================ */
 
-}
+@import url('global.css');
 
-/* first t of the abt us section */
-#abt-us-header-section {
-    width: 100%;
-    max-width: 1980px;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
-
+/* === Hero Section === */
 .abt-us-landing {
-    height: 100svh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    width: 100%;
-    height: 100vh;
-    background: rgb(0, 0, 0);
-
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0b0e2a 0%, #1a1a4e 25%, #0d2b4a 50%, #1a0d2e 75%, #0b0e2a 100%);
+  background-size: 400% 400%;
+  animation: heroBgShift 12s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
 }
 
+@keyframes heroBgShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+}
 
+.abt-us-landing-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(8, 113, 185, 0.25), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 20% 80%, rgba(0, 154, 157, 0.2), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 80% 70%, rgba(147, 51, 234, 0.15), transparent 60%),
+    radial-gradient(ellipse 70% 30% at 30% 50%, rgba(43, 40, 104, 0.3), transparent 60%);
+}
 
+/* === Animated Orbs === */
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  z-index: 1;
+  pointer-events: none;
+  animation: orbFloat 20s ease-in-out infinite;
+}
 
-.abt-us-landing video {
-    width: 70%;
-    padding: 0;
-    border: 0;
-    overflow: hidden;
-    object-fit: cover;
-    display: block;
-    margin: auto;
-    mix-blend-mode: lighten;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    /* Softens the top */
-    mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 0.2%, rgba(255, 255, 255, 1) 100%);
-    filter: brightness(1.5) contrast(1.2) saturate(1.1);
+.hero-orb--1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(8, 113, 185, 0.3), transparent 70%);
+  top: -10%;
+  left: -5%;
+  animation-delay: 0s;
+}
+
+.hero-orb--2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 154, 157, 0.2), transparent 70%);
+  bottom: -5%;
+  right: -5%;
+  animation-delay: -7s;
+  animation-duration: 25s;
+}
+
+.hero-orb--3 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(43, 40, 104, 0.3), transparent 70%);
+  top: 40%;
+  left: 55%;
+  animation-delay: -14s;
+  animation-duration: 18s;
+}
+
+@keyframes orbFloat {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(40px, -30px) scale(1.1);
+  }
+  50% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+  75% {
+    transform: translate(30px, 40px) scale(1.05);
+  }
+}
+
+/* === Floating Geometric Particles === */
+.particle {
+  position: absolute;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.12);
+  pointer-events: none;
+  user-select: none;
+  animation: particleFloat linear infinite;
+}
+
+.particle--1 {
+  left: 8%;
+  top: 20%;
+  font-size: 1.4rem;
+  animation-duration: 14s;
+  animation-delay: 0s;
+}
+
+.particle--2 {
+  left: 22%;
+  top: 70%;
+  font-size: 1.8rem;
+  animation-duration: 18s;
+  animation-delay: 3s;
+}
+
+.particle--3 {
+  left: 42%;
+  top: 15%;
+  font-size: 1.2rem;
+  animation-duration: 12s;
+  animation-delay: 5s;
+}
+
+.particle--4 {
+  left: 60%;
+  top: 75%;
+  font-size: 1.6rem;
+  animation-duration: 16s;
+  animation-delay: 1s;
+}
+
+.particle--5 {
+  left: 75%;
+  top: 25%;
+  font-size: 1.3rem;
+  animation-duration: 15s;
+  animation-delay: 4s;
+}
+
+.particle--6 {
+  left: 90%;
+  top: 60%;
+  font-size: 1rem;
+  animation-duration: 13s;
+  animation-delay: 2s;
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(0.6);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(-20px) rotate(30deg) scale(1);
+  }
+  50% {
+    transform: translateY(-60px) rotate(180deg) scale(1.1);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg) scale(0.6);
+    opacity: 0;
+  }
+}
+
+/* === Hero Text Container === */
+.hero-text-container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  animation: heroTextFadeIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes heroTextFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(4px);
+  margin-bottom: var(--space-2);
 }
 
 .abt-us-landing h1 {
-    font-size: clamp(2rem, 15vh, 6rem);
-    font-weight: 600;
-    text-align: center;
-    color: transparent;
-    margin: auto;
-    filter: brightness(1.2);
-    letter-spacing: -1px;
-    -webkit-text-stroke: 2px rgb(135, 74, 239);
-    text-stroke: 2.5px rgb(204, 196, 196);
+  position: relative;
+  z-index: 3;
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 10vw, 7rem);
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.85);
+  text-stroke: 2px rgba(255, 255, 255, 0.85);
+  text-align: center;
+  letter-spacing: -1px;
+  text-shadow: 0 0 60px rgba(8, 113, 185, 0.3), 0 0 120px rgba(8, 113, 185, 0.1);
+  line-height: 1.1;
 }
 
-
-section {
-    position: relative;
+.abt-us-landing h1 .text-gradient {
+  -webkit-text-stroke: 2px transparent;
+  text-stroke: 2px transparent;
+  background: linear-gradient(135deg, #60b0f4, #a8d8ff, #60b0f4);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 4s ease-in-out infinite;
 }
 
-.glyntown-abt-us{
-    padding: 100px 0;
-    width: clamp(300px, 95%, 1000px);
-    
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10vh;
-}
-.glyntown-abt-us p{
-    font-size: clamp(1rem, 3vh, 2rem);
-    font-weight: 400;
-    width: clamp(300px, 90%, 700px);
-    margin: auto;
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
-.filler,
-.filler-3 {
-    font-size: clamp(1rem, 5vw, 1.5rem);
-    text-align: center;
-    width: 100%;
-    font-weight: 500;
-    margin: auto;
-    padding: 100px 0;
-    background-color: rgb(223, 241, 245);
-
-    color: white;
-
+.hero-subtitle {
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 1.5vw, 1.2rem);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.55);
+  text-align: center;
+  max-width: 500px;
+  line-height: 1.7;
+  margin-top: var(--space-2);
+  letter-spacing: 0.01em;
 }
 
-.filler p,
-.filler-3 p {
-    font-size: clamp(1rem, 3vw, 1.6rem);
-    width: clamp(200px, 87.5%, 600px);
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-    margin: auto;
-    padding: 100px 0 0 0;
+/* === Scroll Indicator === */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  animation: scrollIndicatorFadeIn 1.5s ease 1.5s forwards;
+  opacity: 0;
 }
 
-.filler h2 {
-    background: linear-gradient(to right, black, rgb(184, 1, 184));
-    -webkit-background-clip: text;
-    color: transparent;
+@keyframes scrollIndicatorFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
 }
 
-.filler-3 h2 {
-    background: linear-gradient(to right, black, rgb(1, 184, 80));
-    -webkit-background-clip: text;
-    color: transparent;
+.scroll-indicator__label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.35);
 }
 
-.filler h2,
-.filler-3 h2 {
-    width: clamp(200px, 87.5%, 600px);
-    margin: auto;
-    text-align: center;
-    font-size: clamp(2rem, 5vw, 4rem);
+.scroll-indicator__mouse {
+  width: 24px;
+  height: 38px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-
-
-@keyframes fadeDown {
-    0% {
-        opacity: 0;
-        transform: translateY(100px) scale(0.9);
-
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-    }
+.scroll-indicator__dot {
+  width: 4px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  margin-top: 6px;
+  animation: scrollDot 2s ease-in-out infinite;
 }
 
+@keyframes scrollDot {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.3;
+  }
+}
 
+/* === Floating Hearts === */
+@keyframes heartFloat {
+  0% {
+    transform: translateY(100vh) rotate(0deg) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(360deg) scale(1);
+    opacity: 0;
+  }
+}
 
+@keyframes heartDrift {
+  0%, 100% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 30px;
+  }
+  75% {
+    margin-left: -20px;
+  }
+}
 
+.heart-float {
+  position: absolute;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.15);
+  animation: heartFloat linear infinite;
+  pointer-events: none;
+  user-select: none;
+}
+
+.heart-float:nth-child(11) {
+  left: 5%;
+  font-size: 1.2rem;
+  animation-duration: 12s;
+  animation-delay: 0s;
+  animation-name: heartFloat;
+}
+
+.heart-float:nth-child(12) {
+  left: 15%;
+  font-size: 2rem;
+  animation-duration: 16s;
+  animation-delay: 2s;
+  animation-name: heartFloat, heartDrift;
+  animation-duration: 16s, 4s;
+  animation-delay: 2s, 2s;
+}
+
+.heart-float:nth-child(13) {
+  left: 30%;
+  font-size: 0.9rem;
+  animation-duration: 10s;
+  animation-delay: 4s;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.heart-float:nth-child(14) {
+  left: 50%;
+  font-size: 2.5rem;
+  animation-duration: 18s;
+  animation-delay: 1s;
+  animation-name: heartFloat, heartDrift;
+  animation-duration: 18s, 5s;
+  animation-delay: 1s, 1s;
+}
+
+.heart-float:nth-child(15) {
+  left: 65%;
+  font-size: 1.1rem;
+  animation-duration: 14s;
+  animation-delay: 5s;
+}
+
+.heart-float:nth-child(16) {
+  left: 78%;
+  font-size: 1.8rem;
+  animation-duration: 11s;
+  animation-delay: 3s;
+  animation-name: heartFloat, heartDrift;
+  animation-duration: 11s, 3.5s;
+  animation-delay: 3s, 3s;
+}
+
+.heart-float:nth-child(17) {
+  left: 88%;
+  font-size: 0.8rem;
+  animation-duration: 15s;
+  animation-delay: 6s;
+}
+
+.heart-float:nth-child(18) {
+  left: 95%;
+  font-size: 1.5rem;
+  animation-duration: 13s;
+  animation-delay: 0.5s;
+  color: rgba(255, 255, 255, 0.12);
+}
+
+/* === Introduction === */
+.glyntown-abt-us {
+  padding: var(--space-20) var(--space-8);
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.glyntown-abt-us p {
+  font-family: var(--font-body);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  font-weight: 400;
+  line-height: 1.9;
+  color: var(--color-text-secondary);
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* === Trust Section === */
+#abt-us-header-section {
+  width: 100%;
+}
+
+.filler, .filler-3 {
+  padding: var(--space-16) var(--space-8);
+  text-align: center;
+  background: linear-gradient(135deg, rgba(8, 113, 185, 0.04), rgba(0, 154, 157, 0.04));
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.filler h2, .filler-3 h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, var(--text-5xl));
+  font-weight: 700;
+  max-width: 700px;
+  margin: 0 auto var(--space-6);
+  background: linear-gradient(135deg, var(--color-navy), var(--color-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.filler p, .filler-3 p {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* === Mission & Vision === */
 .mission-vision-container {
-    width: 100%;
-    max-width: 1960px;
-    overflow: hidden;
-    display: flex;
-    padding: 0 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    text-align: center;
-    background: linear-gradient(rgba(238, 238, 238, 0.2), rgba(103, 30, 191, 0.2), rgba(238, 238, 238, 0.2));
+  width: 100%;
+  padding: var(--space-16) 0;
 }
 
 .row {
-    width: clamp(200px, 90%, 1960px);
-    padding: 100px 0;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-8);
+  align-items: center;
 }
 
 .mission-vision-img {
-    width: 100%;
-    flex: 50%;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
 }
 
 .mission-vision-img img {
-    width: 95%;
-    height: 100%;
-    margin: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
+.mission-vision-img:hover img {
+  transform: scale(1.03);
+}
 
 .content-text-container {
-    border-radius: 8px;
-    flex: 50%;
-    display: flex;
-    font-size: 1.7rem;
-    font-weight: 400;
-    padding: 30px;
-    color: rgb(10, 10, 10);
-    flex-direction: column;
-    text-align: left;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
 }
 
-.content-text-container span {
-    font-weight: 800;
+.content-text-container p {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: 1.9;
+  color: var(--color-text-secondary);
 }
 
-.gradient-text {
-    background: linear-gradient(90deg, rgb(76, 60, 219), rgb(4, 90, 136), rgb(26, 171, 108));
-    background-size: 200% 100%;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: gradientAnimation 10s linear infinite;
-    -webkit-text-stroke: 0px rgb(135, 74, 239);
-    text-stroke: 0px rgb(204, 196, 196);
+.content-text-container .text-gradient {
+  font-weight: 700;
 }
 
-@keyframes gradientAnimation {
-    0% {
-        background-position: 100% 0;
-    }
-
-    100% {
-        background-position: -100% 0;
-    }
+/* === Services Section (About) === */
+.heading-section {
+  text-align: center;
+  padding: var(--space-16) var(--space-8) var(--space-8);
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.content-text-container p,
-.content-text-container h1 {
-    width: clamp(200px, 87.5%, 600px);
-    margin: auto;
-}
-
-/* services section */
-.services-section {
-    width: 100%;
-    max-width: 1960px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-}
-
-.service-title {
-    font-size: 2rem;
-    width: 50%;
-    margin: auto;
-    font-weight: 700;
+.services-section-about {
+  padding: 0 var(--space-8) var(--space-16);
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .services-section-row {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    justify-content: space-between;
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+  margin-bottom: var(--space-8);
 }
 
 .service-item {
-    width: 30%;
-    overflow: hidden;
-    margin: 15px;
-    background: linear-gradient(0.25turn,
-            rgba(235, 106, 252, 0.2),
-            rgba(138, 106, 252, 0.2));
-    text-align: left;
-    flex-basis: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    display: flex;
-    flex-direction: column;
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-base);
 }
 
-.service-item-title {
-    font-size: 1.7rem;
-}
-
-.service-item-sentence {
-    list-style: none;
-    padding-top: 30px;
-    font-size: 1rem;
-    font-weight: 200;
+.service-item:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
 }
 
 .service-item img {
-    width: 100%;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
 }
 
 .service-content {
-    padding: 30px;
+  padding: var(--space-6);
 }
 
-#facilities-section {
-    width: 100%;
-    margin: auto;
-
+.service-content h3 {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-4);
+  color: var(--color-navy);
 }
 
-#facilities-section .paragraph {
-    font-size: 1.5rem
+.service-content p {
+  font-size: var(--text-sm);
+  line-height: 1.8;
+  color: var(--color-text-secondary);
 }
 
-.facilities-section-container {
-    text-align: left;
-    width: 100%;
-    margin-bottom: 100px;
-    justify-content: center;
-    flex-direction: column;
-
+/* === Facilities Section === */
+.facilities-section {
+  padding: var(--space-16) 0;
+  background: var(--color-bg-alt);
 }
 
 .facility-section-header-container {
-    width: 100%;
-    text-align: center;
-    padding-top: 100px;
+  text-align: center;
+  padding: 0 var(--space-8);
+  margin-bottom: var(--space-12);
 }
 
 .facility-list-container {
-    padding: 50px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-self: center;
-    gap: 2rem;
-
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
 }
 
 .facility-card {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    width: 100%;
-    justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
 }
 
 .fac-item-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: start;
-    width: clamp(300px, 40%, 400px);
-    gap: 20px;
-    padding: 30px;
+  background: var(--color-white);
+  padding: var(--space-8);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-base);
 }
 
+.fac-item-col:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
 
-.fac-item-col span {
-    font-size: 2rem;
-    font-weight: 800;
-    font-family: sans-serif;
-    color: rgb(44, 0, 133);
-
-
+.facility-name {
+  display: block;
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+  line-height: 1.4;
 }
 
 .facility-item {
-    flex: 90%;
-    width: 100%;
-    font-weight: 400;
-    color: rgb(68, 68, 68);
-    justify-items: space-between;
-    font-size: clamp(1rem, 1.5vw, 1.3rem);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
 }
 
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .services-section-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .row {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
 
-@keyframes reveal {
-    from {
-        transform: translateY(40px);
-    }
+  .vision-row {
+    direction: ltr;
+  }
 
-    to {
-        opacity: 1;
-        transform: none;
-    }
+  .content-text-container {
+    text-align: center;
+  }
 }
 
-@media (max-width: 1158px) {
-    .content-text-container {
-        width: 80vw;
-        max-width: 80vw;
-        height: auto;
-        margin-bottom: 20px;
-        max-height: auto;
-    }
+@media (max-width: 768px) {
+  .services-section-row {
+    grid-template-columns: 1fr;
+  }
 
-    .abt-us-info-text,
-    .mission-vision-container {
-        width: 100%;
-    }
+  .facility-card {
+    grid-template-columns: 1fr;
+  }
 
-    .abt-us-header-title {
-        font-size: 6rem;
+  .glyntown-abt-us {
+    padding: var(--space-12) var(--space-6);
+  }
 
-    }
+  .row {
+    padding: 0 var(--space-6);
+  }
 
-    .abt-us-header-span {
-        font-size: 2.2rem;
-        font-weight: 300;
-    }
-
-    .content-text-container {
-        text-align: center;
-
-    }
-
-    .row {
-        flex-direction: column;
-
-    }
-
-    .vision-row {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
+  .abt-us-landing h1 {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+  }
 }
 
-/* responsive styling */
-@media (max-width: 800px) {
+@media (max-width: 480px) {
+  .fac-item-col {
+    padding: var(--space-6);
+  }
 
-    .abt-us-content p,
-    .service-item,
-    .facility-list-container,
-    .filler p,
-    .filler-3 p {
-        width: 90%;
-    }
+  .service-content {
+    padding: var(--space-5);
+  }
 
-    .content-container,
-    .row,
-    .abt-us-info-text,
-    .abt-us-content {
-        width: 100%;
-    }
-
-    .abt-us-header-container {
-        flex-direction: column;
-    }
-
-    .abt-us-info-text {
-        text-align: center;
-    }
-
-    .abt-us-header-title {
-        font-size: 4rem;
-    }
-
-    .abt-us-header-span {
-        font-size: 2rem;
-    }
-
-    .content-text-container {
-        padding: 30px;
-    }
-
-    /* services */
-    .services-section-row {
-        flex-direction: column;
-        width: 90%;
-        margin: auto;
-
-    }
-
-    .service-item {
-        flex: 100%;
-        margin: auto;
-        margin-bottom: 5vw;
-    }
-
-    /* facilities section */
-    #facilities-section {
-        width: 95%;
-    }
-
-    .facility-list-container {
-        padding: 0;
-        padding-bottom: 30px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
+  .service-content h3 {
+    font-size: var(--text-xl);
+  }
 }
 
-
-@media (max-width: 450px) {
-    .abt-us-landing {
-        height: 100dvh;
-        width: 100%;
-        overflow: hidden;
-        padding: 0;
-        justify-content: flex-end;
-        margin: auto;
-        gap: 0;
-    }
-
-    .abt-us-landing video {
-        width: 100%;
-        transform: scale(1.7);
-        height: auto;
-        margin: auto;
-        margin-top: 300px;
-    }
-
-    .abt-us-landing h1 {
-        font-size: 17vw;
-        margin: auto;
-        text-align: left;
-        padding: 0;
-        width: 95vw;
-
-    }
-
-
-
-    .content-text-container h1 {
-        font-size: 1.5rem;
-        padding: 0 0 10px 0;
-    }
-
-    .content-text-container p,
-    .content-text-container {
-        width: 100%;
-        text-align: left;
-    }
-
-    .mission-vision-container {
-        padding: 0;
-    }
-
-    .content-text-container p,
-    .filler p {
-        font-size: 1.1rem;
-    }
-
-    .filler {
-        padding-top: 100px;
-    }
-
-    .facility-item {
-        margin-right: 0px;
-    }
-
-    .filler p,
-    .filler-3 p,
-    .filler-3 h2,
-    .filler h2 {
-        width: 87.5%;
-        margin: auto;
-        text-align: left;
-    }
-
-    .filler p,
-    .filler-3 p {
-        padding: 20px;
-
-    }
-
-    .service-item,
-    .filler,
-    .filler-3 {
-        width: 100%;
-        padding: 50px 0;
-    }
-
-    .abt-us-content p {
-        width: 100%;
-        font-size: 1.25rem;
-    }
-}

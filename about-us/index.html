@@ -1,222 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- style sheet link -->
+
   <link rel="stylesheet" href="../stylesheet/style.css">
   <link rel="stylesheet" href="../stylesheet/navbar.css">
   <link rel="stylesheet" href="../stylesheet/footerstyle.css">
-  <link rel="stylesheet" href="../stylesheet/about-us-styles.css">
   <link rel="stylesheet" href="../stylesheet/animation.css">
+  <link rel="stylesheet" href="../stylesheet/about-us-styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <title>About Us - Glytown Care</title>
+  <title>About Us - Glyntown Care Centre</title>
   <link rel="icon" type="image/x-icon" href="../images/logo.png">
-
+  <meta name="description" content="Learn more about Glyntown Care Centre — our mission, vision, and commitment to providing compassionate, person-centred care in Glanmire, Co. Cork.">
 </head>
 
 <body>
-  <!-- Header elements -->
   <header>
     <div class="nav-container">
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Main navigation">
         <div class="navbar-brand-container">
           <a href="https://glyntowncare.ie">
-            <img class="navbar-brand" src="../images/logo-nobg.png" alt="">
+            <img class="navbar-brand" src="../images/logo-nobg.png" alt="Glyntown Care Centre">
           </a>
         </div>
         <div class="nav-list-container">
           <ul class="nav">
-            <img class="navbar-brand-menu" src="../images/logo-nobg.png" alt="">
-
+            <img class="navbar-brand-menu" src="../images/logo-nobg.png" alt="Glyntown Care Centre" loading="lazy">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="https://glyntowncare.ie">
-                Home
-              </a>
+              <a class="nav-link" href="https://glyntowncare.ie">Home</a>
             </li>
             <li class="nav-item">
-              <a href="about-us" class="nav-link  active-nav">
-                About Us
-              </a>
+              <a href="../about-us" class="nav-link active-nav">About Us</a>
             </li>
             <li class="nav-item">
-              <a class=" nav-link" href="../wellness">
-                Wellness
-              </a>
+              <a class="nav-link" href="../wellness">Wellness</a>
             </li>
             <li class="nav-item">
-              <a class=" nav-link" href="../careers">
-                Careers
-              </a>
+              <a class="nav-link" href="../careers">Careers</a>
             </li>
-
             <li class="nav-item contact-item">
-              <a class="nav-link" href="../contact-us">
-                Contact Us
-              </a>
+              <a class="nav-link" href="../contact-us">Contact Us</a>
             </li>
-
           </ul>
-
         </div>
         <div class="career-container">
-          <a class="career-link" href="../contact-us">
-            Contact Us
-          </a>
+          <a class="career-link" href="../contact-us">Contact Us</a>
         </div>
       </nav>
-
-      <div class="burger-menu">
+      <div class="burger-menu" aria-label="Toggle navigation menu" role="button" tabindex="0">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
     </div>
   </header>
+
   <main>
+    <!-- Hero -->
     <section class="abt-us-landing">
+      <div class="abt-us-landing-bg"></div>
 
-      <video autoplay muted loop playsinline src="../images/heart3.mp4"></video>
-      <h1>
-        Exceptional
-        <span class="gradient-text">Care</span>
-      </h1>
+      <!-- Decorative animated orbs for depth -->
+      <div class="hero-orb hero-orb--1"></div>
+      <div class="hero-orb hero-orb--2"></div>
+      <div class="hero-orb hero-orb--3"></div>
+
+      <!-- Floating geometric particles -->
+      <div class="particle particle--1">✦</div>
+      <div class="particle particle--2">◆</div>
+      <div class="particle particle--3">◈</div>
+      <div class="particle particle--4">✦</div>
+      <div class="particle particle--5">◇</div>
+      <div class="particle particle--6">✦</div>
+
+      <!-- Floating hearts -->
+      <i class="fa fa-heart heart-float" aria-hidden="true"></i>
+      <i class="fa fa-heart heart-float" aria-hidden="true"></i>
+      <i class="fa fa-heart heart-float" aria-hidden="true"></i>
+      <i class="fa fa-heart heart-float" aria-hidden="true"></i>
+      <i class="fa fa-heart heart-float" aria-hidden="true"></i>
+      <i class="fa fa-heart heart-float" aria-hidden="true"></i>
+      <i class="fa fa-heart heart-float" aria-hidden="true"></i>
+      <i class="fa fa-heart heart-float" aria-hidden="true"></i>
+
+      <div class="hero-text-container">
+        <span class="hero-badge">Glyntown Care Centre</span>
+        <h1>
+          Exceptional
+          <span class="text-gradient">Care</span>
+        </h1>
+        <p class="hero-subtitle">Compassionate, person-centred nursing home care in the heart of Glanmire, Co. Cork</p>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <span class="scroll-indicator__label">Discover more</span>
+        <div class="scroll-indicator__mouse">
+          <div class="scroll-indicator__dot"></div>
+        </div>
+      </div>
     </section>
+
+    <!-- Introduction -->
     <section class="glyntown-abt-us">
-      <p>At Glyntown Care Centre, we are proud to provide a warm, welcoming environment where residents receive high-quality, person-centred care tailored to their individual needs. Whether you're looking for long-term residential care, short-term respite, or specialised dementia support, our dedicated team is here to help every step of the way.
-        </p>
-      <p>Our purpose-built facility offers comfortable accommodations, beautiful landscaped gardens, and a range of engaging activities designed to promote well-being and social connection. From daily living assistance to 24/7 nursing support, we focus on dignity, independence, and enhancing quality of life.
-      </p>  
-       <p> At Glyntown, we don’t just care for people — we care about them. We are a home, a community, and a place where everyone is treated like family.</p>
+      <p class="reveal">At Glyntown Care Centre, we are proud to provide a warm, welcoming environment where residents receive high-quality, person-centred care tailored to their individual needs. Whether you're looking for long-term residential care, short-term respite, or specialised dementia support, our dedicated team is here to help every step of the way.</p>
+      <p class="reveal delay-2">Our purpose-built facility offers comfortable accommodations, beautiful landscaped gardens, and a range of engaging activities designed to promote well-being and social connection. From daily living assistance to 24/7 nursing support, we focus on dignity, independence, and enhancing quality of life.</p>
+      <p class="reveal delay-4">At Glyntown, we don't just care for people — we care about them. We are a home, a community, and a place where everyone is treated like family.</p>
     </section>
+
+    <!-- Trust & Transparency -->
     <section id="abt-us-header-section">
-      <div class="filler delay-trans">
-        <h2 class="fade-in delay-trans-2">
-          A Place of Trust and Transparency
-        </h2>
-        <p class="paragraph fade-in delay-trans-3">
-          We value open communication, working collaboratively with families to understand residents' needs, and
-          ensuring a dedicated team is always available to enhance the quality of life for those in our care. </p>
+      <div class="filler reveal">
+        <h2 class="reveal delay-2">A Place of Trust and Transparency</h2>
+        <p class="reveal delay-3">We value open communication, working collaboratively with families to understand residents' needs, and ensuring a dedicated team is always available to enhance the quality of life for those in our care.</p>
       </div>
-      <div class="mission-vision-container ">
-        <div class="row fade-in delay-trans">
-          <div class="mission-vision-img">
-            <img src="../images/mission111.jpg" alt="">
-          </div>
-          <div class="content-text-container ">
-            <p>
-              Our <span class="gradient-text">mission</span> is to offer compassionate, personalized care in a
-              supportive environment. We
-              enhance
-              residents' well-being through activities and services that promote physical, emotional, and social
-              health.
-              Our dedicated team respects each resident's dignity and fosters strong relationships with families and
-              the
-              community, ensuring a safe, comfortable home.</p>
 
+      <!-- Mission -->
+      <div class="mission-vision-container">
+        <div class="row reveal">
+          <div class="mission-vision-img">
+            <img src="../images/mission111.jpg" alt="Glyntown Care Centre mission" loading="lazy">
+          </div>
+          <div class="content-text-container reveal-right">
+            <span class="badge">Our Mission</span>
+            <p>Our <span class="text-gradient">mission</span> is to offer compassionate, personalized care in a supportive environment. We enhance residents' well-being through activities and services that promote physical, emotional, and social health. Our dedicated team respects each resident's dignity and fosters strong relationships with families and the community, ensuring a safe, comfortable home.</p>
           </div>
         </div>
       </div>
-      
-      <div class="filler-3 fade-in">
-        <h2 class="fade-in delay-trans-2">
-          Our Commitment to Holistic Well-being
-        </h2>
-        <p class="paragraph fade-in delay-trans-3">
-          We believe in holistic well-being, addressing physical, emotional, social, and spiritual needs. Our
-          approach
-          involves tailored healthcare, diverse activities, and programs for a purposeful and joyful living
-          experience. </p>
+
+      <!-- Holistic Well-being -->
+      <div class="filler-3 reveal">
+        <h2 class="reveal delay-2">Our Commitment to Holistic Well-being</h2>
+        <p class="reveal delay-3">We believe in holistic well-being, addressing physical, emotional, social, and spiritual needs. Our approach involves tailored healthcare, diverse activities, and programs for a purposeful and joyful living experience.</p>
       </div>
-      <div class="row vision-row fade-in delay-trans">
-        <div class="content-text-container">
-          <p>
-            Our <span class="gradient-text">vision</span>
-            is to be the leading provider of exceptional senior care, offering a warm, supportive, and empowering
-            environment. We are committed to excellence, innovation, and compassionate service, ensuring our residents
-            thrive while fostering trust with families and the community.</p>
+
+      <!-- Vision -->
+      <div class="mission-vision-container">
+        <div class="row vision-row reveal">
+          <div class="content-text-container reveal-left">
+            <span class="badge">Our Vision</span>
+            <p>Our <span class="text-gradient">vision</span> is to be the leading provider of exceptional senior care, offering a warm, supportive, and empowering environment. We are committed to excellence, innovation, and compassionate service, ensuring our residents thrive while fostering trust with families and the community.</p>
+          </div>
+          <div class="mission-vision-img">
+            <img src="../images/vision.jpg" alt="Glyntown Care Centre vision - a bright future" loading="lazy">
+          </div>
         </div>
-        <div class="mission-vision-img">
-          <img src="../images/vision.jpg" alt="">
-        </div>
-      </div>
       </div>
     </section>
 
+    <!-- Services & Facilities -->
+    <div class="heading-section">
+      <span class="badge">What We Offer</span>
+      <h1 class="section-title">Services and Facilities</h1>
+      <p class="section-subtitle">
+        We provide compassionate care that goes beyond the ordinary, fostering a haven of wellness and support for your loved ones' journey to a brighter and healthier future.
+      </p>
+    </div>
 
+    <section id="services-section" class="services-section-about">
+      <div class="services-section-row">
+        <div class="service-item reveal-left">
+          <img src="../images/doctor-checking-residents.jpg" alt="24/7 Nursing Care" loading="lazy">
+          <div class="service-content">
+            <h3>24/7 Nursing Care &amp; Medical Cover</h3>
+            <p>Our elderly residents receive round-the-clock nursing care, comprehensive medical coverage, and access to our dedicated GP as well as our multidisciplinary services - Speech and language therapy, dietician, occupational therapy, podiatrist optician, dentistry and community x-ray.</p>
+          </div>
+        </div>
+        <div class="service-item reveal delay-2">
+          <img src="../images/structure-daily-living-care.jpg" alt="Structured Daily Living Care" loading="lazy">
+          <div class="service-content">
+            <h3>Structured Care for Daily Living</h3>
+            <p>We provide personalised daily routines for elderly residents in our nursing home, ensuring they receive the care and attention they need to maintain their physical and emotional well-being.</p>
+          </div>
+        </div>
+        <div class="service-item reveal delay-3">
+          <img src="../images/engaging-activities-with-resident.jpg" alt="Engaging Activities" loading="lazy">
+          <div class="service-content">
+            <h3>Engaging Activities for Resident Well-Being</h3>
+            <p>We provide a wide array of enjoyable activities such as baking, dancing, singing, crafting, arts, gardening, outings, garden parties, watching films, and listening to music, promoting well-being and happiness.</p>
+          </div>
+        </div>
+      </div>
+      <div class="services-section-row">
+        <div class="service-item reveal-left">
+          <img src="../images/grooming-a-resident.jpg" alt="Empowering Self-Care" loading="lazy">
+          <div class="service-content">
+            <h3>Empowering Self-Care</h3>
+            <p>We provide support for our residents' self-care by offering hairdressing, hand massage, physiotherapy, and chiropody services on a quarterly basis, recognizing the importance of self-care in enhancing well-being during the golden years.</p>
+          </div>
+        </div>
+        <div class="service-item reveal">
+          <img src="../images/laundry-service.jpg" alt="Laundry Service" loading="lazy">
+          <div class="service-content">
+            <h3>Convenient Laundry Care</h3>
+            <p>Our nursing home provides convenient and reliable laundry services to our residents, ensuring their comfort and cleanliness with the exception of dry cleaning.</p>
+          </div>
+        </div>
+        <div class="service-item reveal-right">
+          <img src="../images/spiritual-nourishment.jpg" alt="Spiritual Nourishment" loading="lazy">
+          <div class="service-content">
+            <h3>Spiritual Nourishment</h3>
+            <p>Our nursing home provides regular mass services every month, complete with visiting priests and the opportunity for Holy Communion and receiving the Sacrament of the sick, allowing our residents to engage in meaningful spiritual practices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities -->
+    <section id="facilities-section" class="facilities-section">
+      <div class="facilities-section-container">
+        <div class="facility-section-header-container reveal">
+          <span class="badge">Our Facilities</span>
+          <h1 class="section-title">Facilities</h1>
+          <p class="section-subtitle">Our facilities are designed to meet the needs and enhance the quality of life for our residents.</p>
+        </div>
+        <div class="facility-list-container">
+          <div class="facility-card">
+            <div class="fac-item-col reveal-left">
+              <span class="facility-name">24 Hour Nursing Care &amp; Doctor on call</span>
+              <div class="facility-item">Professional medical care available around the clock for residents' health and well-being.</div>
+            </div>
+            <div class="fac-item-col reveal-right">
+              <span class="facility-name">Nurses' Station and Office</span>
+              <div class="facility-item">A central hub where staff coordinate care and attend to residents' needs.</div>
+            </div>
+          </div>
+          <div class="facility-card">
+            <div class="fac-item-col reveal-left">
+              <span class="facility-name">Nurse call system installed in each bedroom and bathroom</span>
+              <div class="facility-item">Emergency call buttons ensure quick assistance when needed.</div>
+            </div>
+            <div class="fac-item-col reveal-right">
+              <span class="facility-name">Secure courtyard with fountain and outdoor seating</span>
+              <div class="facility-item">A peaceful outdoor space for relaxation, fresh air, and socializing.</div>
+            </div>
+          </div>
+          <div class="facility-card">
+            <div class="fac-item-col reveal-left">
+              <span class="facility-name">Private Visitor's Area</span>
+              <div class="facility-item">A quiet and comfortable space for family and friends to visit residents.</div>
+            </div>
+            <div class="fac-item-col reveal-right">
+              <span class="facility-name">Locking Door Release System</span>
+              <div class="facility-item">Enhances security, ensuring a safe environment for all residents.</div>
+            </div>
+          </div>
+          <div class="facility-card">
+            <div class="fac-item-col reveal-left">
+              <span class="facility-name">Wheel-chair accessible communal toilets</span>
+              <div class="facility-item">Designed for ease of use and accessibility for all mobility levels.</div>
+            </div>
+            <div class="fac-item-col reveal-right">
+              <span class="facility-name">Sitting room with plasma TV</span>
+              <div class="facility-item">A cozy common area for entertainment, relaxation, and social interaction.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
   <footer>
     <div class="footer-container">
-      <div class="footer-container-inner inner-container font-1">
-        <div class="footer-row">
-          <div class="footer-column">
-            <img src="../images/logo.png" alt="">
-          </div>
-
-          <div class="footer-column">
-            <h4 class="footer-title">Address</h4>
-
-            <ul class="address-list list">
-              <li class="footer-item-list">Glyntown Care Centre</li>
-              <li class="footer-item-list">Glyntown, Glanmire</li>
-              <li class="footer-item-list">Co. Cork, T45 H795</li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4 class="footer-title">Contact Us</h4>
-
-            <ul class="reach-out-list list">
-              <li class="footer-item-list"><a href="mailto:info@glyntowncare.ie">E: info@glyntowncare.ie</a></li>
-              <li class="footer-item-list"><a href="tel:0874400603">M: 087 440 0603</a></li>
-              <li class="footer-item-list"><a href="tel:0214821500">T: 021 482 1500</a></li>
-
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4 class="footer-title">Socials</h4>
-
-            <ul class="social-list list">
-              <li class="footer-item-list"><a href="https://www.facebook.com/profile.php?id=61555276798054"
-                  target="_blank">Facebook</a></li>
-              <li class="footer-item-list"><a href="https://www.instagram.com/glyntowncarecentre/"
-                  target="_blank">Instagram</a></li>
-              <li class="footer-item-list"><a href="https://www.linkedin.com/company/glyntown-care-centre/about/"
-                  target="_blank">LinkedIn</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4 class="footer-title">Useful Links</h4>
-
-            <ul class="social-list list">
-              <li class="footer-item-list"><a href="../wellness">Services</a></li>
-              <li class="footer-item-list"><a href="../wellness#facilities-section">Facilities</a></li>
-              <li class="footer-item-list"><a href="../complaint-procedure/">How to make a Complaint?</a></li>
-
-
-            </ul>
-
-
-
-          </div>
-          <div class="footer-column">
-
-            <ul class="social-list list">
-
-              <li class="footer-item-list"><a href="about-us">About Us</a></li>
-              <li class="footer-item-list"><a href="../careers">Career Page</a></li>
-            </ul>
-          </div>
+      <div class="footer-row">
+        <div class="footer-col-brand">
+          <img src="../images/logo-nobg.png" alt="Glyntown Care Centre" loading="lazy">
+          <p>Providing compassionate, person-centred care in Glanmire, Co. Cork since 2015.</p>
         </div>
-        <p class="footer-span"> © Copyright Glyntown Care Centre. All Rights Reserved.</p>
-
+        <div class="footer-column">
+          <h4 class="footer-title">Address</h4>
+          <ul class="address-list list">
+            <li class="footer-item-list">Glyntown Care Centre</li>
+            <li class="footer-item-list">Glyntown, Glanmire</li>
+            <li class="footer-item-list">Co. Cork, T45 H795</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Contact Us</h4>
+          <ul class="reach-out-list list">
+            <li class="footer-item-list"><a href="mailto:info@glyntowncare.ie">✉ info@glyntowncare.ie</a></li>
+            <li class="footer-item-list"><a href="tel:0874400603">📞 087 440 0603</a></li>
+            <li class="footer-item-list"><a href="tel:0214821500">📞 021 482 1500</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="social-list list">
+            <li class="footer-item-list"><a href="../about-us">About Us</a></li>
+            <li class="footer-item-list"><a href="../wellness">Services</a></li>
+            <li class="footer-item-list"><a href="../careers">Careers</a></li>
+            <li class="footer-item-list"><a href="../complaint-procedure/">Make a Complaint</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title">Socials</h4>
+          <ul class="social-list list">
+            <li class="footer-item-list"><a href="https://www.facebook.com/profile.php?id=61555276798054" target="_blank" rel="noopener">Facebook</a></li>
+            <li class="footer-item-list"><a href="https://www.instagram.com/glyntowncarecentre/" target="_blank" rel="noopener">Instagram</a></li>
+            <li class="footer-item-list"><a href="https://www.linkedin.com/company/glyntown-care-centre/about/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-span">© 2024 Glyntown Care Centre. All Rights Reserved.</span>
+        <div class="footer-social-links">
+          <a href="https://www.facebook.com/profile.php?id=61555276798054" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/glyntowncarecentre/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/glyntown-care-centre/about/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+        </div>
       </div>
     </div>
   </footer>
-  <script type="text/javascript" src="../scripts/script.js"></script>
 
+  <script src="../scripts/script.js" defer></script>
 </body>
-
 </html>
+

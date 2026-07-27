@@ -1,189 +1,188 @@
+/* ============================================
+   Glyntown Care - Contact Us Page
+   ============================================ */
 
-/* contact style / contact Us page */
-.timeline-photo-container{
-    height: 100px;
-    width: 100%;
-    padding: 100px 0px 50px 0px;
+@import url('global.css');
 
-    align-items: center;
-    justify-content: center;
-  
-  }
-  #contact-container{
-    text-align: center;
-    justify-content: center;
-  }
-
- 
-  .contact-us-title{
-    color: rgb(53, 0, 83);
-    text-align: center;
-    font-size: 4rem;
-    
-  }
-  .contact-inner-container{  
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-  }
-
-
-  .contact-information{
-    width: 60%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: stretch;
-  }
-
-.contact-card-container{
-  padding-bottom: 30px;
-  width: 90%;
-  padding: 10px;
-  
-}
-.contact-card-container-inner{
-  margin: auto;
-  background-color: rgba(239, 234, 255, 0.5);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 8px;
-  height: 280px;
-  padding: 30px;
-}
-
-.contact-frm-btn{
+/* === Hero === */
+.timeline-photo-container {
+  padding: var(--space-20) var(--space-8) var(--space-8);
   text-align: center;
-  margin-bottom: 0px;
 }
-.contact-card-title{
-  padding-top: 30px;
-  font-weight: 700;
-  font-size: 2rem;
+
+.contact-us-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-6xl);
+  color: var(--color-navy);
 }
-.contact-card-phrase{
-  padding: 40px 40px 20px 40px;
-  font-weight: 400;
+
+/* === Contact Cards === */
+#contact-container {
+  padding: var(--space-8) var(--space-8) var(--space-16);
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.phone-number, .email{
-  text-decoration: none;
-  font-size: 1.3rem;
-  color: black;
-  font-weight: 700;
+
+.contact-inner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--space-8);
 }
-.bus-route-title{
-  font-size: 1.5rem;
+
+.contact-information {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-8);
+  width: 100%;
+  max-width: 900px;
 }
-.bus-route-text-content{
+
+.contact-information__card {
+  flex: 1;
+  background: var(--color-white);
+  padding: var(--space-8);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
-  width: clamp(200px, 87.5%, 600px);
+  gap: var(--space-5);
+  transition: all var(--transition-base);
+}
+
+.contact-information__card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.contact-information__card-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.contact-information__card-text {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.contact-information__card-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: auto;
+}
+
+.contact-information__card-link {
+  display: inline-flex;
   align-items: center;
-  text-align: left;
-  padding: 0 0 50px 0;
+  gap: var(--space-3);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--text-lg);
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.contact-information__card-link i {
+  font-size: 1.25rem;
+  width: 1.25rem;
+}
+
+.contact-information__card-link:hover {
+  color: var(--color-primary-dark);
+}
+
+.contact-information__card-link:hover i {
+  text-decoration: none;
+}
+
+.contact-information__card-socials {
+  display: flex;
   justify-content: center;
-}
-.bus-route-list-container{
-  flex: 50%;
-}
-.bus-route-list-container{
-  padding: 0 35px;
-}
-.bus-route-links-container{
-  text-align: left;
-  width: clamp(200px, 87.5%, 600px);
-
-  flex: 50%;
+  gap: var(--space-5);
+  margin-top: auto;
+  padding-top: var(--space-4);
 }
 
-
-.location-in-contact-us{
-  
-  border-radius: 8px;
-  width: 80%;
+.contact-information__card-socials a {
+  color: var(--color-navy);
+  font-size: 2.25rem;
+  transition: color var(--transition-fast), transform var(--transition-fast);
 }
 
-@media(max-width: 1548px){
-  .contact-information{
-    width: 80%;
-  }
+.contact-information__card-socials a:hover {
+  color: var(--color-primary);
+  transform: scale(1.1);
 }
-@media(max-width: 1200px){
-  .contact-information{
+
+/* === Location in Contact === */
+.location-in-contact-us {
+  padding: var(--space-16) var(--space-8);
+  background: var(--color-bg-alt);
+}
+
+.location-in-contact-us h1 {
+  font-family: var(--font-heading);
+  font-size: var(--text-5xl);
+  color: var(--color-navy);
+  margin-bottom: var(--space-8);
+}
+
+.bus-route-text-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .contact-information {
     flex-direction: column;
   }
 }
-@media (max-width: 800px){
-  main{
-    padding-top: 30px;
-  }
-  .contact-inner-container{
-    flex-direction: column;
-    width: 100%;
-  }
-  .contact-information{
-    width: 95%;
-  }
-  .form-rows{
-    flex-direction: column;
-  }
-  .contact-us-title{
-    font-size: 35px;
-    padding: 40px;
-  }
-  .contact-card-container-inner{
-    height: auto;
-    padding: 30px;
-    margin: auto;
-  }
-  .timeline-photo-container{
-    padding-bottom: 0;
-  }
- 
-}
-@media (max-width: 1500px){
-  .bus-route-text-content{
-    flex-direction: column;
-    padding: 20px;
-  }
-  .bus-route-links-container{
-    text-align: center;
-    padding-bottom: 30px;
-    
-  }
-  
-}
 
-@media (max-width: 1200px){
-  .contact-inner-container{
-    flex-direction: column;
-    width: 100%;
+@media (max-width: 768px) {
+  .contact-us-title {
+    font-size: var(--text-4xl);
   }
-  
-  .contact-card-container{
-    width: 95%;
-  }
-  
-  .location-in-contact-us{
-    width: 100%;
+
+  .bus-route-text-content {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 480px){
-  .inner-container{
-    width: 100%;
+@media (max-width: 480px) {
+  .contact-information {
+    gap: var(--space-5);
   }
-  .bus-route-text-content{
-    padding: 0 10px;
+
+  .contact-information__card {
+    padding: var(--space-6);
   }
-  .bus-information-step-by-step-list{
-    width: 80%;
+
+  .contact-information__card-title {
+    font-size: var(--text-xl);
   }
-  .contact-card-phrase{
-    padding: 30px 0;
+
+  .contact-information__card-link {
+    font-size: var(--text-base);
   }
-  iframe{
-    margin: 0;
+
+  .contact-information__card-socials {
+    gap: var(--space-4);
+  }
+
+  .contact-information__card-socials a {
+    font-size: 2rem;
   }
 }
 

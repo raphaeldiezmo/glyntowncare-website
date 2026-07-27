@@ -1,145 +1,214 @@
-// Author: Raphael Diezmo
-// Description: This scripts will contain all the functionalities/methods of the
-// whole website, this will control some elements of the website, by changing
-// values of some element attributes. This will also contain an emailing system.
-// as well as sending an auto-response to who ever tries to contact using the form
-// that the website contains.
+// ============================================
+// Glyntown Care - Main JavaScript
+// Performance optimized with modern APIs
+// ============================================
 
+(function() {
+  'use strict';
 
+  // === Check for reduced motion preference ===
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-// ========================================
-//                OBSERVERS
-// ========================================
+  // === DOM Cache ===
+  const header = document.querySelector('header');
+  const burgerMenu = document.querySelector('.burger-menu');
+  const navMenu = document.querySelector('.nav');
+  const navLinks = document.querySelectorAll('.nav-link');
 
-const fader = document.querySelectorAll('.fade-in');
-const slider = document.querySelectorAll('.slider');
-const appearOptions = {
-  threshold: 0, rootMargin: "0px 0px -250px 0px"
-};
+  // === Navbar Toggle ===
+  if (burgerMenu && navMenu) {
+    burgerMenu.addEventListener('click', (e) => {
+      e.stopPropagation();
+      burgerMenu.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    });
 
+    // Close menu on link click
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        burgerMenu.classList.remove('active');
+        navMenu.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
 
-// Usage of Intersection Observer
-const appearOnScroll = new IntersectionObserver(
-  // contains function that has an entries and
-  // appearOnScroll parameter
-  function (
-    entries, appearOnScroll
-  ) {
-    // running to every each entry
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) {
-        return;
+    // Close menu on outside click
+    document.addEventListener('click', (e) => {
+      if (navMenu.classList.contains('active') &&
+          !navMenu.contains(e.target) &&
+          !burgerMenu.contains(e.target)) {
+        burgerMenu.classList.remove('active');
+        navMenu.classList.remove('active');
+        document.body.style.overflow = '';
       }
-      // if an entry doesn't intersect, it'll
-      // add the appear class in the entry
-      else {
-        entry.target.classList.add('appear');
-        appearOnScroll.unobserve(entry.target);
+    });
+  }
+
+  // === Scroll Events (passive for performance) ===
+  let lastScrollY = 0;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+
+    // Hide/show header
+    if (header) {
+      if (currentScrollY > 100) {
+        header.classList.add('scrolled');
+        if (currentScrollY > lastScrollY) {
+          header.classList.add('hidden');
+        } else {
+          header.classList.remove('hidden');
+        }
+      } else {
+        header.classList.remove('scrolled', 'hidden');
       }
-    })
-  }, appearOptions
-);
+    }
 
-fader.forEach(fader => {
-  appearOnScroll.observe(fader);
-})
+    lastScrollY = currentScrollY;
+  }, { passive: true });
 
-slider.forEach(slider => {
-  appearOnScroll.observe(slider);
-})
+  // === Intersection Observer for Scroll Reveals ===
+  if (!prefersReducedMotion) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed', 'appear');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
 
-// // Making the navbar appear and disappear function
-// // keep track of previous scroll position
-// let prevScrollpos = window.pageYOffset;
+    // Observe all reveal elements
+    const revealElements = document.querySelectorAll(
+      '.reveal, .reveal-left, .reveal-right, .reveal-scale, ' +
+      '.fade-in, .appear-with-on-scroll-animation, ' +
+      '.slider, .from-left, .from-right, .bottom-to-top'
+    );
 
-//         window.onscroll = function() {
-//             let currentScrollPos = window.pageYOffset;
-//             let navs = document.querySelector('.nav-link');
+    revealElements.forEach(el => revealObserver.observe(el));
+  } else {
+    // If reduced motion, just reveal everything immediately
+    document.querySelectorAll(
+      '.reveal, .reveal-left, .reveal-right, .reveal-scale, ' +
+      '.fade-in, .appear-with-on-scroll-animation, ' +
+      '.slider, .from-left, .from-right, .bottom-to-top'
+    ).forEach(el => {
+      el.classList.add('revealed', 'appear');
+    });
+  }
 
+  // === Lazy loading for images ===
+  if ('loading' in HTMLImageElement.prototype) {
+    document.querySelectorAll('img[data-src]').forEach(img => {
+      img.src = img.dataset.src;
+    });
+  } else {
+    // Fallback for older browsers
+    const lazyObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.classList.add('loaded');
+          lazyObserver.unobserve(img);
+        }
+      });
+    }, {
+      rootMargin: '200px 0px'
+    });
 
-//             // if (currentScrollPos <= 100){
-//             //   document.querySelector('header').classList.remove('hidden');
+    document.querySelectorAll('img[data-src]').forEach(img => {
+      lazyObserver.observe(img);
+    });
+  }
 
+  // === Smooth scroll for anchor links ===
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href === '#') return;
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        const headerOffset = 80;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-//             // }
-//             // else{
-//             //   if (prevScrollpos > currentScrollPos) {
-//             //     document.querySelector('header').classList.remove('hidden');
-//             // } else {
-//             //     document.querySelector('header').classList.add('hidden');
-//             // }
-//             // }
-
-
-//             prevScrollpos = currentScrollPos;
-//         }
-// Variable Declarations
-const burgerMenu = document.querySelector(".burger-menu");
-const navMenu = document.querySelector(".nav");
-
-
-
-// Burger menu functionality 
-// This function makes the element active, by clicking the burger menu class
-// it will activate the burger-menu and contain a customized attributes 
-// as well as the .nav class
-burgerMenu.addEventListener("click", () => {
-  burgerMenu.classList.toggle("active"); // adding .active to .burger-menu class
-  navMenu.classList.toggle("active");// adding .active to .nav class
-})
-
-// This function takes out the .active attributes. The following elements are 
-// .burger-menu and .nav 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click"), () => {
-  burgerMenu.classList.remove("active");
-  navMenu.classList.remove("active");
-})
-
-
-
-
-
-// carousel
-const carousel = document.getElementById("ser");
-const track = carousel.querySelector(".carousel-track");
-const items = track.children;
-const total = items.length;
-let index = 0;
-let interval;
-
-// Make sure videos loop
-[...items].forEach(item => {
-  if (item.tagName === "VIDEO") item.play();
-});
-
-function showSlide(i) {
-  track.style.transform = `translateX(-${i * 100}%)`;
-
-  // Pause all videos
-  [...items].forEach(el => {
-    if (el.tagName === "VIDEO") el.pause();
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
   });
 
-  // Play current if it's a video
-  const current = items[i];
-  if (current.tagName === "VIDEO") current.play();
-}
+  // === Responsive font scaling ===
+  function setFontScale() {
+    const width = window.innerWidth;
+    if (width < 480) {
+      document.documentElement.style.setProperty('--text-5xl', '2.25rem');
+    } else if (width < 768) {
+      document.documentElement.style.setProperty('--text-5xl', '2.75rem');
+    } else {
+      document.documentElement.style.removeProperty('--text-5xl');
+    }
+  }
 
-function startCarousel() {
-  interval = setInterval(() => {
-    index = (index + 1) % total;
-    showSlide(index);
-  }, 4000); // Change slide every 4 seconds
-}
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(setFontScale, 100);
+  }, { passive: true });
 
-function stopCarousel() {
-  clearInterval(interval);
-}
+  setFontScale();
 
-// Start on load
-showSlide(index);
-startCarousel();
+  // === Carousel functionality (if carousel exists) ===
+  const carousel = document.getElementById('ser');
+  if (carousel) {
+    const track = carousel.querySelector('.carousel-track');
+    const items = track?.children;
+    if (track && items && items.length > 0) {
+      const total = items.length;
+      let index = 0;
+      let interval;
 
-// Pause on hover
-carousel.addEventListener("mouseenter", stopCarousel);
-carousel.addEventListener("mouseleave", startCarousel);
+      // Auto-play videos in current slide
+      function playCurrentVideo(i) {
+        const current = items[i];
+        if (current.tagName === 'VIDEO') {
+          items.forEach(item => {
+            if (item.tagName === 'VIDEO') item.pause();
+          });
+          current.play().catch(() => {});
+        }
+      }
+
+      function showSlide(i) {
+        track.style.transform = `translateX(-${i * 100}%)`;
+        playCurrentVideo(i);
+      }
+
+      function startCarousel() {
+        interval = setInterval(() => {
+          index = (index + 1) % total;
+          showSlide(index);
+        }, 4000);
+      }
+
+      function stopCarousel() {
+        clearInterval(interval);
+      }
+
+      showSlide(index);
+      startCarousel();
+
+      carousel.addEventListener('mouseenter', stopCarousel);
+      carousel.addEventListener('mouseleave', startCarousel);
+    }
+  }
+})();
+
