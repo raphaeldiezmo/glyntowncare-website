@@ -14,6 +14,13 @@
   const burgerMenu = document.querySelector('.burger-menu');
   const navMenu = document.querySelector('.nav');
   const navLinks = document.querySelectorAll('.nav-link');
+  const reviewInvitation = document.querySelector('.review-invitation');
+  const footer = document.querySelector('footer');
+
+  // Place the review invitation directly before the site footer.
+  if (reviewInvitation && footer) {
+    footer.before(reviewInvitation);
+  }
 
   // === Navbar Toggle ===
   if (burgerMenu && navMenu) {
@@ -211,4 +218,3 @@
     }
   }
 })();
-

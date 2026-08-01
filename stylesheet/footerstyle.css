@@ -13,6 +13,10 @@ footer {
   position: relative;
 }
 
+.review-invitation + footer {
+  margin-top: 0;
+}
+
 footer::before {
   content: '';
   position: absolute;
@@ -22,6 +26,117 @@ footer::before {
   height: 3px;
   background: linear-gradient(90deg, transparent, var(--color-primary), var(--color-teal), transparent);
   border-radius: var(--radius-full);
+}
+
+/* ========== REVIEW INVITATION ========== */
+.review-invitation {
+  padding: var(--space-12) var(--space-6);
+  background: radial-gradient(circle at 50% 0%, rgba(8, 113, 185, 0.1), transparent 42%), var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text);
+  text-align: center;
+  animation: review-invitation-enter 700ms 180ms both cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.review-invitation__content {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.review-invitation__stars {
+  margin: 0;
+  color: #e2a83b;
+  font-size: 1.05rem;
+  letter-spacing: 0.22em;
+  animation: review-stars-glow 2.8s ease-in-out infinite;
+}
+
+.review-invitation__eyebrow {
+  margin: var(--space-4) 0 var(--space-2);
+  color: var(--color-primary);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.review-invitation h2 {
+  margin: 0;
+  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.review-invitation__message {
+  max-width: 510px;
+  margin: var(--space-4) auto var(--space-6);
+  color: var(--color-text-secondary);
+  font-size: var(--text-base);
+  line-height: 1.7;
+}
+
+.review-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-teal));
+  box-shadow: 0 8px 18px rgba(8, 113, 185, 0.22);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-decoration: none;
+  transition: box-shadow var(--transition-base), filter var(--transition-base), transform var(--transition-base);
+}
+
+.review-link span {
+  font-family: var(--font-body);
+  font-size: 0.85em;
+  transition: transform var(--transition-base);
+}
+
+.review-link:hover,
+.review-link:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(8, 113, 185, 0.3);
+  filter: saturate(1.15);
+}
+
+.review-link:hover span,
+.review-link:focus-visible span {
+  transform: translate(3px, -3px);
+}
+
+.review-link:focus-visible {
+  outline: 2px solid var(--color-navy);
+  outline-offset: 5px;
+  border-radius: var(--radius-sm);
+}
+
+@keyframes review-invitation-enter {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes review-stars-glow {
+  0%, 100% { opacity: 0.75; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .review-invitation,
+  .review-invitation__stars,
+  .review-link,
+  .review-link span {
+    animation: none;
+    transition: none;
+  }
 }
 
 .footer-container {
@@ -224,6 +339,10 @@ footer::before {
     flex-direction: column;
     gap: var(--space-3);
     text-align: center;
+  }
+
+  .review-invitation {
+    padding: var(--space-10) var(--space-5);
   }
 
   .footer-column {
